@@ -1533,13 +1533,15 @@ code {
   .map-title-overlay {
     top: 12px;
     left: 12px;
-    max-width: calc(100% - 24px);
+    max-width: calc(100% - 150px);
   }
 
   .map-action-overlay {
+    top: 12px;
     right: 12px;
-    bottom: 12px;
-    top: auto;
+    bottom: auto;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .pagination-bar {
