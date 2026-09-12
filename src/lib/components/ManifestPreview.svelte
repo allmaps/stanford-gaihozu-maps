@@ -27,6 +27,14 @@
   let pageStart = $derived((currentPage - 1) * pageSize);
   let paginatedPreviewImages = $derived(previewImages.slice(pageStart, pageStart + pageSize));
   let pageLabel = $derived("Page " + currentPage + " of " + totalPages);
+  let metadataEntries = $derived(
+    (manifest?.metadata || [])
+      .map((item) => ({
+        label: metadataText(item.label) || "Metadata",
+        value: metadataText(item.value),
+      }))
+      .filter((item) => item.value),
+  );
 
   let geojsonPath = $derived.by(() => {
     const geojson = manifest?.seeAlso?.find((item) => item.id.endsWith(".geojson"));
@@ -49,6 +57,12 @@
 
   function nextPage() {
     currentPage = Math.min(totalPages, currentPage + 1);
+  }
+
+  function metadataText(map?: Record<string, string[]> | string) {
+    if (!map) return "";
+    if (typeof map === "string") return map;
+    return Object.values(map).flat().filter(Boolean).join("; ");
   }
 </script>
 
@@ -79,11 +93,21 @@
       <dt>Canvases</dt>
       <dd>{canvases.length}</dd>
     </div>
-    <div>
-      <dt>Images</dt>
-      <dd>{previewImages.length}</dd>
-    </div>
   </dl>
+
+  {#if metadataEntries.length}
+    <section class="manifest-metadata" aria-label="Manifest metadata">
+      <h3>Metadata</h3>
+      <dl>
+        {#each metadataEntries as entry}
+          <div>
+            <dt>{entry.label}</dt>
+            <dd>{entry.value}</dd>
+          </div>
+        {/each}
+      </dl>
+    </section>
+  {/if}
 
   {#if totalPages > 1}
     <nav class="pagination-bar" aria-label="Thumbnail pages">

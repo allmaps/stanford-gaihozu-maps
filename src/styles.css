@@ -446,6 +446,56 @@ figure {
   font-weight: 700;
 }
 
+.manifest-metadata {
+  margin: 0 0 20px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface);
+}
+
+.manifest-metadata h3 {
+  margin: 0;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-muted);
+  color: var(--stanford-black);
+  font-family: "Source Sans 3", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 10px 12px;
+}
+
+.manifest-metadata dl {
+  display: grid;
+  margin: 0;
+}
+
+.manifest-metadata div {
+  display: grid;
+  grid-template-columns: minmax(130px, 0.3fr) minmax(0, 1fr);
+  gap: 12px;
+  padding: 11px 12px;
+}
+
+.manifest-metadata div + div {
+  border-top: 1px solid var(--border);
+}
+
+.manifest-metadata dt {
+  color: var(--stanford-cool-grey);
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.manifest-metadata dd {
+  min-width: 0;
+  margin: 0;
+  color: var(--stanford-black);
+  line-height: 1.42;
+  overflow-wrap: anywhere;
+}
+
 .thumb-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -726,7 +776,6 @@ code {
 
 .map-entry[data-state="open"] {
   border-color: var(--stanford-digital-green-dark);
-  box-shadow: inset 3px 0 0 var(--stanford-digital-red);
 }
 
 .map-entry-summary {
@@ -1232,7 +1281,18 @@ code {
 
 .list-sidebar {
   z-index: 2;
+  padding-right: 0;
   box-shadow: 10px 0 24px rgba(46, 45, 41, 0.08);
+}
+
+.list-sidebar .map-panel-header {
+  padding-right: 20px;
+}
+
+.list-sidebar .map-results {
+  padding-right: 16px;
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 .list-results {
@@ -1241,7 +1301,6 @@ code {
 
 .map-entry.is-selected {
   border-color: var(--stanford-digital-red);
-  box-shadow: inset 3px 0 0 var(--stanford-digital-red);
 }
 
 .map-entry.is-selected .map-entry-summary {
@@ -1486,6 +1545,11 @@ code {
 
   .pagination-button {
     min-width: 0;
+  }
+
+  .manifest-metadata div {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 
   .filter-popover {

@@ -40,7 +40,7 @@
     if (!sidebarEl || id === null || id === "") return;
     void tick().then(() => {
       const entry = sidebarEl?.querySelector<HTMLElement>('[data-feature-key="' + String(id) + '"]');
-      entry?.scrollIntoView({ block: "nearest" });
+      entry?.scrollIntoView({ behavior: "smooth", block: "nearest" });
     });
   });
 

@@ -53,7 +53,8 @@
   let previousSheetCountMin = 0;
   let previousSheetCountMax = 0;
   let viewportBbox = $state<Bbox | null>(null);
-  let polygonsVisible = $state<boolean>(true);
+  let polygonsEnabled = $state<boolean>(true);
+  let spaceHidingPolygons = $state<boolean>(false);
   let fitToFeaturesKey = $state<number>(0);
   let fitToSelectedKey = $state<number>(0);
   let collectionOpen = $state<boolean>(Boolean(initialManifestId));
@@ -87,6 +88,10 @@
       : filteredFeatures,
   );
   let activeFilterCount = $derived(filterCount());
+  let polygonsVisible = $derived(polygonsEnabled && !spaceHidingPolygons);
+  let polygonVisibilityLabel = $derived(
+    polygonsEnabled ? (spaceHidingPolygons ? "Polygons hidden while Space is held" : "Polygons shown") : "Polygons hidden",
+  );
 
   onMount(() => {
     requestedManifestId = manifestFromLocation();
@@ -100,14 +105,26 @@
     const handleKeydown = (event: KeyboardEvent) => {
       if (event.code !== "Space" || event.repeat || isFormControl(event.target) || collectionOpen || aboutOpen || filtersOpen) return;
       event.preventDefault();
-      polygonsVisible = !polygonsVisible;
+      spaceHidingPolygons = true;
+    };
+    const handleKeyup = (event: KeyboardEvent) => {
+      if (event.code !== "Space" || !spaceHidingPolygons) return;
+      event.preventDefault();
+      spaceHidingPolygons = false;
+    };
+    const handleBlur = () => {
+      spaceHidingPolygons = false;
     };
 
     window.addEventListener("popstate", handlePopState);
     window.addEventListener("keydown", handleKeydown);
+    window.addEventListener("keyup", handleKeyup);
+    window.addEventListener("blur", handleBlur);
     return () => {
       window.removeEventListener("popstate", handlePopState);
       window.removeEventListener("keydown", handleKeydown);
+      window.removeEventListener("keyup", handleKeyup);
+      window.removeEventListener("blur", handleBlur);
     };
   });
 
@@ -439,7 +456,7 @@
               </div>
 
               <div class="switch-row compact-switch-row">
-                <Switch.Root class="switch-root" checked={polygonsVisible} aria-label="Show polygons" onCheckedChange={(visible) => (polygonsVisible = visible)}>
+                <Switch.Root class="switch-root" checked={polygonsEnabled} aria-label="Show polygons" onCheckedChange={(enabled) => (polygonsEnabled = enabled)}>
                   <Switch.Thumb class="switch-thumb" />
                 </Switch.Root>
                 {#if polygonsVisible}
@@ -447,8 +464,8 @@
                 {:else}
                   <EyeOff size={16} strokeWidth={2.2} aria-hidden="true" />
                 {/if}
-                <span>{polygonsVisible ? "Polygons shown" : "Polygons hidden"}</span>
-                <kbd>Space</kbd>
+                <span>{polygonVisibilityLabel}</span>
+                <kbd>Hold Space</kbd>
               </div>
 
               <div class="map-filter-actions">
@@ -501,10 +518,6 @@
                 <div>
                   <dt>Map and interface</dt>
                   <dd><a href={openFreeMapUrl}>OpenFreeMap</a> background tiles, <a href={mapLibreUrl}>MapLibre GL JS</a> rendering, Svelte, and <a href={bitsUiUrl}>Bits UI</a> controls.</dd>
-                </div>
-                <div>
-                  <dt>Typography</dt>
-                  <dd>Stanford's recommended Source Sans 3 typeface is loaded from Google Fonts for this sans-serif interface.</dd>
                 </div>
               </dl>
             </Dialog.Content>
