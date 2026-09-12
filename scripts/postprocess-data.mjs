@@ -380,9 +380,10 @@ function unionNavPlaceFeatures(features, { id, label, properties = {} }) {
 
 function unionClippingGeometries(geometries) {
   const chunkSize = 250;
-  let accumulator = geometries[0];
-  for (let index = 1; index < geometries.length; index += chunkSize) {
-    accumulator = unionPolygons(accumulator, ...geometries.slice(index, index + chunkSize));
+  const [firstGeometry, ...remainingGeometries] = geometries;
+  let accumulator = unionPolygons(firstGeometry);
+  for (let index = 0; index < remainingGeometries.length; index += chunkSize) {
+    accumulator = unionPolygons(accumulator, ...remainingGeometries.slice(index, index + chunkSize));
   }
   return accumulator;
 }
