@@ -67,11 +67,11 @@ node scripts/build-data.mjs --base-url http://localhost:5173
 
 ## Output
 
-- `public/geojson/{series-druid}.geojson`: saved sheet-index GeoJSON.
-- `public/iiif/series/{series-druid}/sheets.json`: extracted sheet manifest URLs.
-- `public/iiif/series/{series-druid}/manifest.json`: combined IIIF manifest for one index series.
-- `public/iiif/collection.json`: root collection with nested browse groupings.
-- `public/iiif/collections/**/*.json`: standalone nested collections for all series, broad region, and scale.
+- `static/geojson/{series-druid}.geojson`: saved sheet-index GeoJSON.
+- `static/iiif/series/{series-druid}/sheets.json`: extracted sheet manifest URLs.
+- `static/iiif/series/{series-druid}/manifest.json`: combined IIIF manifest for one index series.
+- `static/iiif/collection.json`: root collection with nested browse groupings.
+- `static/iiif/collections/**/*.json`: standalone nested collections for all series, broad region, and scale.
 - `data/index-records/{series-druid}.json`: local copy of the OpenGeoMetadata record.
 - `data/build-report.json`: run summary and failed sheet manifest fetches.
 

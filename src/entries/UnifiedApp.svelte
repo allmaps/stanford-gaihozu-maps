@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from "$app/paths";
   import { onMount } from "svelte";
   import { Button, Dialog, Popover, Select, Slider, Switch } from "bits-ui";
   import { Braces, Database, ExternalLink, Eye, EyeOff, Funnel, Info, ListTree, Maximize2, RotateCcw, X } from "@lucide/svelte";
@@ -40,7 +41,7 @@
     "Over time the mapping efforts grew to including \"mapping of interimperial boundaries, cadastral surveys of the colonies, and detailed drawings of strategic cities and fortifications.\"",
     "Geographically the Stanford maps cover a broad area including Japan, China, Mongolia, North Korea, South Korea, the Philippines, and beyond.",
   ].join(" ");
-  const appBasePath = normalizeAppBasePath(import.meta.env.BASE_URL || "/");
+  const appBasePath = normalizeAppBasePath(base || "/");
   const initialManifestId = manifestFromLocation();
 
   let requestedManifestId = $state<string>(initialManifestId);

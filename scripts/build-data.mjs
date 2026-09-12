@@ -37,7 +37,7 @@ const limitSheets = numberOption(args["limit-sheets"]);
 const skipManifests = Boolean(args["skip-manifests"]);
 const dryRun = Boolean(args["dry-run"]);
 const selectedSeries = setOption(args["series-id"]).map(normalizeBareDruid);
-const publicDir = path.resolve("public");
+const staticDir = path.resolve("static");
 const dataDir = path.resolve("data");
 const navPlaceContext = "http://iiif.io/api/extension/navplace/context.json";
 const iiifPresentationContext = "http://iiif.io/api/presentation/3/context.json";
@@ -70,8 +70,8 @@ async function main() {
   }
 
   await mkdir(cacheDir, { recursive: true });
-  await mkdir(path.join(publicDir, "geojson"), { recursive: true });
-  await mkdir(path.join(publicDir, "iiif", "series"), { recursive: true });
+  await mkdir(path.join(staticDir, "geojson"), { recursive: true });
+  await mkdir(path.join(staticDir, "iiif", "series"), { recursive: true });
   await mkdir(path.join(dataDir, "index-records"), { recursive: true });
 
   const allRecords = await discoverSeries(metadataRoot, collectionId);
@@ -172,7 +172,7 @@ async function prepareSeries(record, ordinal, total) {
     report.sheets = sheets.length;
     report.status = "geojson-ready";
 
-    const seriesDir = path.join(publicDir, "iiif", "series", seriesDruid);
+    const seriesDir = path.join(staticDir, "iiif", "series", seriesDruid);
     if (!dryRun) {
       await mkdir(seriesDir, { recursive: true });
       await writeJson(path.join(seriesDir, "sheets.json"), {
@@ -249,7 +249,7 @@ async function buildSeriesManifestFile(prepared, ordinal, total) {
       ? "manifests-written-with-errors"
       : "manifests-written";
 
-  const seriesDir = path.join(publicDir, "iiif", "series", seriesDruid);
+  const seriesDir = path.join(staticDir, "iiif", "series", seriesDruid);
   const manifestPath = path.join(seriesDir, "manifest.json");
   const manifestUrl = `${baseUrl}/iiif/series/${seriesDruid}/manifest.json`;
   const manifest = buildSeriesManifest(record, seriesDruid, sheets, canvases);
@@ -290,7 +290,7 @@ async function buildSeriesManifestFile(prepared, ordinal, total) {
 async function writeCollectionAndReport(collectionItems, totalSeries, report) {
   if (dryRun) return;
   const collection = buildCollection(collectionItems, totalSeries);
-  await writeJson(path.join(publicDir, "iiif", "collection.json"), collection);
+  await writeJson(path.join(staticDir, "iiif", "collection.json"), collection);
   await writeBuildReport(report);
 }
 
@@ -300,7 +300,7 @@ async function writeBuildReport(report) {
 }
 
 async function saveGeojson(seriesDruid, refs) {
-  const localPath = path.join(publicDir, "geojson", `${seriesDruid}.geojson`);
+  const localPath = path.join(staticDir, "geojson", `${seriesDruid}.geojson`);
   const directUrl = directGeojsonUrl(refs);
   if (directUrl) {
     const { buffer } = await cachedFetch(directUrl, {

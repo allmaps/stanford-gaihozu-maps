@@ -8,7 +8,7 @@ const args = parseArgs(process.argv.slice(2));
 const baseUrl = trimTrailingSlash(
   args["base-url"] || process.env.BASE_URL || "http://localhost:5173",
 );
-const publicDir = path.resolve("public");
+const staticDir = path.resolve("static");
 const dataDir = path.resolve("data");
 const basePath = new URL(baseUrl).pathname.replace(new RegExp("/$"), "");
 const navPlaceContext = "http://iiif.io/api/extension/navplace/context.json";
@@ -29,7 +29,7 @@ async function main() {
   const collection = buildRootCollection(enrichedSeries);
   const seriesIndex = buildSeriesIndex(enrichedSeries);
   await writeCollectionTree(collection);
-  await writeJson(path.join(publicDir, "iiif", "series-index.geojson"), seriesIndex);
+  await writeJson(path.join(staticDir, "iiif", "series-index.geojson"), seriesIndex);
   console.log(
     "Postprocessed " + enrichedSeries.length + " manifests and rewrote nested collection.",
   );
@@ -46,7 +46,7 @@ async function discoverSeriesIds() {
       .filter(Boolean);
   }
 
-  const seriesRoot = path.join(publicDir, "iiif", "series");
+  const seriesRoot = path.join(staticDir, "iiif", "series");
   const entries = await readdir(seriesRoot, { withFileTypes: true });
   return entries
     .filter((entry) => entry.isDirectory())
@@ -55,8 +55,8 @@ async function discoverSeriesIds() {
 }
 
 async function enrichSeries(seriesDruid, ordinal, total) {
-  const manifestPath = path.join(publicDir, "iiif", "series", seriesDruid, "manifest.json");
-  const geojsonPath = path.join(publicDir, "geojson", seriesDruid + ".geojson");
+  const manifestPath = path.join(staticDir, "iiif", "series", seriesDruid, "manifest.json");
+  const geojsonPath = path.join(staticDir, "geojson", seriesDruid + ".geojson");
   const recordPath = path.join(dataDir, "index-records", seriesDruid + ".json");
 
   if (!existsSync(manifestPath) || !existsSync(geojsonPath)) return null;
@@ -114,7 +114,7 @@ async function enrichSeries(seriesDruid, ordinal, total) {
 }
 
 async function rewriteSheetsJson(seriesDruid) {
-  const sheetsPath = path.join(publicDir, "iiif", "series", seriesDruid, "sheets.json");
+  const sheetsPath = path.join(staticDir, "iiif", "series", seriesDruid, "sheets.json");
   if (!existsSync(sheetsPath)) return;
   const text = await readFile(sheetsPath, "utf8");
   const rewritten = text.replace(
@@ -307,7 +307,7 @@ function localPathForUrl(url) {
   if (!pathname.startsWith("/iiif/")) {
     throw new Error("Refusing to write collection outside /iiif/: " + url);
   }
-  return path.join(publicDir, pathname.replace(/^\//, ""));
+  return path.join(staticDir, pathname.replace(/^\//, ""));
 }
 
 function manifestReference(manifest, record, sheets) {

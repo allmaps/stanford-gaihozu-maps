@@ -1,6 +1,7 @@
+import { base } from "$app/paths";
 import type { IiifCanvas, IiifImage, IiifManifest, IiifResource, LanguageMap } from "./types";
 
-const basePath = normalizeBasePath(import.meta.env.BASE_URL || "/");
+const basePath = normalizeBasePath(base || "/");
 
 export function publicPath(path: string) {
   if (/^https?:\/\//i.test(path)) return path;

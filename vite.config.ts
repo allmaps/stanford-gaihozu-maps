@@ -1,10 +1,5 @@
-import { svelte } from "@sveltejs/vite-plugin-svelte";
+import { sveltekit } from "@sveltejs/kit/vite";
 import { defineConfig } from "vite";
-
-declare const process: { env: { PUBLIC_URL?: string } };
-
-const publicUrl = process.env.PUBLIC_URL;
-const base = publicUrl ? new URL(publicUrl).pathname.replace(/\/?$/, "/") : "/";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -13,8 +8,7 @@ const corsHeaders = {
 };
 
 export default defineConfig({
-  base,
-  plugins: [svelte()],
+  plugins: [sveltekit()],
   optimizeDeps: {
     exclude: ["maplibre-gl"],
   },
@@ -29,13 +23,5 @@ export default defineConfig({
     port: 5174,
     cors: true,
     headers: corsHeaders,
-  },
-  build: {
-    rollupOptions: {
-      input: {
-        index: "index.html",
-        map: "map.html",
-      },
-    },
   },
 });
