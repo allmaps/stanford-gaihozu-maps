@@ -508,7 +508,7 @@
                   <p>{collectionDescription}</p>
                 </section>
                 <p>
-                  This browser starts from the Stanford EarthWorks collection of Japanese military and imperial map sheet indexes, then builds a browsable IIIF Presentation 3 collection around the scanned sheets.
+                  This project starts from the Stanford EarthWorks collection of Japanese military and imperial map sheet indexes, then builds a browsable IIIF Presentation 3 collection around the scanned sheets.
                 </p>
                 <p>
                   The data workflow reads EarthWorks and OpenGeoMetadata records, downloads each index GeoJSON or converts the shapefile parts when needed, extracts Stanford PURL IIIF manifest URLs from each sheet feature, and uses <code>@iiif/helpers</code> to upgrade and combine the individual sheet manifests into one series manifest.
