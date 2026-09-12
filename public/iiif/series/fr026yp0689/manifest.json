@@ -1,0 +1,497 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fr026yp0689/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "一万分一朝鮮地形圖 平壤 -- 1:10,000 Chōsen Chikeizu Heijō, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series, '一万分一朝鮮地形圖 平壤 -- 1:10,000 Chōsen Chikeizu Heijō.' This map series was originally produced by the Japanese Land Survey Department of the General Staff Headquarters [1932, 1947]. Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or\n'maps of outer lands.' These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "fr026yp0689"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-fr026yp0689"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "2"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "2"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-fr026yp0689",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/fr026yp0689",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/fr026yp0689.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fr026yp0689/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/fr026yp0689%2Findex_11351812/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/dq615xp0271/iiif/canvas/cocina-fileSet-dq615xp0271-dq615xp0271_1",
+      "type": "Canvas",
+      "height": 26236,
+      "width": 18741,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/dq615xp0271/dq615xp0271_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (88.4 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/dq615xp0271/iiif/canvas/cocina-fileSet-dq615xp0271-dq615xp0271_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/dq615xp0271/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fdq615xp0271-dq615xp0271_1%2Fdq615xp0271_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/dq615xp0271/iiif/canvas/cocina-fileSet-dq615xp0271-dq615xp0271_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/dq615xp0271%2Fdq615xp0271_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26236,
+                "width": 18741,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/dq615xp0271%2Fdq615xp0271_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "平壌東部 / EAST"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/dq615xp0271/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fr026yp0689/manifest.json#navplace-dq615xp0271",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fr026yp0689/manifest.json#navplace-dq615xp0271-feature-1",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "平壌東部 / EAST"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/dq615xp0271/iiif/manifest",
+              "recid": "dq615xp0271",
+              "callNumber": "G7909 .P9 1932 .K6 1947 EAST",
+              "sourceFeatureIndex": 1
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    125.758333,
+                    38.966667
+                  ],
+                  [
+                    125.822222,
+                    38.966667
+                  ],
+                  [
+                    125.822222,
+                    39.052778
+                  ],
+                  [
+                    125.758333,
+                    39.052778
+                  ],
+                  [
+                    125.758333,
+                    38.966667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              125.758333,
+              38.966667,
+              125.822222,
+              39.052778
+            ]
+          }
+        ],
+        "bbox": [
+          125.758333,
+          38.966667,
+          125.822222,
+          39.052778
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/dq615xp0271/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "平壌東部 / EAST"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/gf738rt4022/iiif/canvas/cocina-fileSet-gf738rt4022-gf738rt4022_1",
+      "type": "Canvas",
+      "height": 26379,
+      "width": 18903,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/gf738rt4022/gf738rt4022_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (89.6 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/gf738rt4022/iiif/canvas/cocina-fileSet-gf738rt4022-gf738rt4022_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/gf738rt4022/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fgf738rt4022-gf738rt4022_1%2Fgf738rt4022_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/gf738rt4022/iiif/canvas/cocina-fileSet-gf738rt4022-gf738rt4022_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/gf738rt4022%2Fgf738rt4022_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26379,
+                "width": 18903,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/gf738rt4022%2Fgf738rt4022_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "平壌西部 / WEST"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/gf738rt4022/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fr026yp0689/manifest.json#navplace-gf738rt4022",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fr026yp0689/manifest.json#navplace-gf738rt4022-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "平壌西部 / WEST"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/gf738rt4022/iiif/manifest",
+              "recid": "gf738rt4022",
+              "callNumber": "G7909 .P9 1932 .K6 1947 WEST",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    125.681944,
+                    38.966667
+                  ],
+                  [
+                    125.758333,
+                    38.966667
+                  ],
+                  [
+                    125.758333,
+                    39.052778
+                  ],
+                  [
+                    125.681944,
+                    39.052778
+                  ],
+                  [
+                    125.681944,
+                    38.966667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              125.681944,
+              38.966667,
+              125.758333,
+              39.052778
+            ]
+          }
+        ],
+        "bbox": [
+          125.681944,
+          38.966667,
+          125.758333,
+          39.052778
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/gf738rt4022/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "平壌西部 / WEST"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fr026yp0689/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fr026yp0689/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "一万分一朝鮮地形圖 平壤 -- 1:10,000 Chōsen Chikeizu Heijō, Maps Index"
+            ]
+          },
+          "seriesDruid": "fr026yp0689",
+          "sheetCount": 2,
+          "sourceFeatureCount": 2
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                125.681944,
+                38.966667
+              ],
+              [
+                125.822222,
+                38.966667
+              ],
+              [
+                125.822222,
+                39.052778
+              ],
+              [
+                125.681944,
+                39.052778
+              ],
+              [
+                125.681944,
+                38.966667
+              ]
+            ]
+          ]
+        },
+        "bbox": [
+          125.681944,
+          38.966667,
+          125.822222,
+          39.052778
+        ]
+      }
+    ],
+    "bbox": [
+      125.681944,
+      38.966667,
+      125.822222,
+      39.052778
+    ]
+  }
+}

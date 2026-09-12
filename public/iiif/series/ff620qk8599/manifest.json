@@ -1,0 +1,5102 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "二百万分一太平洋周域輿地圖 (航空圖) -- 1:2,000,000 Taiheiyō shūiki yochizu (kōkūzu), Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series \"二百万分一太平洋周域輿地圖 (航空圖) -- 1:2,000,000 Taiheiyō shūiki yochizu (kōkūzu)\" (1942-1943). Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or \"maps of outer lands.\" These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection.This layer provides an index map that can be used to locate individual scanned map sheets."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "ff620qk8599"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-ff620qk8599"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "31"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "31"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-ff620qk8599",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/ff620qk8599",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/ff620qk8599.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/ff620qk8599%2Findex_10114060/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/jv060xc2413/iiif/canvas/cocina-fileSet-jv060xc2413-jv060xc2413_1",
+      "type": "Canvas",
+      "height": 26534,
+      "width": 19145,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/jv060xc2413/jv060xc2413_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (91.3 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/jv060xc2413/iiif/canvas/cocina-fileSet-jv060xc2413-jv060xc2413_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/jv060xc2413/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fjv060xc2413-jv060xc2413_1%2Fjv060xc2413_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/jv060xc2413/iiif/canvas/cocina-fileSet-jv060xc2413-jv060xc2413_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/jv060xc2413%2Fjv060xc2413_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26534,
+                "width": 19145,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/jv060xc2413%2Fjv060xc2413_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "北部2南. 千島列島中部_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/jv060xc2413/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-jv060xc2413",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-jv060xc2413-feature-36",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "北部2南. 千島列島中部_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/jv060xc2413/iiif/manifest",
+              "recid": "jv060xc2413",
+              "callNumber": "G7801 .P6 S2000 .J3 N-2-A SOUTH",
+              "sourceFeatureIndex": 36
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    150,
+                    32.666667
+                  ],
+                  [
+                    165,
+                    32.666667
+                  ],
+                  [
+                    165,
+                    50
+                  ],
+                  [
+                    150,
+                    50
+                  ],
+                  [
+                    150,
+                    32.666667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              150,
+              32.666667,
+              165,
+              50
+            ]
+          }
+        ],
+        "bbox": [
+          150,
+          32.666667,
+          165,
+          50
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/jv060xc2413/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "北部2南. 千島列島中部_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/kt932sx1636/iiif/canvas/cocina-fileSet-kt932sx1636-kt932sx1636_1",
+      "type": "Canvas",
+      "height": 26476,
+      "width": 19243,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/kt932sx1636/kt932sx1636_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (91.6 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/kt932sx1636/iiif/canvas/cocina-fileSet-kt932sx1636-kt932sx1636_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/kt932sx1636/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fkt932sx1636-kt932sx1636_1%2Fkt932sx1636_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/kt932sx1636/iiif/canvas/cocina-fileSet-kt932sx1636-kt932sx1636_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/kt932sx1636%2Fkt932sx1636_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26476,
+                "width": 19243,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/kt932sx1636%2Fkt932sx1636_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "北部3. オホーツク - アレクサンドロフスク"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/kt932sx1636/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-kt932sx1636",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-kt932sx1636-feature-30",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "北部3. オホーツク - アレクサンドロフスク"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/kt932sx1636/iiif/manifest",
+              "recid": "kt932sx1636",
+              "callNumber": "G7801 .P6 S2000 .J3 N-3",
+              "sourceFeatureIndex": 30
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    135,
+                    50
+                  ],
+                  [
+                    150,
+                    50
+                  ],
+                  [
+                    150,
+                    63
+                  ],
+                  [
+                    135,
+                    63
+                  ],
+                  [
+                    135,
+                    50
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              135,
+              50,
+              150,
+              63
+            ]
+          }
+        ],
+        "bbox": [
+          135,
+          50,
+          150,
+          63
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/kt932sx1636/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "北部3. オホーツク - アレクサンドロフスク"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/wh988dx8384/iiif/canvas/cocina-fileSet-wh988dx8384-wh988dx8384_1",
+      "type": "Canvas",
+      "height": 26517,
+      "width": 18281,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/wh988dx8384/wh988dx8384_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (87.1 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/wh988dx8384/iiif/canvas/cocina-fileSet-wh988dx8384-wh988dx8384_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/wh988dx8384/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fwh988dx8384-wh988dx8384_1%2Fwh988dx8384_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/wh988dx8384/iiif/canvas/cocina-fileSet-wh988dx8384-wh988dx8384_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/wh988dx8384%2Fwh988dx8384_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26517,
+                "width": 18281,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/wh988dx8384%2Fwh988dx8384_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "北部4. 日本東部_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/wh988dx8384/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-wh988dx8384",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-wh988dx8384-feature-35",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "北部4. 日本東部_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/wh988dx8384/iiif/manifest",
+              "recid": "wh988dx8384",
+              "callNumber": "G7801 .P6 S2000 .J3 N-4-A",
+              "sourceFeatureIndex": 35
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    135,
+                    32.666667
+                  ],
+                  [
+                    150,
+                    32.666667
+                  ],
+                  [
+                    150,
+                    50
+                  ],
+                  [
+                    135,
+                    50
+                  ],
+                  [
+                    135,
+                    32.666667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              135,
+              32.666667,
+              150,
+              50
+            ]
+          }
+        ],
+        "bbox": [
+          135,
+          32.666667,
+          150,
+          50
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/wh988dx8384/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "北部4. 日本東部_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/ws669sk2413/iiif/canvas/cocina-fileSet-ws669sk2413-ws669sk2413_1",
+      "type": "Canvas",
+      "height": 26294,
+      "width": 19063,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/ws669sk2413/ws669sk2413_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (90.1 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/ws669sk2413/iiif/canvas/cocina-fileSet-ws669sk2413-ws669sk2413_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/ws669sk2413/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fws669sk2413-ws669sk2413_1%2Fws669sk2413_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/ws669sk2413/iiif/canvas/cocina-fileSet-ws669sk2413-ws669sk2413_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/ws669sk2413%2Fws669sk2413_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26294,
+                "width": 19063,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/ws669sk2413%2Fws669sk2413_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "北部5. ヤクーツク - 滿洲北部_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/ws669sk2413/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-ws669sk2413",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-ws669sk2413-feature-29",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "北部5. ヤクーツク - 滿洲北部_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/ws669sk2413/iiif/manifest",
+              "recid": "ws669sk2413",
+              "callNumber": "G7801 .P6 S2000 .J3 N-5-A",
+              "sourceFeatureIndex": 29
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    120,
+                    50
+                  ],
+                  [
+                    135,
+                    50
+                  ],
+                  [
+                    135,
+                    63
+                  ],
+                  [
+                    120,
+                    63
+                  ],
+                  [
+                    120,
+                    50
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              120,
+              50,
+              135,
+              63
+            ]
+          }
+        ],
+        "bbox": [
+          120,
+          50,
+          135,
+          63
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/ws669sk2413/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "北部5. ヤクーツク - 滿洲北部_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/jz048jd5350/iiif/canvas/cocina-fileSet-jz048jd5350-jz048jd5350_1",
+      "type": "Canvas",
+      "height": 26448,
+      "width": 19150,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/jz048jd5350/jz048jd5350_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (91 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/jz048jd5350/iiif/canvas/cocina-fileSet-jz048jd5350-jz048jd5350_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/jz048jd5350/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fjz048jd5350-jz048jd5350_1%2Fjz048jd5350_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/jz048jd5350/iiif/canvas/cocina-fileSet-jz048jd5350-jz048jd5350_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/jz048jd5350%2Fjz048jd5350_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26448,
+                "width": 19150,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/jz048jd5350%2Fjz048jd5350_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "北部6. 日本西部 - 満州首部_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/jz048jd5350/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-jz048jd5350",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-jz048jd5350-feature-34",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "北部6. 日本西部 - 満州首部_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/jz048jd5350/iiif/manifest",
+              "recid": "jz048jd5350",
+              "callNumber": "G7801 .P6 S2000 .J3 N-6-A",
+              "sourceFeatureIndex": 34
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    120,
+                    32.666667
+                  ],
+                  [
+                    135,
+                    32.666667
+                  ],
+                  [
+                    135,
+                    50
+                  ],
+                  [
+                    120,
+                    50
+                  ],
+                  [
+                    120,
+                    32.666667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              120,
+              32.666667,
+              135,
+              50
+            ]
+          }
+        ],
+        "bbox": [
+          120,
+          32.666667,
+          135,
+          50
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/jz048jd5350/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "北部6. 日本西部 - 満州首部_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/qd409yx7147/iiif/canvas/cocina-fileSet-qd409yx7147-qd409yx7147_1",
+      "type": "Canvas",
+      "height": 26365,
+      "width": 19188,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/qd409yx7147/qd409yx7147_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (90.9 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/qd409yx7147/iiif/canvas/cocina-fileSet-qd409yx7147-qd409yx7147_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/qd409yx7147/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fqd409yx7147-qd409yx7147_1%2Fqd409yx7147_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/qd409yx7147/iiif/canvas/cocina-fileSet-qd409yx7147-qd409yx7147_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/qd409yx7147%2Fqd409yx7147_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26365,
+                "width": 19188,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/qd409yx7147%2Fqd409yx7147_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "北部8. バイカル湖_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/qd409yx7147/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-qd409yx7147",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-qd409yx7147-feature-28",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "北部8. バイカル湖_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/qd409yx7147/iiif/manifest",
+              "recid": "qd409yx7147",
+              "callNumber": "G7801 .P6 S2000 .J3 N-8-A",
+              "sourceFeatureIndex": 28
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    105,
+                    50
+                  ],
+                  [
+                    120,
+                    50
+                  ],
+                  [
+                    120,
+                    63
+                  ],
+                  [
+                    105,
+                    63
+                  ],
+                  [
+                    105,
+                    50
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              105,
+              50,
+              120,
+              63
+            ]
+          }
+        ],
+        "bbox": [
+          105,
+          50,
+          120,
+          63
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/qd409yx7147/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "北部8. バイカル湖_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/gn873qr3246/iiif/canvas/cocina-fileSet-gn873qr3246-gn873qr3246_1",
+      "type": "Canvas",
+      "height": 26301,
+      "width": 18996,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/gn873qr3246/gn873qr3246_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (89.8 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/gn873qr3246/iiif/canvas/cocina-fileSet-gn873qr3246-gn873qr3246_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/gn873qr3246/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fgn873qr3246-gn873qr3246_1%2Fgn873qr3246_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/gn873qr3246/iiif/canvas/cocina-fileSet-gn873qr3246-gn873qr3246_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/gn873qr3246%2Fgn873qr3246_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26301,
+                "width": 18996,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/gn873qr3246%2Fgn873qr3246_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "北部9. 北京 - 西安 - 庫倫_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/gn873qr3246/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-gn873qr3246",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-gn873qr3246-feature-33",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "北部9. 北京 - 西安 - 庫倫_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/gn873qr3246/iiif/manifest",
+              "recid": "gn873qr3246",
+              "callNumber": "G7801 .P6 S2000 .J3 N-9-A",
+              "sourceFeatureIndex": 33
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    105,
+                    32.666667
+                  ],
+                  [
+                    120,
+                    32.666667
+                  ],
+                  [
+                    120,
+                    50
+                  ],
+                  [
+                    105,
+                    50
+                  ],
+                  [
+                    105,
+                    32.666667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              105,
+              32.666667,
+              120,
+              50
+            ]
+          }
+        ],
+        "bbox": [
+          105,
+          32.666667,
+          120,
+          50
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/gn873qr3246/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "北部9. 北京 - 西安 - 庫倫_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/zr449pr4724/iiif/canvas/cocina-fileSet-zr449pr4724-zr449pr4724_1",
+      "type": "Canvas",
+      "height": 25984,
+      "width": 18767,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/zr449pr4724/zr449pr4724_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (87.7 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/zr449pr4724/iiif/canvas/cocina-fileSet-zr449pr4724-zr449pr4724_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/zr449pr4724/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fzr449pr4724-zr449pr4724_1%2Fzr449pr4724_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/zr449pr4724/iiif/canvas/cocina-fileSet-zr449pr4724-zr449pr4724_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/zr449pr4724%2Fzr449pr4724_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 25984,
+                "width": 18767,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/zr449pr4724%2Fzr449pr4724_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "北部11. イルクーツク - クラスノヤルスク_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/zr449pr4724/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-zr449pr4724",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-zr449pr4724-feature-27",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "北部11. イルクーツク - クラスノヤルスク_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/zr449pr4724/iiif/manifest",
+              "recid": "zr449pr4724",
+              "callNumber": "G7801 .P6 S2000 .J3 N-11-A",
+              "sourceFeatureIndex": 27
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    90,
+                    50
+                  ],
+                  [
+                    105,
+                    50
+                  ],
+                  [
+                    105,
+                    63
+                  ],
+                  [
+                    90,
+                    63
+                  ],
+                  [
+                    90,
+                    50
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              90,
+              50,
+              105,
+              63
+            ]
+          }
+        ],
+        "bbox": [
+          90,
+          50,
+          105,
+          63
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/zr449pr4724/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "北部11. イルクーツク - クラスノヤルスク_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/dg165zd1943/iiif/canvas/cocina-fileSet-dg165zd1943-dg165zd1943_1",
+      "type": "Canvas",
+      "height": 26217,
+      "width": 19023,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/dg165zd1943/dg165zd1943_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (89.7 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/dg165zd1943/iiif/canvas/cocina-fileSet-dg165zd1943-dg165zd1943_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/dg165zd1943/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fdg165zd1943-dg165zd1943_1%2Fdg165zd1943_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/dg165zd1943/iiif/canvas/cocina-fileSet-dg165zd1943-dg165zd1943_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/dg165zd1943%2Fdg165zd1943_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26217,
+                "width": 19023,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/dg165zd1943%2Fdg165zd1943_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "北部12. 蘭州 - 哈密_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/dg165zd1943/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-dg165zd1943",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-dg165zd1943-feature-32",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "北部12. 蘭州 - 哈密_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/dg165zd1943/iiif/manifest",
+              "recid": "dg165zd1943",
+              "callNumber": "G7801 .P6 S2000 .J3 N-12-A",
+              "sourceFeatureIndex": 32
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    90,
+                    32.666667
+                  ],
+                  [
+                    105,
+                    32.666667
+                  ],
+                  [
+                    105,
+                    50
+                  ],
+                  [
+                    90,
+                    50
+                  ],
+                  [
+                    90,
+                    32.666667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              90,
+              32.666667,
+              105,
+              50
+            ]
+          }
+        ],
+        "bbox": [
+          90,
+          32.666667,
+          105,
+          50
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/dg165zd1943/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "北部12. 蘭州 - 哈密_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/fh280wh6845/iiif/canvas/cocina-fileSet-fh280wh6845-fh280wh6845_1",
+      "type": "Canvas",
+      "height": 19088,
+      "width": 26406,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/fh280wh6845/fh280wh6845_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (90.6 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/fh280wh6845/iiif/canvas/cocina-fileSet-fh280wh6845-fh280wh6845_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/fh280wh6845/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Ffh280wh6845-fh280wh6845_1%2Ffh280wh6845_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/fh280wh6845/iiif/canvas/cocina-fileSet-fh280wh6845-fh280wh6845_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/fh280wh6845%2Ffh280wh6845_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19088,
+                "width": 26406,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/fh280wh6845%2Ffh280wh6845_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部1. ニュージーランド北部"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/fh280wh6845/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-fh280wh6845",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-fh280wh6845-feature-21",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部1. ニュージーランド北部"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/fh280wh6845/iiif/manifest",
+              "recid": "fh280wh6845",
+              "callNumber": "G7801 .P6 S2000 .J3 S-1",
+              "sourceFeatureIndex": 21
+            },
+            "geometry": {
+              "type": "MultiPolygon",
+              "coordinates": [
+                [
+                  [
+                    [
+                      -175.833333,
+                      -42.5
+                    ],
+                    [
+                      -175.833333,
+                      -32.5
+                    ],
+                    [
+                      -180,
+                      -32.5
+                    ],
+                    [
+                      -180,
+                      -42.5
+                    ],
+                    [
+                      -175.833333,
+                      -42.5
+                    ]
+                  ]
+                ],
+                [
+                  [
+                    [
+                      180,
+                      -42.5
+                    ],
+                    [
+                      180,
+                      -32.5
+                    ],
+                    [
+                      166,
+                      -32.5
+                    ],
+                    [
+                      166,
+                      -42.5
+                    ],
+                    [
+                      180,
+                      -42.5
+                    ]
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              -180,
+              -42.5,
+              180,
+              -32.5
+            ]
+          }
+        ],
+        "bbox": [
+          -180,
+          -42.5,
+          180,
+          -32.5
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/fh280wh6845/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部1. ニュージーランド北部"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/gz877fn7534/iiif/canvas/cocina-fileSet-gz877fn7534-gz877fn7534_1",
+      "type": "Canvas",
+      "height": 19105,
+      "width": 26326,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/gz877fn7534/gz877fn7534_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (90.4 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/gz877fn7534/iiif/canvas/cocina-fileSet-gz877fn7534-gz877fn7534_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/gz877fn7534/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fgz877fn7534-gz877fn7534_1%2Fgz877fn7534_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/gz877fn7534/iiif/canvas/cocina-fileSet-gz877fn7534-gz877fn7534_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/gz877fn7534%2Fgz877fn7534_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19105,
+                "width": 26326,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/gz877fn7534%2Fgz877fn7534_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部1. ニュージーランド北部_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/gz877fn7534/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-gz877fn7534",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-gz877fn7534-feature-23",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部1. ニュージーランド北部_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/gz877fn7534/iiif/manifest",
+              "recid": "gz877fn7534",
+              "callNumber": "G7801 .P6 S2000 .J3 S-1-A",
+              "sourceFeatureIndex": 23
+            },
+            "geometry": {
+              "type": "MultiPolygon",
+              "coordinates": [
+                [
+                  [
+                    [
+                      -175.833333,
+                      -42.5
+                    ],
+                    [
+                      -175.833333,
+                      -32.5
+                    ],
+                    [
+                      -180,
+                      -32.5
+                    ],
+                    [
+                      -180,
+                      -42.5
+                    ],
+                    [
+                      -175.833333,
+                      -42.5
+                    ]
+                  ]
+                ],
+                [
+                  [
+                    [
+                      180,
+                      -42.5
+                    ],
+                    [
+                      180,
+                      -32.5
+                    ],
+                    [
+                      166,
+                      -32.5
+                    ],
+                    [
+                      166,
+                      -42.5
+                    ],
+                    [
+                      180,
+                      -42.5
+                    ]
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              -180,
+              -42.5,
+              180,
+              -32.5
+            ]
+          }
+        ],
+        "bbox": [
+          -180,
+          -42.5,
+          180,
+          -32.5
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/gz877fn7534/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部1. ニュージーランド北部_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/mg698mx0981/iiif/canvas/cocina-fileSet-mg698mx0981-mg698mx0981_1",
+      "type": "Canvas",
+      "height": 19392,
+      "width": 26742,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/mg698mx0981/mg698mx0981_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (93.2 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/mg698mx0981/iiif/canvas/cocina-fileSet-mg698mx0981-mg698mx0981_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/mg698mx0981/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fmg698mx0981-mg698mx0981_1%2Fmg698mx0981_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/mg698mx0981/iiif/canvas/cocina-fileSet-mg698mx0981-mg698mx0981_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/mg698mx0981%2Fmg698mx0981_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19392,
+                "width": 26742,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/mg698mx0981%2Fmg698mx0981_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部2. ニュージーランド南部"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/mg698mx0981/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-mg698mx0981",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-mg698mx0981-feature-22",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部2. ニュージーランド南部"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/mg698mx0981/iiif/manifest",
+              "recid": "mg698mx0981",
+              "callNumber": "G7801 .P6 S2000 .J3 S-2",
+              "sourceFeatureIndex": 22
+            },
+            "geometry": {
+              "type": "MultiPolygon",
+              "coordinates": [
+                [
+                  [
+                    [
+                      -175.833333,
+                      -51
+                    ],
+                    [
+                      -175.833333,
+                      -42.5
+                    ],
+                    [
+                      -180,
+                      -42.5
+                    ],
+                    [
+                      -180,
+                      -51
+                    ],
+                    [
+                      -175.833333,
+                      -51
+                    ]
+                  ]
+                ],
+                [
+                  [
+                    [
+                      180,
+                      -51
+                    ],
+                    [
+                      180,
+                      -42.5
+                    ],
+                    [
+                      166,
+                      -42.5
+                    ],
+                    [
+                      166,
+                      -51
+                    ],
+                    [
+                      180,
+                      -51
+                    ]
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              -180,
+              -51,
+              180,
+              -42.5
+            ]
+          }
+        ],
+        "bbox": [
+          -180,
+          -51,
+          180,
+          -42.5
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/mg698mx0981/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部2. ニュージーランド南部"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/fd186qc0017/iiif/canvas/cocina-fileSet-fd186qc0017-fd186qc0017_1",
+      "type": "Canvas",
+      "height": 19080,
+      "width": 26329,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/fd186qc0017/fd186qc0017_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (90.3 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/fd186qc0017/iiif/canvas/cocina-fileSet-fd186qc0017-fd186qc0017_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/fd186qc0017/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Ffd186qc0017-fd186qc0017_1%2Ffd186qc0017_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/fd186qc0017/iiif/canvas/cocina-fileSet-fd186qc0017-fd186qc0017_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/fd186qc0017%2Ffd186qc0017_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19080,
+                "width": 26329,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/fd186qc0017%2Ffd186qc0017_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部2. ニュージーランド南部_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/fd186qc0017/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-fd186qc0017",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-fd186qc0017-feature-24",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部2. ニュージーランド南部_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/fd186qc0017/iiif/manifest",
+              "recid": "fd186qc0017",
+              "callNumber": "G7801 .P6 S2000 .J3 S-2-A",
+              "sourceFeatureIndex": 24
+            },
+            "geometry": {
+              "type": "MultiPolygon",
+              "coordinates": [
+                [
+                  [
+                    [
+                      -175.833333,
+                      -51
+                    ],
+                    [
+                      -175.833333,
+                      -42.5
+                    ],
+                    [
+                      -180,
+                      -42.5
+                    ],
+                    [
+                      -180,
+                      -51
+                    ],
+                    [
+                      -175.833333,
+                      -51
+                    ]
+                  ]
+                ],
+                [
+                  [
+                    [
+                      180,
+                      -51
+                    ],
+                    [
+                      180,
+                      -42.5
+                    ],
+                    [
+                      166,
+                      -42.5
+                    ],
+                    [
+                      166,
+                      -51
+                    ],
+                    [
+                      180,
+                      -51
+                    ]
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              -180,
+              -51,
+              180,
+              -42.5
+            ]
+          }
+        ],
+        "bbox": [
+          -180,
+          -51,
+          180,
+          -42.5
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/fd186qc0017/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部2. ニュージーランド南部_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/zp433cv2484/iiif/canvas/cocina-fileSet-zp433cv2484-zp433cv2484_1",
+      "type": "Canvas",
+      "height": 19424,
+      "width": 26730,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/zp433cv2484/zp433cv2484_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (93.3 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/zp433cv2484/iiif/canvas/cocina-fileSet-zp433cv2484-zp433cv2484_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/zp433cv2484/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fzp433cv2484-zp433cv2484_1%2Fzp433cv2484_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/zp433cv2484/iiif/canvas/cocina-fileSet-zp433cv2484-zp433cv2484_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/zp433cv2484%2Fzp433cv2484_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19424,
+                "width": 26730,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/zp433cv2484%2Fzp433cv2484_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部3. ソロモン諸島 - ビスマルク群島_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/zp433cv2484/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-zp433cv2484",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-zp433cv2484-feature-13",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部3. ソロモン諸島 - ビスマルク群島_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/zp433cv2484/iiif/manifest",
+              "recid": "zp433cv2484",
+              "callNumber": "G7801 .P6 S2000 .J3 S-3-A",
+              "sourceFeatureIndex": 13
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    148,
+                    -12.666667
+                  ],
+                  [
+                    166,
+                    -12.666667
+                  ],
+                  [
+                    166,
+                    0
+                  ],
+                  [
+                    148,
+                    0
+                  ],
+                  [
+                    148,
+                    -12.666667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              148,
+              -12.666667,
+              166,
+              0
+            ]
+          }
+        ],
+        "bbox": [
+          148,
+          -12.666667,
+          166,
+          0
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/zp433cv2484/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部3. ソロモン諸島 - ビスマルク群島_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/dh812mt7013/iiif/canvas/cocina-fileSet-dh812mt7013-dh812mt7013_1",
+      "type": "Canvas",
+      "height": 19488,
+      "width": 26721,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/dh812mt7013/dh812mt7013_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (93.6 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/dh812mt7013/iiif/canvas/cocina-fileSet-dh812mt7013-dh812mt7013_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/dh812mt7013/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fdh812mt7013-dh812mt7013_1%2Fdh812mt7013_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/dh812mt7013/iiif/canvas/cocina-fileSet-dh812mt7013-dh812mt7013_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/dh812mt7013%2Fdh812mt7013_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19488,
+                "width": 26721,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/dh812mt7013%2Fdh812mt7013_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部4. ニューカレドニヤ西部 - ロックハムプトン(濠洲)_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/dh812mt7013/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-dh812mt7013",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-dh812mt7013-feature-16",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部4. ニューカレドニヤ西部 - ロックハムプトン(濠洲)_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/dh812mt7013/iiif/manifest",
+              "recid": "dh812mt7013",
+              "callNumber": "G7801 .P6 S2000 .J3 S-4-A",
+              "sourceFeatureIndex": 16
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    148,
+                    -24.666667
+                  ],
+                  [
+                    166,
+                    -24.666667
+                  ],
+                  [
+                    166,
+                    -12.666667
+                  ],
+                  [
+                    148,
+                    -12.666667
+                  ],
+                  [
+                    148,
+                    -24.666667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              148,
+              -24.666667,
+              166,
+              -12.666667
+            ]
+          }
+        ],
+        "bbox": [
+          148,
+          -24.666667,
+          166,
+          -12.666667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/dh812mt7013/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部4. ニューカレドニヤ西部 - ロックハムプトン(濠洲)_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/vn786yz1883/iiif/canvas/cocina-fileSet-vn786yz1883-vn786yz1883_1",
+      "type": "Canvas",
+      "height": 19268,
+      "width": 26386,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/vn786yz1883/vn786yz1883_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (91.4 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/vn786yz1883/iiif/canvas/cocina-fileSet-vn786yz1883-vn786yz1883_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/vn786yz1883/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fvn786yz1883-vn786yz1883_1%2Fvn786yz1883_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/vn786yz1883/iiif/canvas/cocina-fileSet-vn786yz1883-vn786yz1883_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/vn786yz1883%2Fvn786yz1883_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19268,
+                "width": 26386,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/vn786yz1883%2Fvn786yz1883_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部5. ブリスベーン - シドニー_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/vn786yz1883/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-vn786yz1883",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-vn786yz1883-feature-19",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部5. ブリスベーン - シドニー_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/vn786yz1883/iiif/manifest",
+              "recid": "vn786yz1883",
+              "callNumber": "G7801 .P6 S2000 .J3 S-5-A",
+              "sourceFeatureIndex": 19
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    148,
+                    -35.666667
+                  ],
+                  [
+                    166,
+                    -35.666667
+                  ],
+                  [
+                    166,
+                    -24.666667
+                  ],
+                  [
+                    148,
+                    -24.666667
+                  ],
+                  [
+                    148,
+                    -35.666667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              148,
+              -35.666667,
+              166,
+              -24.666667
+            ]
+          }
+        ],
+        "bbox": [
+          148,
+          -35.666667,
+          166,
+          -24.666667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/vn786yz1883/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部5. ブリスベーン - シドニー_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/kn202rj1662/iiif/canvas/cocina-fileSet-kn202rj1662-kn202rj1662_1",
+      "type": "Canvas",
+      "height": 19256,
+      "width": 26588,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/kn202rj1662/kn202rj1662_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (92 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/kn202rj1662/iiif/canvas/cocina-fileSet-kn202rj1662-kn202rj1662_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/kn202rj1662/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fkn202rj1662-kn202rj1662_1%2Fkn202rj1662_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/kn202rj1662/iiif/canvas/cocina-fileSet-kn202rj1662-kn202rj1662_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/kn202rj1662%2Fkn202rj1662_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19256,
+                "width": 26588,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/kn202rj1662%2Fkn202rj1662_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部6. ニューギニァ - オーストラリア北端_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/kn202rj1662/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-kn202rj1662",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-kn202rj1662-feature-12",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部6. ニューギニァ - オーストラリア北端_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/kn202rj1662/iiif/manifest",
+              "recid": "kn202rj1662",
+              "callNumber": "G7801 .P6 S2000 .J3 S-6-A",
+              "sourceFeatureIndex": 12
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    130,
+                    -12.666667
+                  ],
+                  [
+                    148,
+                    -12.666667
+                  ],
+                  [
+                    148,
+                    0
+                  ],
+                  [
+                    130,
+                    0
+                  ],
+                  [
+                    130,
+                    -12.666667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              130,
+              -12.666667,
+              148,
+              0
+            ]
+          }
+        ],
+        "bbox": [
+          130,
+          -12.666667,
+          148,
+          0
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/kn202rj1662/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部6. ニューギニァ - オーストラリア北端_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/ms599nh7338/iiif/canvas/cocina-fileSet-ms599nh7338-ms599nh7338_1",
+      "type": "Canvas",
+      "height": 19350,
+      "width": 26688,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/ms599nh7338/ms599nh7338_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (92.8 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/ms599nh7338/iiif/canvas/cocina-fileSet-ms599nh7338-ms599nh7338_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/ms599nh7338/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fms599nh7338-ms599nh7338_1%2Fms599nh7338_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/ms599nh7338/iiif/canvas/cocina-fileSet-ms599nh7338-ms599nh7338_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/ms599nh7338%2Fms599nh7338_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19350,
+                "width": 26688,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/ms599nh7338%2Fms599nh7338_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部7. オーストラリア東北部"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/ms599nh7338/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-ms599nh7338",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-ms599nh7338-feature-15",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部7. オーストラリア東北部"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/ms599nh7338/iiif/manifest",
+              "recid": "ms599nh7338",
+              "callNumber": "G7801 .P6 S2000 .J3 S-7",
+              "sourceFeatureIndex": 15
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    130,
+                    -24.666667
+                  ],
+                  [
+                    148,
+                    -24.666667
+                  ],
+                  [
+                    148,
+                    -12.666667
+                  ],
+                  [
+                    130,
+                    -12.666667
+                  ],
+                  [
+                    130,
+                    -24.666667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              130,
+              -24.666667,
+              148,
+              -12.666667
+            ]
+          }
+        ],
+        "bbox": [
+          130,
+          -24.666667,
+          148,
+          -12.666667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/ms599nh7338/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部7. オーストラリア東北部"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/hf420hd8177/iiif/canvas/cocina-fileSet-hf420hd8177-hf420hd8177_1",
+      "type": "Canvas",
+      "height": 19368,
+      "width": 26832,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/hf420hd8177/hf420hd8177_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (93.4 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/hf420hd8177/iiif/canvas/cocina-fileSet-hf420hd8177-hf420hd8177_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/hf420hd8177/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fhf420hd8177-hf420hd8177_1%2Fhf420hd8177_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/hf420hd8177/iiif/canvas/cocina-fileSet-hf420hd8177-hf420hd8177_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/hf420hd8177%2Fhf420hd8177_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19368,
+                "width": 26832,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/hf420hd8177%2Fhf420hd8177_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部7. オーストラリア東北部_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/hf420hd8177/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-hf420hd8177",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-hf420hd8177-feature-25",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部7. オーストラリア東北部_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/hf420hd8177/iiif/manifest",
+              "recid": "hf420hd8177",
+              "callNumber": "G7801 .P6 S2000 .J3 S-7-A",
+              "sourceFeatureIndex": 25
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    130,
+                    -24.666667
+                  ],
+                  [
+                    148,
+                    -24.666667
+                  ],
+                  [
+                    148,
+                    -12.666667
+                  ],
+                  [
+                    130,
+                    -12.666667
+                  ],
+                  [
+                    130,
+                    -24.666667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              130,
+              -24.666667,
+              148,
+              -12.666667
+            ]
+          }
+        ],
+        "bbox": [
+          130,
+          -24.666667,
+          148,
+          -12.666667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/hf420hd8177/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部7. オーストラリア東北部_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/dy988wr5691/iiif/canvas/cocina-fileSet-dy988wr5691-dy988wr5691_1",
+      "type": "Canvas",
+      "height": 19324,
+      "width": 26888,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/dy988wr5691/dy988wr5691_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (93.4 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/dy988wr5691/iiif/canvas/cocina-fileSet-dy988wr5691-dy988wr5691_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/dy988wr5691/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fdy988wr5691-dy988wr5691_1%2Fdy988wr5691_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/dy988wr5691/iiif/canvas/cocina-fileSet-dy988wr5691-dy988wr5691_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/dy988wr5691%2Fdy988wr5691_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19324,
+                "width": 26888,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/dy988wr5691%2Fdy988wr5691_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部8. アデレード_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/dy988wr5691/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-dy988wr5691",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-dy988wr5691-feature-18",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部8. アデレード_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/dy988wr5691/iiif/manifest",
+              "recid": "dy988wr5691",
+              "callNumber": "G7801 .P6 S2000 .J3 S-8-A",
+              "sourceFeatureIndex": 18
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    130,
+                    -35.666667
+                  ],
+                  [
+                    148,
+                    -35.666667
+                  ],
+                  [
+                    148,
+                    -24.666667
+                  ],
+                  [
+                    130,
+                    -24.666667
+                  ],
+                  [
+                    130,
+                    -35.666667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              130,
+              -35.666667,
+              148,
+              -24.666667
+            ]
+          }
+        ],
+        "bbox": [
+          130,
+          -35.666667,
+          148,
+          -24.666667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/dy988wr5691/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部8. アデレード_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/kz101cx3242/iiif/canvas/cocina-fileSet-kz101cx3242-kz101cx3242_1",
+      "type": "Canvas",
+      "height": 19308,
+      "width": 26558,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/kz101cx3242/kz101cx3242_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (92.2 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/kz101cx3242/iiif/canvas/cocina-fileSet-kz101cx3242-kz101cx3242_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/kz101cx3242/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fkz101cx3242-kz101cx3242_1%2Fkz101cx3242_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/kz101cx3242/iiif/canvas/cocina-fileSet-kz101cx3242-kz101cx3242_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/kz101cx3242%2Fkz101cx3242_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19308,
+                "width": 26558,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/kz101cx3242%2Fkz101cx3242_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部9. メルボルン - ホバート"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/kz101cx3242/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-kz101cx3242",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-kz101cx3242-feature-20",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部9. メルボルン - ホバート"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/kz101cx3242/iiif/manifest",
+              "recid": "kz101cx3242",
+              "callNumber": "G7801 .P6 S2000 .J3 S-9",
+              "sourceFeatureIndex": 20
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    135,
+                    -45.333333
+                  ],
+                  [
+                    153,
+                    -45.333333
+                  ],
+                  [
+                    153,
+                    -35.666667
+                  ],
+                  [
+                    135,
+                    -35.666667
+                  ],
+                  [
+                    135,
+                    -45.333333
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              135,
+              -45.333333,
+              153,
+              -35.666667
+            ]
+          }
+        ],
+        "bbox": [
+          135,
+          -45.333333,
+          153,
+          -35.666667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/kz101cx3242/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部9. メルボルン - ホバート"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/pq456cv3297/iiif/canvas/cocina-fileSet-pq456cv3297-pq456cv3297_1",
+      "type": "Canvas",
+      "height": 19192,
+      "width": 26432,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/pq456cv3297/pq456cv3297_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (91.2 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/pq456cv3297/iiif/canvas/cocina-fileSet-pq456cv3297-pq456cv3297_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/pq456cv3297/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fpq456cv3297-pq456cv3297_1%2Fpq456cv3297_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/pq456cv3297/iiif/canvas/cocina-fileSet-pq456cv3297-pq456cv3297_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/pq456cv3297%2Fpq456cv3297_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19192,
+                "width": 26432,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/pq456cv3297%2Fpq456cv3297_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部9. メルボルン - ホバート_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/pq456cv3297/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-pq456cv3297",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-pq456cv3297-feature-26",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部9. メルボルン - ホバート_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/pq456cv3297/iiif/manifest",
+              "recid": "pq456cv3297",
+              "callNumber": "G7801 .P6 S2000 .J3 S-9-A",
+              "sourceFeatureIndex": 26
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    135,
+                    -45.333333
+                  ],
+                  [
+                    153,
+                    -45.333333
+                  ],
+                  [
+                    153,
+                    -35.666667
+                  ],
+                  [
+                    135,
+                    -35.666667
+                  ],
+                  [
+                    135,
+                    -45.333333
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              135,
+              -45.333333,
+              153,
+              -35.666667
+            ]
+          }
+        ],
+        "bbox": [
+          135,
+          -45.333333,
+          153,
+          -35.666667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/pq456cv3297/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部9. メルボルン - ホバート_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/qw869gv1854/iiif/canvas/cocina-fileSet-qw869gv1854-qw869gv1854_1",
+      "type": "Canvas",
+      "height": 19242,
+      "width": 26478,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/qw869gv1854/qw869gv1854_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (91.6 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/qw869gv1854/iiif/canvas/cocina-fileSet-qw869gv1854-qw869gv1854_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/qw869gv1854/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fqw869gv1854-qw869gv1854_1%2Fqw869gv1854_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/qw869gv1854/iiif/canvas/cocina-fileSet-qw869gv1854-qw869gv1854_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/qw869gv1854%2Fqw869gv1854_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19242,
+                "width": 26478,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/qw869gv1854%2Fqw869gv1854_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部13. ボルネオ東南部 - ティモール_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/qw869gv1854/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-qw869gv1854",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-qw869gv1854-feature-11",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部13. ボルネオ東南部 - ティモール_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/qw869gv1854/iiif/manifest",
+              "recid": "qw869gv1854",
+              "callNumber": "G7801 .P6 S2000 .J3 S-13-A",
+              "sourceFeatureIndex": 11
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    112,
+                    -12.666667
+                  ],
+                  [
+                    130,
+                    -12.666667
+                  ],
+                  [
+                    130,
+                    0
+                  ],
+                  [
+                    112,
+                    0
+                  ],
+                  [
+                    112,
+                    -12.666667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              112,
+              -12.666667,
+              130,
+              0
+            ]
+          }
+        ],
+        "bbox": [
+          112,
+          -12.666667,
+          130,
+          0
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/qw869gv1854/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部13. ボルネオ東南部 - ティモール_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/yt218wy4588/iiif/canvas/cocina-fileSet-yt218wy4588-yt218wy4588_1",
+      "type": "Canvas",
+      "height": 19270,
+      "width": 26467,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/yt218wy4588/yt218wy4588_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (91.7 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/yt218wy4588/iiif/canvas/cocina-fileSet-yt218wy4588-yt218wy4588_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/yt218wy4588/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fyt218wy4588-yt218wy4588_1%2Fyt218wy4588_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/yt218wy4588/iiif/canvas/cocina-fileSet-yt218wy4588-yt218wy4588_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/yt218wy4588%2Fyt218wy4588_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19270,
+                "width": 26467,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/yt218wy4588%2Fyt218wy4588_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部14. オーストラリア西北部_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/yt218wy4588/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-yt218wy4588",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-yt218wy4588-feature-14",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部14. オーストラリア西北部_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/yt218wy4588/iiif/manifest",
+              "recid": "yt218wy4588",
+              "callNumber": "G7801 .P6 S2000 .J3 S-14-A",
+              "sourceFeatureIndex": 14
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    112,
+                    -24.666667
+                  ],
+                  [
+                    130,
+                    -24.666667
+                  ],
+                  [
+                    130,
+                    -12.666667
+                  ],
+                  [
+                    112,
+                    -12.666667
+                  ],
+                  [
+                    112,
+                    -24.666667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              112,
+              -24.666667,
+              130,
+              -12.666667
+            ]
+          }
+        ],
+        "bbox": [
+          112,
+          -24.666667,
+          130,
+          -12.666667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/yt218wy4588/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部14. オーストラリア西北部_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/hq233fz8396/iiif/canvas/cocina-fileSet-hq233fz8396-hq233fz8396_1",
+      "type": "Canvas",
+      "height": 19319,
+      "width": 26670,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/hq233fz8396/hq233fz8396_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (92.6 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/hq233fz8396/iiif/canvas/cocina-fileSet-hq233fz8396-hq233fz8396_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/hq233fz8396/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fhq233fz8396-hq233fz8396_1%2Fhq233fz8396_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/hq233fz8396/iiif/canvas/cocina-fileSet-hq233fz8396-hq233fz8396_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/hq233fz8396%2Fhq233fz8396_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19319,
+                "width": 26670,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/hq233fz8396%2Fhq233fz8396_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部15. オーストラリア西南部_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/hq233fz8396/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-hq233fz8396",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-hq233fz8396-feature-17",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部15. オーストラリア西南部_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/hq233fz8396/iiif/manifest",
+              "recid": "hq233fz8396",
+              "callNumber": "G7801 .P6 S2000 .J3 S-15-A",
+              "sourceFeatureIndex": 17
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    112,
+                    -35.666667
+                  ],
+                  [
+                    130,
+                    -35.666667
+                  ],
+                  [
+                    130,
+                    -24.666667
+                  ],
+                  [
+                    112,
+                    -24.666667
+                  ],
+                  [
+                    112,
+                    -35.666667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              112,
+              -35.666667,
+              130,
+              -24.666667
+            ]
+          }
+        ],
+        "bbox": [
+          112,
+          -35.666667,
+          130,
+          -24.666667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/hq233fz8396/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部15. オーストラリア西南部_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/mf001kw2478/iiif/canvas/cocina-fileSet-mf001kw2478-mf001kw2478_1",
+      "type": "Canvas",
+      "height": 26306,
+      "width": 19118,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/mf001kw2478/mf001kw2478_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (90.4 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/mf001kw2478/iiif/canvas/cocina-fileSet-mf001kw2478-mf001kw2478_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/mf001kw2478/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fmf001kw2478-mf001kw2478_1%2Fmf001kw2478_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/mf001kw2478/iiif/canvas/cocina-fileSet-mf001kw2478-mf001kw2478_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/mf001kw2478%2Fmf001kw2478_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26306,
+                "width": 19118,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/mf001kw2478%2Fmf001kw2478_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部16. 重慶 - ハノイ_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/mf001kw2478/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-mf001kw2478",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-mf001kw2478-feature-3",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部16. 重慶 - ハノイ_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/mf001kw2478/iiif/manifest",
+              "recid": "mf001kw2478",
+              "callNumber": "G7801 .P6 S2000 .J3 S-16-A",
+              "sourceFeatureIndex": 3
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    97.6666668,
+                    17.833333
+                  ],
+                  [
+                    110.3333334,
+                    17.833333
+                  ],
+                  [
+                    110.3333334,
+                    34
+                  ],
+                  [
+                    97.6666668,
+                    34
+                  ],
+                  [
+                    97.6666668,
+                    17.833333
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              97.6666668,
+              17.833333,
+              110.3333334,
+              34
+            ]
+          }
+        ],
+        "bbox": [
+          97.6666668,
+          17.833333,
+          110.3333334,
+          34
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/mf001kw2478/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部16. 重慶 - ハノイ_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/gw783xd5977/iiif/canvas/cocina-fileSet-gw783xd5977-gw783xd5977_1",
+      "type": "Canvas",
+      "height": 26180,
+      "width": 19107,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/gw783xd5977/gw783xd5977_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (89.9 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/gw783xd5977/iiif/canvas/cocina-fileSet-gw783xd5977-gw783xd5977_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/gw783xd5977/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fgw783xd5977-gw783xd5977_1%2Fgw783xd5977_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/gw783xd5977/iiif/canvas/cocina-fileSet-gw783xd5977-gw783xd5977_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/gw783xd5977%2Fgw783xd5977_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26180,
+                "width": 19107,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/gw783xd5977%2Fgw783xd5977_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部19. マンダレー - カルカッタ_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/gw783xd5977/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-gw783xd5977",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-gw783xd5977-feature-2",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部19. マンダレー - カルカッタ_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/gw783xd5977/iiif/manifest",
+              "recid": "gw783xd5977",
+              "callNumber": "G7801 .P6 S2000 .J3 S-19-A",
+              "sourceFeatureIndex": 2
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    85.0000002,
+                    17.833333
+                  ],
+                  [
+                    97.6666668,
+                    17.833333
+                  ],
+                  [
+                    97.6666668,
+                    34
+                  ],
+                  [
+                    85.0000002,
+                    34
+                  ],
+                  [
+                    85.0000002,
+                    17.833333
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              85.0000002,
+              17.833333,
+              97.6666668,
+              34
+            ]
+          }
+        ],
+        "bbox": [
+          85.0000002,
+          17.833333,
+          97.6666668,
+          34
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/gw783xd5977/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部19. マンダレー - カルカッタ_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/kn019kx2981/iiif/canvas/cocina-fileSet-kn019kx2981-kn019kx2981_1",
+      "type": "Canvas",
+      "height": 26848,
+      "width": 19470,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/kn019kx2981/kn019kx2981_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (93.9 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/kn019kx2981/iiif/canvas/cocina-fileSet-kn019kx2981-kn019kx2981_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/kn019kx2981/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fkn019kx2981-kn019kx2981_1%2Fkn019kx2981_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/kn019kx2981/iiif/canvas/cocina-fileSet-kn019kx2981-kn019kx2981_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/kn019kx2981%2Fkn019kx2981_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26848,
+                "width": 19470,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/kn019kx2981%2Fkn019kx2981_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部20. ラングーン - アンダマン諸島 - スマトラ西部_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/kn019kx2981/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-kn019kx2981",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-kn019kx2981-feature-6",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部20. ラングーン - アンダマン諸島 - スマトラ西部_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/kn019kx2981/iiif/manifest",
+              "recid": "kn019kx2981",
+              "callNumber": "G7801 .P6 S2000 .J3 S-20-A",
+              "sourceFeatureIndex": 6
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    84.9999998,
+                    0
+                  ],
+                  [
+                    97.6666666,
+                    0
+                  ],
+                  [
+                    97.6666666,
+                    17.833333
+                  ],
+                  [
+                    84.9999998,
+                    17.833333
+                  ],
+                  [
+                    84.9999998,
+                    0
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              84.9999998,
+              0,
+              97.6666666,
+              17.833333
+            ]
+          }
+        ],
+        "bbox": [
+          84.9999998,
+          0,
+          97.6666666,
+          17.833333
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/kn019kx2981/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部20. ラングーン - アンダマン諸島 - スマトラ西部_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/xk418py6521/iiif/canvas/cocina-fileSet-xk418py6521-xk418py6521_1",
+      "type": "Canvas",
+      "height": 26806,
+      "width": 19444,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/xk418py6521/xk418py6521_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (93.7 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/xk418py6521/iiif/canvas/cocina-fileSet-xk418py6521-xk418py6521_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/xk418py6521/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fxk418py6521-xk418py6521_1%2Fxk418py6521_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/xk418py6521/iiif/canvas/cocina-fileSet-xk418py6521-xk418py6521_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/xk418py6521%2Fxk418py6521_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26806,
+                "width": 19444,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/xk418py6521%2Fxk418py6521_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部21. デリー - ボンベイ_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/xk418py6521/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-xk418py6521",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-xk418py6521-feature-1",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部21. デリー - ボンベイ_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/xk418py6521/iiif/manifest",
+              "recid": "xk418py6521",
+              "callNumber": "G7801 .P6 S2000 .J3 S-21-A",
+              "sourceFeatureIndex": 1
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    72.3333336,
+                    17.833333
+                  ],
+                  [
+                    85.0000002,
+                    17.833333
+                  ],
+                  [
+                    85.0000002,
+                    34
+                  ],
+                  [
+                    72.3333336,
+                    34
+                  ],
+                  [
+                    72.3333336,
+                    17.833333
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              72.3333336,
+              17.833333,
+              85.0000002,
+              34
+            ]
+          }
+        ],
+        "bbox": [
+          72.3333336,
+          17.833333,
+          85.0000002,
+          34
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/xk418py6521/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部21. デリー - ボンベイ_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/wz415rz7220/iiif/canvas/cocina-fileSet-wz415rz7220-wz415rz7220_1",
+      "type": "Canvas",
+      "height": 26648,
+      "width": 19404,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/wz415rz7220/wz415rz7220_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (92.9 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/wz415rz7220/iiif/canvas/cocina-fileSet-wz415rz7220-wz415rz7220_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/wz415rz7220/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fwz415rz7220-wz415rz7220_1%2Fwz415rz7220_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/wz415rz7220/iiif/canvas/cocina-fileSet-wz415rz7220-wz415rz7220_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/wz415rz7220%2Fwz415rz7220_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26648,
+                "width": 19404,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/wz415rz7220%2Fwz415rz7220_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部22. 印度南部 - セイロン島_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/wz415rz7220/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-wz415rz7220",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-wz415rz7220-feature-5",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部22. 印度南部 - セイロン島_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/wz415rz7220/iiif/manifest",
+              "recid": "wz415rz7220",
+              "callNumber": "G7801 .P6 S2000 .J3 S-22-A",
+              "sourceFeatureIndex": 5
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    72.333333,
+                    0
+                  ],
+                  [
+                    84.9999998,
+                    0
+                  ],
+                  [
+                    84.9999998,
+                    17.833333
+                  ],
+                  [
+                    72.333333,
+                    17.833333
+                  ],
+                  [
+                    72.333333,
+                    0
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              72.333333,
+              0,
+              84.9999998,
+              17.833333
+            ]
+          }
+        ],
+        "bbox": [
+          72.333333,
+          0,
+          84.9999998,
+          17.833333
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/wz415rz7220/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部22. 印度南部 - セイロン島_航空圖"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/jh390gj3351/iiif/canvas/cocina-fileSet-jh390gj3351-jh390gj3351_1",
+      "type": "Canvas",
+      "height": 26346,
+      "width": 19280,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/jh390gj3351/jh390gj3351_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (91.3 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/jh390gj3351/iiif/canvas/cocina-fileSet-jh390gj3351-jh390gj3351_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/jh390gj3351/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fjh390gj3351-jh390gj3351_1%2Fjh390gj3351_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/jh390gj3351/iiif/canvas/cocina-fileSet-jh390gj3351-jh390gj3351_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/jh390gj3351%2Fjh390gj3351_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26346,
+                "width": 19280,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/jh390gj3351%2Fjh390gj3351_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部23. 印度西部 - イラン東部_航空圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/jh390gj3351/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-jh390gj3351",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-jh390gj3351-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部23. 印度西部 - イラン東部_航空圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/jh390gj3351/iiif/manifest",
+              "recid": "jh390gj3351",
+              "callNumber": "G7801 .P6 S2000 .J3 S-23-A",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    59.666667,
+                    17.833333
+                  ],
+                  [
+                    72.3333336,
+                    17.833333
+                  ],
+                  [
+                    72.3333336,
+                    34
+                  ],
+                  [
+                    59.666667,
+                    34
+                  ],
+                  [
+                    59.666667,
+                    17.833333
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              59.666667,
+              17.833333,
+              72.3333336,
+              34
+            ]
+          }
+        ],
+        "bbox": [
+          59.666667,
+          17.833333,
+          72.3333336,
+          34
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/jh390gj3351/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部23. 印度西部 - イラン東部_航空圖"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ff620qk8599/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "二百万分一太平洋周域輿地圖 (航空圖) -- 1:2,000,000 Taiheiyō shūiki yochizu (kōkūzu), Maps Index"
+            ]
+          },
+          "seriesDruid": "ff620qk8599",
+          "sheetCount": 31,
+          "sourceFeatureCount": 31
+        },
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  -180,
+                  -51
+                ],
+                [
+                  -175.833333,
+                  -51
+                ],
+                [
+                  -175.833333,
+                  -32.5
+                ],
+                [
+                  -180,
+                  -32.5
+                ],
+                [
+                  -180,
+                  -51
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  59.666667,
+                  17.833333
+                ],
+                [
+                  72.333333,
+                  17.833333
+                ],
+                [
+                  72.333333,
+                  0
+                ],
+                [
+                  97.6666666,
+                  0
+                ],
+                [
+                  97.6666666,
+                  17.833333
+                ],
+                [
+                  110.3333334,
+                  17.833333
+                ],
+                [
+                  110.3333334,
+                  32.666667
+                ],
+                [
+                  165,
+                  32.666667
+                ],
+                [
+                  165,
+                  50
+                ],
+                [
+                  150,
+                  50
+                ],
+                [
+                  150,
+                  63
+                ],
+                [
+                  90,
+                  63
+                ],
+                [
+                  90,
+                  34
+                ],
+                [
+                  59.666667,
+                  34
+                ],
+                [
+                  59.666667,
+                  17.833333
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  112,
+                  -35.666667
+                ],
+                [
+                  135,
+                  -35.666667
+                ],
+                [
+                  135,
+                  -45.333333
+                ],
+                [
+                  153,
+                  -45.333333
+                ],
+                [
+                  153,
+                  -35.666667
+                ],
+                [
+                  166,
+                  -35.666667
+                ],
+                [
+                  166,
+                  -51
+                ],
+                [
+                  180,
+                  -51
+                ],
+                [
+                  180,
+                  -32.5
+                ],
+                [
+                  166,
+                  -32.5
+                ],
+                [
+                  166,
+                  0
+                ],
+                [
+                  112,
+                  0
+                ],
+                [
+                  112,
+                  -35.666667
+                ]
+              ]
+            ]
+          ]
+        },
+        "bbox": [
+          -180,
+          -51,
+          180,
+          63
+        ]
+      }
+    ],
+    "bbox": [
+      -180,
+      -51,
+      180,
+      63
+    ]
+  }
+}

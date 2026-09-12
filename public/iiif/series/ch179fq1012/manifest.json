@@ -1,0 +1,505 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ch179fq1012/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "五十万分一薩哈嗹州附近素圖 | 五十万分一薩哈嗹附近素圖 -- 1:500,000 Saharen-shū fukin sozu | 1:500,000 Saharen fukin sozu, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series \"五十万分一薩哈嗹州附近素圖 | 五十万分一薩哈嗹附近素圖 -- 1:500,000 Saharen-shū fukin sozu | 1:500,000 Saharen fukin sozu\" (1941, 1947). Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or \"maps of outer lands.\" These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection.This layer provides an index map that can be used to locate individual scanned map sheets."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "ch179fq1012"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-ch179fq1012"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "2"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "2"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-ch179fq1012",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/ch179fq1012",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/ch179fq1012.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ch179fq1012/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/ch179fq1012%2Findex_9229964/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/yd570gt8270/iiif/canvas/cocina-fileSet-yd570gt8270-yd570gt8270_1",
+      "type": "Canvas",
+      "height": 26617,
+      "width": 19519,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/yd570gt8270/yd570gt8270_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (93.4 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/yd570gt8270/iiif/canvas/cocina-fileSet-yd570gt8270-yd570gt8270_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/yd570gt8270/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fyd570gt8270-yd570gt8270_1%2Fyd570gt8270_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/yd570gt8270/iiif/canvas/cocina-fileSet-yd570gt8270-yd570gt8270_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/yd570gt8270%2Fyd570gt8270_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26617,
+                "width": 19519,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/yd570gt8270%2Fyd570gt8270_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "其1. EAST"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/yd570gt8270/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ch179fq1012/manifest.json#navplace-yd570gt8270",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ch179fq1012/manifest.json#navplace-yd570gt8270-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "其1. EAST"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/yd570gt8270/iiif/manifest",
+              "recid": "yd570gt8270",
+              "callNumber": "G7330 1941 .J3 EAST",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    140,
+                    50
+                  ],
+                  [
+                    144.5,
+                    50
+                  ],
+                  [
+                    144.5,
+                    54.5
+                  ],
+                  [
+                    140,
+                    54.5
+                  ],
+                  [
+                    140,
+                    50
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              140,
+              50,
+              144.5,
+              54.5
+            ]
+          }
+        ],
+        "bbox": [
+          140,
+          50,
+          144.5,
+          54.5
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/yd570gt8270/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "其1. EAST"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/zg109gd4320/iiif/canvas/cocina-fileSet-zg109gd4320-zg109gd4320_1",
+      "type": "Canvas",
+      "height": 26600,
+      "width": 19283,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/zg109gd4320/zg109gd4320_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (92.2 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/zg109gd4320/iiif/canvas/cocina-fileSet-zg109gd4320-zg109gd4320_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/zg109gd4320/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fzg109gd4320-zg109gd4320_1%2Fzg109gd4320_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/zg109gd4320/iiif/canvas/cocina-fileSet-zg109gd4320-zg109gd4320_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/zg109gd4320%2Fzg109gd4320_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26600,
+                "width": 19283,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/zg109gd4320%2Fzg109gd4320_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "其2. WEST"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/zg109gd4320/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ch179fq1012/manifest.json#navplace-zg109gd4320",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ch179fq1012/manifest.json#navplace-zg109gd4320-feature-1",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "其2. WEST"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/zg109gd4320/iiif/manifest",
+              "recid": "zg109gd4320",
+              "callNumber": "G7330 1941 .J3 WEST",
+              "sourceFeatureIndex": 1
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    140,
+                    50
+                  ],
+                  [
+                    140,
+                    53.25
+                  ],
+                  [
+                    135,
+                    53.25
+                  ],
+                  [
+                    135,
+                    50
+                  ],
+                  [
+                    140,
+                    50
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              135,
+              50,
+              140,
+              53.25
+            ]
+          }
+        ],
+        "bbox": [
+          135,
+          50,
+          140,
+          53.25
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/zg109gd4320/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "其2. WEST"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ch179fq1012/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ch179fq1012/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "五十万分一薩哈嗹州附近素圖 | 五十万分一薩哈嗹附近素圖 -- 1:500,000 Saharen-shū fukin sozu | 1:500,000 Saharen fukin sozu, Maps Index"
+            ]
+          },
+          "seriesDruid": "ch179fq1012",
+          "sheetCount": 2,
+          "sourceFeatureCount": 2
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                135,
+                50
+              ],
+              [
+                144.5,
+                50
+              ],
+              [
+                144.5,
+                54.5
+              ],
+              [
+                140,
+                54.5
+              ],
+              [
+                140,
+                53.25
+              ],
+              [
+                135,
+                53.25
+              ],
+              [
+                135,
+                50
+              ]
+            ]
+          ]
+        },
+        "bbox": [
+          135,
+          50,
+          144.5,
+          54.5
+        ]
+      }
+    ],
+    "bbox": [
+      135,
+      50,
+      144.5,
+      54.5
+    ]
+  }
+}

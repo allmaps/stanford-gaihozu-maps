@@ -1,0 +1,523 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fw627zx3120/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "二十万分一蘭領ボルネオ -- 1:200,000 Ranryō Boruneo, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series \"二十万分一蘭領ボルネオ -- 1:200,000 Ranryō Boruneo\" (1940). Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or \"maps of outer lands.\" These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection.This layer provides an index map that can be used to locate individual scanned map sheets."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "fw627zx3120"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-fw627zx3120"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "2"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "2"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-fw627zx3120",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/fw627zx3120",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/fw627zx3120.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fw627zx3120/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/fw627zx3120%2Findex_10425288/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/bm016vy9826/iiif/canvas/cocina-fileSet-bm016vy9826-75011acd-e6a6-4d70-8951-4f4b03e12f95",
+      "type": "Canvas",
+      "height": 14300,
+      "width": 11421,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/bm016vy9826/bm016vy9826_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (29.3 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/bm016vy9826/iiif/canvas/cocina-fileSet-bm016vy9826-75011acd-e6a6-4d70-8951-4f4b03e12f95/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/bm016vy9826/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fbm016vy9826-75011acd-e6a6-4d70-8951-4f4b03e12f95%2Fbm016vy9826_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/bm016vy9826/iiif/canvas/cocina-fileSet-bm016vy9826-75011acd-e6a6-4d70-8951-4f4b03e12f95",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/bm016vy9826%2Fbm016vy9826_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 14300,
+                "width": 11421,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/bm016vy9826%2Fbm016vy9826_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "タラカン附近 3號"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/bm016vy9826/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fw627zx3120/manifest.json#navplace-bm016vy9826",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fw627zx3120/manifest.json#navplace-bm016vy9826-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "タラカン附近 3號"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/bm016vy9826/iiif/manifest",
+              "recid": "bm016vy9826",
+              "callNumber": "G8101 .D2 S200 .J3 SHEET 3",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    116.5,
+                    4.666667
+                  ],
+                  [
+                    116.5,
+                    4
+                  ],
+                  [
+                    117.166667,
+                    4
+                  ],
+                  [
+                    117.166667,
+                    4.666667
+                  ],
+                  [
+                    116.5,
+                    4.666667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              116.5,
+              4,
+              117.166667,
+              4.666667
+            ]
+          }
+        ],
+        "bbox": [
+          116.5,
+          4,
+          117.166667,
+          4.666667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/bm016vy9826/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "タラカン附近 3號"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/ck438bb3719/iiif/canvas/cocina-fileSet-ck438bb3719-b7041fa1-db29-4f04-8b76-570667a4a199",
+      "type": "Canvas",
+      "height": 13262,
+      "width": 10119,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/ck438bb3719/ck438bb3719_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (24.1 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/ck438bb3719/iiif/canvas/cocina-fileSet-ck438bb3719-b7041fa1-db29-4f04-8b76-570667a4a199/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/ck438bb3719/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fck438bb3719-b7041fa1-db29-4f04-8b76-570667a4a199%2Fck438bb3719_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/ck438bb3719/iiif/canvas/cocina-fileSet-ck438bb3719-b7041fa1-db29-4f04-8b76-570667a4a199",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/ck438bb3719%2Fck438bb3719_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 13262,
+                "width": 10119,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/ck438bb3719%2Fck438bb3719_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "バリックパパン附近 45號"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/ck438bb3719/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fw627zx3120/manifest.json#navplace-ck438bb3719",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fw627zx3120/manifest.json#navplace-ck438bb3719-feature-1",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "バリックパパン附近 45號"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/ck438bb3719/iiif/manifest",
+              "recid": "ck438bb3719",
+              "callNumber": "G8101 .D2 S200 .J3 SHEET 45",
+              "sourceFeatureIndex": 1
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    115.833333,
+                    -2
+                  ],
+                  [
+                    115.833333,
+                    -2.666667
+                  ],
+                  [
+                    116.5,
+                    -2.666667
+                  ],
+                  [
+                    116.5,
+                    -2
+                  ],
+                  [
+                    115.833333,
+                    -2
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              115.833333,
+              -2.666667,
+              116.5,
+              -2
+            ]
+          }
+        ],
+        "bbox": [
+          115.833333,
+          -2.666667,
+          116.5,
+          -2
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/ck438bb3719/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "バリックパパン附近 45號"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fw627zx3120/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fw627zx3120/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "二十万分一蘭領ボルネオ -- 1:200,000 Ranryō Boruneo, Maps Index"
+            ]
+          },
+          "seriesDruid": "fw627zx3120",
+          "sheetCount": 2,
+          "sourceFeatureCount": 2
+        },
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  115.833333,
+                  -2.666667
+                ],
+                [
+                  116.5,
+                  -2.666667
+                ],
+                [
+                  116.5,
+                  -2
+                ],
+                [
+                  115.833333,
+                  -2
+                ],
+                [
+                  115.833333,
+                  -2.666667
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  116.5,
+                  4
+                ],
+                [
+                  117.166667,
+                  4
+                ],
+                [
+                  117.166667,
+                  4.666667
+                ],
+                [
+                  116.5,
+                  4.666667
+                ],
+                [
+                  116.5,
+                  4
+                ]
+              ]
+            ]
+          ]
+        },
+        "bbox": [
+          115.833333,
+          -2.666667,
+          117.166667,
+          4.666667
+        ]
+      }
+    ],
+    "bbox": [
+      115.833333,
+      -2.666667,
+      117.166667,
+      4.666667
+    ]
+  }
+}

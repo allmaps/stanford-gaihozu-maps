@@ -1,0 +1,588 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/xd660kt4892/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "十万分一マロエラップ島附近 | 十万分一マーシャル諸島集成圖 -- 1:100,000 Maroerapputō fukin | 1:100,000 Māsharu shotō shūseizu, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series, '十万分一マロエラップ島附近 | 十万分一マーシャル諸島集成圖 -- 1:100,000 Maroerapputō fukin | 1:100,000 Māsharu shotō shūseizu.' This map series was originally produced by the Japanese Land Survey Department of the General Staff Headquarters [1944]. Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or\n'maps of outer lands.' These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "xd660kt4892"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-xd660kt4892"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-xd660kt4892",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/xd660kt4892",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/xd660kt4892.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/xd660kt4892/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/xd660kt4892%2Findex_10648587/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/wn680yy0358/iiif/canvas/cocina-fileSet-wn680yy0358-wn680yy0358_1",
+      "type": "Canvas",
+      "height": 19146,
+      "width": 26474,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/wn680yy0358/wn680yy0358_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (91.1 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/wn680yy0358/iiif/canvas/cocina-fileSet-wn680yy0358-wn680yy0358_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/wn680yy0358/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fwn680yy0358-wn680yy0358_1%2Fwn680yy0358_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/wn680yy0358/iiif/canvas/cocina-fileSet-wn680yy0358-wn680yy0358_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/wn680yy0358%2Fwn680yy0358_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19146,
+                "width": 26474,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/wn680yy0358%2Fwn680yy0358_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "1. マロエラップ島"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/wn680yy0358/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/xd660kt4892/manifest.json#navplace-wn680yy0358",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/xd660kt4892/manifest.json#navplace-wn680yy0358-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "1. マロエラップ島"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/wn680yy0358/iiif/manifest",
+              "recid": "wn680yy0358",
+              "callNumber": "G9460 S100 .J3",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "bbox": [
+                170.75000000000003,
+                8.466666999999973,
+                171.2500000000001,
+                9.000000000000057
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    170.75000000000003,
+                    8.466666999999973
+                  ],
+                  [
+                    170.75000000000003,
+                    9.000000000000057
+                  ],
+                  [
+                    171.2500000000001,
+                    9.000000000000057
+                  ],
+                  [
+                    171.2500000000001,
+                    8.466666999999973
+                  ],
+                  [
+                    170.75000000000003,
+                    8.466666999999973
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              170.75000000000003,
+              8.466666999999973,
+              171.2500000000001,
+              9.000000000000057
+            ]
+          },
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/xd660kt4892/manifest.json#navplace-wn680yy0358-feature-1",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "2. アウル島"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/wn680yy0358/iiif/manifest",
+              "recid": "wn680yy0358",
+              "callNumber": "G9460 S100 .J3",
+              "sourceFeatureIndex": 1
+            },
+            "geometry": {
+              "bbox": [
+                171,
+                8.116667000000064,
+                171.2500000000001,
+                8.416667000000075
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    171,
+                    8.116667000000064
+                  ],
+                  [
+                    171,
+                    8.416667000000075
+                  ],
+                  [
+                    171.2500000000001,
+                    8.416667000000075
+                  ],
+                  [
+                    171.2500000000001,
+                    8.116667000000064
+                  ],
+                  [
+                    171,
+                    8.116667000000064
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              171,
+              8.116667000000064,
+              171.2500000000001,
+              8.416667000000075
+            ]
+          },
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/xd660kt4892/manifest.json#navplace-wn680yy0358-feature-2",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "3. アイリングラプラプ島"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/wn680yy0358/iiif/manifest",
+              "recid": "wn680yy0358",
+              "callNumber": "G9460 S100 .J3",
+              "sourceFeatureIndex": 2
+            },
+            "geometry": {
+              "bbox": [
+                168.5,
+                7.2166670000000295,
+                169,
+                7.666667000000019
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    168.5,
+                    7.2166670000000295
+                  ],
+                  [
+                    168.5,
+                    7.666667000000019
+                  ],
+                  [
+                    169,
+                    7.666667000000019
+                  ],
+                  [
+                    169,
+                    7.2166670000000295
+                  ],
+                  [
+                    168.5,
+                    7.2166670000000295
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              168.5,
+              7.2166670000000295,
+              169,
+              7.666667000000019
+            ]
+          },
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/xd660kt4892/manifest.json#navplace-wn680yy0358-feature-3",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "4. ナモ島"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/wn680yy0358/iiif/manifest",
+              "recid": "wn680yy0358",
+              "callNumber": "G9460 S100 .J3",
+              "sourceFeatureIndex": 3
+            },
+            "geometry": {
+              "bbox": [
+                167.95000000000016,
+                7.716666999999916,
+                168.33333300000004,
+                8.21666700000003
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    167.95000000000016,
+                    7.716666999999916
+                  ],
+                  [
+                    167.95000000000016,
+                    8.21666700000003
+                  ],
+                  [
+                    168.33333300000004,
+                    8.21666700000003
+                  ],
+                  [
+                    168.33333300000004,
+                    7.716666999999916
+                  ],
+                  [
+                    167.95000000000016,
+                    7.716666999999916
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              167.95000000000016,
+              7.716666999999916,
+              168.33333300000004,
+              8.21666700000003
+            ]
+          }
+        ],
+        "bbox": [
+          167.95000000000016,
+          7.2166670000000295,
+          171.2500000000001,
+          9.000000000000057
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/wn680yy0358/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "1. マロエラップ島"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/xd660kt4892/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/xd660kt4892/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "十万分一マロエラップ島附近 | 十万分一マーシャル諸島集成圖 -- 1:100,000 Maroerapputō fukin | 1:100,000 Māsharu shotō shūseizu, Maps Index"
+            ]
+          },
+          "seriesDruid": "xd660kt4892",
+          "sheetCount": 1,
+          "sourceFeatureCount": 4
+        },
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  167.95000000000016,
+                  7.716666999999916
+                ],
+                [
+                  168.33333300000004,
+                  7.716666999999916
+                ],
+                [
+                  168.33333300000004,
+                  8.21666700000003
+                ],
+                [
+                  167.95000000000016,
+                  8.21666700000003
+                ],
+                [
+                  167.95000000000016,
+                  7.716666999999916
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  168.5,
+                  7.2166670000000295
+                ],
+                [
+                  169,
+                  7.2166670000000295
+                ],
+                [
+                  169,
+                  7.666667000000019
+                ],
+                [
+                  168.5,
+                  7.666667000000019
+                ],
+                [
+                  168.5,
+                  7.2166670000000295
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  170.75000000000003,
+                  8.466666999999973
+                ],
+                [
+                  171.2500000000001,
+                  8.466666999999973
+                ],
+                [
+                  171.2500000000001,
+                  9.000000000000057
+                ],
+                [
+                  170.75000000000003,
+                  9.000000000000057
+                ],
+                [
+                  170.75000000000003,
+                  8.466666999999973
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  171,
+                  8.116667000000064
+                ],
+                [
+                  171.2500000000001,
+                  8.116667000000064
+                ],
+                [
+                  171.2500000000001,
+                  8.416667000000075
+                ],
+                [
+                  171,
+                  8.416667000000075
+                ],
+                [
+                  171,
+                  8.116667000000064
+                ]
+              ]
+            ]
+          ]
+        },
+        "bbox": [
+          167.95000000000016,
+          7.2166670000000295,
+          171.2500000000001,
+          9.000000000000057
+        ]
+      }
+    ],
+    "bbox": [
+      167.95000000000016,
+      7.2166670000000295,
+      171.2500000000001,
+      9.000000000000057
+    ]
+  }
+}

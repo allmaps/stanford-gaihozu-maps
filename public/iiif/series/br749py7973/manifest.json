@@ -1,0 +1,344 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/br749py7973/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "欧「ソ」産業資源圖 -- Ōso sangyō shigenzu 1:3,000,000, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series \"欧「ソ」産業資源圖 -- Ōso sangyō shigenzu 1:3,000,000\" (1944). Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or \"maps of outer lands.\" These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection.This layer provides an index map that can be used to locate individual scanned map sheets."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "br749py7973"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-br749py7973"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-br749py7973",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/br749py7973",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/br749py7973.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/br749py7973/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/br749py7973%2Findex_11352800/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/yp256wc3773/iiif/canvas/cocina-fileSet-yp256wc3773-0245d06c-f44c-421d-9d66-1c3f6d7061b5",
+      "type": "Canvas",
+      "height": 34412,
+      "width": 25377,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/yp256wc3773/yp256wc3773_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (693 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/yp256wc3773/iiif/canvas/cocina-fileSet-yp256wc3773-0245d06c-f44c-421d-9d66-1c3f6d7061b5/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/yp256wc3773/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fyp256wc3773-0245d06c-f44c-421d-9d66-1c3f6d7061b5%2Fyp256wc3773_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/yp256wc3773/iiif/canvas/cocina-fileSet-yp256wc3773-0245d06c-f44c-421d-9d66-1c3f6d7061b5",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/yp256wc3773%2Fyp256wc3773_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 34412,
+                "width": 25377,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/yp256wc3773%2Fyp256wc3773_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "欧「ソ」産業資源圖"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/yp256wc3773/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/br749py7973/manifest.json#navplace-yp256wc3773",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/br749py7973/manifest.json#navplace-yp256wc3773-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "欧「ソ」産業資源圖"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/yp256wc3773/iiif/manifest",
+              "recid": "yp256wc3773",
+              "callNumber": "G7012 .M1 1944 .J2",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    15.133333,
+                    38.333333
+                  ],
+                  [
+                    80.05,
+                    38.333333
+                  ],
+                  [
+                    80.05,
+                    73.533333
+                  ],
+                  [
+                    15.133333,
+                    73.533333
+                  ],
+                  [
+                    15.133333,
+                    38.333333
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              15.133333,
+              38.333333,
+              80.05,
+              73.533333
+            ]
+          }
+        ],
+        "bbox": [
+          15.133333,
+          38.333333,
+          80.05,
+          73.533333
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/yp256wc3773/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "欧「ソ」産業資源圖"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/br749py7973/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/br749py7973/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "欧「ソ」産業資源圖 -- Ōso sangyō shigenzu 1:3,000,000, Maps Index"
+            ]
+          },
+          "seriesDruid": "br749py7973",
+          "sheetCount": 1,
+          "sourceFeatureCount": 1
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              15.133333,
+              38.333333
+            ],
+            [
+              80.05,
+              38.333333
+            ],
+            [
+              80.05,
+              73.533333
+            ],
+            [
+              15.133333,
+              73.533333
+            ],
+            [
+              15.133333,
+              38.333333
+            ]
+          ]
+        },
+        "bbox": [
+          15.133333,
+          38.333333,
+          80.05,
+          73.533333
+        ]
+      }
+    ],
+    "bbox": [
+      15.133333,
+      38.333333,
+      80.05,
+      73.533333
+    ]
+  }
+}

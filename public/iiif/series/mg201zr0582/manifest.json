@@ -1,0 +1,513 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/mg201zr0582/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "百万分一航空圖 九州 - 沖縄 - 臺灣 -- 1:1,000,000 Kōkūzu_Kyūshū - Okinawa - Taiwan, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series \"百万分一航空圖 九州 - 沖縄 - 臺灣 -- 1:1,000,000 Kōkūzu_Kyūshū - Okinawa - Taiwan\" (1935). Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or \"maps of outer lands.\" These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection.This layer provides an index map that can be used to locate individual scanned map sheets."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "mg201zr0582"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-mg201zr0582"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "2"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "2"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-mg201zr0582",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/mg201zr0582",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/mg201zr0582.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/mg201zr0582/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/mg201zr0582%2Findex_12122837/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/wh703dw8944/iiif/canvas/cocina-fileSet-wh703dw8944-wh703dw8944_1",
+      "type": "Canvas",
+      "height": 26253,
+      "width": 9654,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/wh703dw8944/wh703dw8944_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (45.6 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/wh703dw8944/iiif/canvas/cocina-fileSet-wh703dw8944-wh703dw8944_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/wh703dw8944/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fwh703dw8944-wh703dw8944_1%2Fwh703dw8944_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/wh703dw8944/iiif/canvas/cocina-fileSet-wh703dw8944-wh703dw8944_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/wh703dw8944%2Fwh703dw8944_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26253,
+                "width": 9654,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/wh703dw8944%2Fwh703dw8944_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "[1.] 九州及沖縄"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/wh703dw8944/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/mg201zr0582/manifest.json#navplace-wh703dw8944",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/mg201zr0582/manifest.json#navplace-wh703dw8944-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "[1.] 九州及沖縄"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/wh703dw8944/iiif/manifest",
+              "recid": "wh703dw8944",
+              "callNumber": "G7962 .O6 P93 1935 .J3 SHEET 1",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    126.7171636,
+                    26.1862325
+                  ],
+                  [
+                    129.8011818,
+                    25.1608879
+                  ],
+                  [
+                    132.6405978,
+                    33.701246
+                  ],
+                  [
+                    129.5565796,
+                    34.7265906
+                  ],
+                  [
+                    126.7171636,
+                    26.1862325
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              126.7171636,
+              25.1608879,
+              132.6405978,
+              34.7265906
+            ]
+          }
+        ],
+        "bbox": [
+          126.7171636,
+          25.1608879,
+          132.6405978,
+          34.7265906
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/wh703dw8944/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "[1.] 九州及沖縄"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/xd088zh5454/iiif/canvas/cocina-fileSet-xd088zh5454-xd088zh5454_1",
+      "type": "Canvas",
+      "height": 9704,
+      "width": 26264,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/xd088zh5454/xd088zh5454_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (45.8 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/xd088zh5454/iiif/canvas/cocina-fileSet-xd088zh5454-xd088zh5454_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/xd088zh5454/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fxd088zh5454-xd088zh5454_1%2Fxd088zh5454_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/xd088zh5454/iiif/canvas/cocina-fileSet-xd088zh5454-xd088zh5454_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/xd088zh5454%2Fxd088zh5454_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 9704,
+                "width": 26264,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/xd088zh5454%2Fxd088zh5454_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "[2.] 沖繩及臺灣"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/xd088zh5454/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/mg201zr0582/manifest.json#navplace-xd088zh5454",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/mg201zr0582/manifest.json#navplace-xd088zh5454-feature-1",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "[2.] 沖繩及臺灣"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/xd088zh5454/iiif/manifest",
+              "recid": "xd088zh5454",
+              "callNumber": "G7962 .O6 P93 1935 .J3 SHEET 2",
+              "sourceFeatureIndex": 1
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    118.9695555,
+                    24.1928032
+                  ],
+                  [
+                    120.8205326,
+                    21.3408067
+                  ],
+                  [
+                    128.6215817,
+                    26.4037735
+                  ],
+                  [
+                    126.7706046,
+                    29.2557699
+                  ],
+                  [
+                    118.9695555,
+                    24.1928032
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              118.9695555,
+              21.3408067,
+              128.6215817,
+              29.2557699
+            ]
+          }
+        ],
+        "bbox": [
+          118.9695555,
+          21.3408067,
+          128.6215817,
+          29.2557699
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/xd088zh5454/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "[2.] 沖繩及臺灣"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/mg201zr0582/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/mg201zr0582/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "百万分一航空圖 九州 - 沖縄 - 臺灣 -- 1:1,000,000 Kōkūzu_Kyūshū - Okinawa - Taiwan, Maps Index"
+            ]
+          },
+          "seriesDruid": "mg201zr0582",
+          "sheetCount": 2,
+          "sourceFeatureCount": 2
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                118.9695555,
+                24.1928032
+              ],
+              [
+                120.8205326,
+                21.3408067
+              ],
+              [
+                127.7548270386403,
+                25.841240176858957
+              ],
+              [
+                129.8011818,
+                25.1608879
+              ],
+              [
+                132.6405978,
+                33.701246
+              ],
+              [
+                129.5565796,
+                34.7265906
+              ],
+              [
+                127.41009871103506,
+                28.270433613293264
+              ],
+              [
+                126.7706046,
+                29.2557699
+              ],
+              [
+                118.9695555,
+                24.1928032
+              ]
+            ]
+          ]
+        },
+        "bbox": [
+          118.9695555,
+          21.3408067,
+          132.6405978,
+          34.7265906
+        ]
+      }
+    ],
+    "bbox": [
+      118.9695555,
+      21.3408067,
+      132.6405978,
+      34.7265906
+    ]
+  }
+}

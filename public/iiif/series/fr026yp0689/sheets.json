@@ -1,0 +1,144 @@
+{
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fr026yp0689/sheets.json",
+  "type": "Dataset",
+  "label": "一万分一朝鮮地形圖 平壤 -- 1:10,000 Chōsen Chikeizu Heijō, Maps Index",
+  "sourceGeojson": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/fr026yp0689.geojson",
+  "sheets": [
+    {
+      "label": "平壌東部 / EAST",
+      "manifestUrl": "https://purl.stanford.edu/dq615xp0271/iiif/manifest",
+      "recid": "dq615xp0271",
+      "websiteUrl": "https://purl.stanford.edu/dq615xp0271",
+      "callNumber": "G7909 .P9 1932 .K6 1947 EAST",
+      "featureIndex": 1,
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fr026yp0689/manifest.json#navplace-dq615xp0271",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fr026yp0689/manifest.json#navplace-dq615xp0271-feature-1",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "平壌東部 / EAST"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/dq615xp0271/iiif/manifest",
+              "recid": "dq615xp0271",
+              "callNumber": "G7909 .P9 1932 .K6 1947 EAST",
+              "sourceFeatureIndex": 1
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    125.758333,
+                    38.966667
+                  ],
+                  [
+                    125.822222,
+                    38.966667
+                  ],
+                  [
+                    125.822222,
+                    39.052778
+                  ],
+                  [
+                    125.758333,
+                    39.052778
+                  ],
+                  [
+                    125.758333,
+                    38.966667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              125.758333,
+              38.966667,
+              125.822222,
+              39.052778
+            ]
+          }
+        ],
+        "bbox": [
+          125.758333,
+          38.966667,
+          125.822222,
+          39.052778
+        ]
+      }
+    },
+    {
+      "label": "平壌西部 / WEST",
+      "manifestUrl": "https://purl.stanford.edu/gf738rt4022/iiif/manifest",
+      "recid": "gf738rt4022",
+      "websiteUrl": "https://purl.stanford.edu/gf738rt4022",
+      "callNumber": "G7909 .P9 1932 .K6 1947 WEST",
+      "featureIndex": 0,
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fr026yp0689/manifest.json#navplace-gf738rt4022",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/fr026yp0689/manifest.json#navplace-gf738rt4022-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "平壌西部 / WEST"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/gf738rt4022/iiif/manifest",
+              "recid": "gf738rt4022",
+              "callNumber": "G7909 .P9 1932 .K6 1947 WEST",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    125.681944,
+                    38.966667
+                  ],
+                  [
+                    125.758333,
+                    38.966667
+                  ],
+                  [
+                    125.758333,
+                    39.052778
+                  ],
+                  [
+                    125.681944,
+                    39.052778
+                  ],
+                  [
+                    125.681944,
+                    38.966667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              125.681944,
+              38.966667,
+              125.758333,
+              39.052778
+            ]
+          }
+        ],
+        "bbox": [
+          125.681944,
+          38.966667,
+          125.758333,
+          39.052778
+        ]
+      }
+    }
+  ]
+}

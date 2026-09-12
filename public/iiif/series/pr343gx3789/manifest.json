@@ -1,0 +1,513 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/pr343gx3789/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "百万分一圖 [極東] -- 1:1,000,000 [Kyokutō], Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series, '百万分一圖 [極東] -- 1:1,000,000 [Kyokutō]' (1941). Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or 'maps of outer lands.' These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. This layer provides an index map that can be used to locate individual scanned map sheets."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "pr343gx3789"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-pr343gx3789"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "2"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "2"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-pr343gx3789",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/pr343gx3789",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/pr343gx3789.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/pr343gx3789/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/pr343gx3789%2Findex_10652573/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/cv862kb1136/iiif/canvas/cocina-fileSet-cv862kb1136-cv862kb1136_1",
+      "type": "Canvas",
+      "height": 19464,
+      "width": 26621,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/cv862kb1136/cv862kb1136_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (93.1 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/cv862kb1136/iiif/canvas/cocina-fileSet-cv862kb1136-cv862kb1136_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/cv862kb1136/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fcv862kb1136-cv862kb1136_1%2Fcv862kb1136_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/cv862kb1136/iiif/canvas/cocina-fileSet-cv862kb1136-cv862kb1136_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/cv862kb1136%2Fcv862kb1136_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19464,
+                "width": 26621,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/cv862kb1136%2Fcv862kb1136_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "6. 満洲中部 - 沿海州"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/cv862kb1136/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/pr343gx3789/manifest.json#navplace-cv862kb1136",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/pr343gx3789/manifest.json#navplace-cv862kb1136-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "6. 満洲中部 - 沿海州"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/cv862kb1136/iiif/manifest",
+              "recid": "cv862kb1136",
+              "callNumber": "G7323 .K5P6 S1000 .J3 SHEET 6",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    121,
+                    41.583333
+                  ],
+                  [
+                    133,
+                    41.583333
+                  ],
+                  [
+                    133.666667,
+                    47.833333
+                  ],
+                  [
+                    120.333333,
+                    47.833333
+                  ],
+                  [
+                    121,
+                    41.583333
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              120.333333,
+              41.583333,
+              133.666667,
+              47.833333
+            ]
+          }
+        ],
+        "bbox": [
+          120.333333,
+          41.583333,
+          133.666667,
+          47.833333
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/cv862kb1136/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "6. 満洲中部 - 沿海州"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/nr357ph7571/iiif/canvas/cocina-fileSet-nr357ph7571-nr357ph7571_1",
+      "type": "Canvas",
+      "height": 26622,
+      "width": 19360,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/nr357ph7571/nr357ph7571_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (92.7 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/nr357ph7571/iiif/canvas/cocina-fileSet-nr357ph7571-nr357ph7571_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/nr357ph7571/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fnr357ph7571-nr357ph7571_1%2Fnr357ph7571_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/nr357ph7571/iiif/canvas/cocina-fileSet-nr357ph7571-nr357ph7571_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/nr357ph7571%2Fnr357ph7571_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26622,
+                "width": 19360,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/nr357ph7571%2Fnr357ph7571_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "8. ハバロフスク地方 - 滿洲東北部"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/nr357ph7571/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/pr343gx3789/manifest.json#navplace-nr357ph7571",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/pr343gx3789/manifest.json#navplace-nr357ph7571-feature-1",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "8. ハバロフスク地方 - 滿洲東北部"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/nr357ph7571/iiif/manifest",
+              "recid": "nr357ph7571",
+              "callNumber": "G7323 .K5P6 S1000 .J3 SHEET 8",
+              "sourceFeatureIndex": 1
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    127.333333,
+                    47.416667
+                  ],
+                  [
+                    136.666667,
+                    47.416667
+                  ],
+                  [
+                    137.666667,
+                    56.333333
+                  ],
+                  [
+                    126.333333,
+                    56.333333
+                  ],
+                  [
+                    127.333333,
+                    47.416667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              126.333333,
+              47.416667,
+              137.666667,
+              56.333333
+            ]
+          }
+        ],
+        "bbox": [
+          126.333333,
+          47.416667,
+          137.666667,
+          56.333333
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/nr357ph7571/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "8. ハバロフスク地方 - 滿洲東北部"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/pr343gx3789/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/pr343gx3789/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "百万分一圖 [極東] -- 1:1,000,000 [Kyokutō], Maps Index"
+            ]
+          },
+          "seriesDruid": "pr343gx3789",
+          "sheetCount": 2,
+          "sourceFeatureCount": 2
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                120.333333,
+                47.833333
+              ],
+              [
+                121,
+                41.583333
+              ],
+              [
+                133,
+                41.583333
+              ],
+              [
+                133.62222260444446,
+                47.416667
+              ],
+              [
+                136.666667,
+                47.416667
+              ],
+              [
+                137.666667,
+                56.333333
+              ],
+              [
+                126.333333,
+                56.333333
+              ],
+              [
+                127.28660409930998,
+                47.833333
+              ],
+              [
+                120.333333,
+                47.833333
+              ]
+            ]
+          ]
+        },
+        "bbox": [
+          120.333333,
+          41.583333,
+          137.666667,
+          56.333333
+        ]
+      }
+    ],
+    "bbox": [
+      120.333333,
+      41.583333,
+      137.666667,
+      56.333333
+    ]
+  }
+}

@@ -1,0 +1,672 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/kj167xt8678/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "百万分一満「ソ」国境方面航空圖 -- 1:1,000,000 Man \"So\" kokkyō hōmen kokūzu, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series, '百万分一満「ソ」国境方面航空圖 -- 1:1,000,000 Man \"So\" kokkyō hōmen kokūzu' (1944). Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or 'maps of outer lands.' These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. This layer provides an index map that can be used to locate individual scanned map sheets."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "kj167xt8678"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-kj167xt8678"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "3"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "3"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-kj167xt8678",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/kj167xt8678",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/kj167xt8678.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/kj167xt8678/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/kj167xt8678%2Findex_10109116/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/gt836nv8332/iiif/canvas/cocina-fileSet-gt836nv8332-gt836nv8332_1",
+      "type": "Canvas",
+      "height": 19216,
+      "width": 26530,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/gt836nv8332/gt836nv8332_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (91.6 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/gt836nv8332/iiif/canvas/cocina-fileSet-gt836nv8332-gt836nv8332_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/gt836nv8332/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fgt836nv8332-gt836nv8332_1%2Fgt836nv8332_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/gt836nv8332/iiif/canvas/cocina-fileSet-gt836nv8332-gt836nv8332_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/gt836nv8332%2Fgt836nv8332_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19216,
+                "width": 26530,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/gt836nv8332%2Fgt836nv8332_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "1. アレクサンドロフスク - ハバロスク - 佳木斯"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/gt836nv8332/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/kj167xt8678/manifest.json#navplace-gt836nv8332",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/kj167xt8678/manifest.json#navplace-gt836nv8332-feature-2",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "1. アレクサンドロフスク - ハバロスク - 佳木斯"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/gt836nv8332/iiif/manifest",
+              "recid": "gt836nv8332",
+              "callNumber": "G7822 .F2 1944 .J3 SHEET 1",
+              "sourceFeatureIndex": 2
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    129.5,
+                    45.666667
+                  ],
+                  [
+                    142.25,
+                    45.916667
+                  ],
+                  [
+                    142.75,
+                    52.416667
+                  ],
+                  [
+                    128.333333,
+                    52.083333
+                  ],
+                  [
+                    129.5,
+                    45.666667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              128.333333,
+              45.666667,
+              142.75,
+              52.416667
+            ]
+          }
+        ],
+        "bbox": [
+          128.333333,
+          45.666667,
+          142.75,
+          52.416667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/gt836nv8332/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "1. アレクサンドロフスク - ハバロスク - 佳木斯"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/br910mb6290/iiif/canvas/cocina-fileSet-br910mb6290-br910mb6290_1",
+      "type": "Canvas",
+      "height": 18864,
+      "width": 26219,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/br910mb6290/br910mb6290_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (88.9 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/br910mb6290/iiif/canvas/cocina-fileSet-br910mb6290-br910mb6290_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/br910mb6290/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fbr910mb6290-br910mb6290_1%2Fbr910mb6290_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/br910mb6290/iiif/canvas/cocina-fileSet-br910mb6290-br910mb6290_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/br910mb6290%2Fbr910mb6290_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 18864,
+                "width": 26219,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/br910mb6290%2Fbr910mb6290_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "2. ハバロフスク - 黒河 - 齊齊哈爾"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/br910mb6290/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/kj167xt8678/manifest.json#navplace-br910mb6290",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/kj167xt8678/manifest.json#navplace-br910mb6290-feature-1",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "2. ハバロフスク - 黒河 - 齊齊哈爾"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/br910mb6290/iiif/manifest",
+              "recid": "br910mb6290",
+              "callNumber": "G7822 .F2 1944 .J3 SHEET 2",
+              "sourceFeatureIndex": 1
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    123.416667,
+                    47.25
+                  ],
+                  [
+                    136.333333,
+                    47.25
+                  ],
+                  [
+                    137.333333,
+                    53.75
+                  ],
+                  [
+                    122.416667,
+                    53.75
+                  ],
+                  [
+                    123.416667,
+                    47.25
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              122.416667,
+              47.25,
+              137.333333,
+              53.75
+            ]
+          }
+        ],
+        "bbox": [
+          122.416667,
+          47.25,
+          137.333333,
+          53.75
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/br910mb6290/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "2. ハバロフスク - 黒河 - 齊齊哈爾"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/jp555mg5687/iiif/canvas/cocina-fileSet-jp555mg5687-jp555mg5687_1",
+      "type": "Canvas",
+      "height": 19245,
+      "width": 26554,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/jp555mg5687/jp555mg5687_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (91.9 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/jp555mg5687/iiif/canvas/cocina-fileSet-jp555mg5687-jp555mg5687_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/jp555mg5687/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fjp555mg5687-jp555mg5687_1%2Fjp555mg5687_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/jp555mg5687/iiif/canvas/cocina-fileSet-jp555mg5687-jp555mg5687_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/jp555mg5687%2Fjp555mg5687_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19245,
+                "width": 26554,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/jp555mg5687%2Fjp555mg5687_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "3. ハバロフスク - 浦潮斯徳 - 哈爾濱"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/jp555mg5687/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/kj167xt8678/manifest.json#navplace-jp555mg5687",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/kj167xt8678/manifest.json#navplace-jp555mg5687-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "3. ハバロフスク - 浦潮斯徳 - 哈爾濱"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/jp555mg5687/iiif/manifest",
+              "recid": "jp555mg5687",
+              "callNumber": "G7822 .F2 1944 .J3 SHEET 3",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    126.666667,
+                    41.916667
+                  ],
+                  [
+                    138.5,
+                    41.916667
+                  ],
+                  [
+                    139.166667,
+                    48.333333
+                  ],
+                  [
+                    126,
+                    48.333333
+                  ],
+                  [
+                    126.666667,
+                    41.916667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              126,
+              41.916667,
+              139.166667,
+              48.333333
+            ]
+          }
+        ],
+        "bbox": [
+          126,
+          41.916667,
+          139.166667,
+          48.333333
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/jp555mg5687/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "3. ハバロフスク - 浦潮斯徳 - 哈爾濱"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/kj167xt8678/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/kj167xt8678/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "百万分一満「ソ」国境方面航空圖 -- 1:1,000,000 Man \"So\" kokkyō hōmen kokūzu, Maps Index"
+            ]
+          },
+          "seriesDruid": "kj167xt8678",
+          "sheetCount": 3,
+          "sourceFeatureCount": 3
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                122.416667,
+                53.75
+              ],
+              [
+                123.416667,
+                47.25
+              ],
+              [
+                126.11255414589306,
+                47.25
+              ],
+              [
+                126.666667,
+                41.916667
+              ],
+              [
+                138.5,
+                41.916667
+              ],
+              [
+                138.9087779967891,
+                45.851152843074296
+              ],
+              [
+                142.25,
+                45.916667
+              ],
+              [
+                142.75,
+                52.416667
+              ],
+              [
+                137.10813592582497,
+                52.28621901786231
+              ],
+              [
+                137.333333,
+                53.75
+              ],
+              [
+                122.416667,
+                53.75
+              ]
+            ]
+          ]
+        },
+        "bbox": [
+          122.416667,
+          41.916667,
+          142.75,
+          53.75
+        ]
+      }
+    ],
+    "bbox": [
+      122.416667,
+      41.916667,
+      142.75,
+      53.75
+    ]
+  }
+}

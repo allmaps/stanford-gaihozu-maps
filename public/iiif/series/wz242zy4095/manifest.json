@@ -1,0 +1,350 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/wz242zy4095/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "百万分一圖 雲南 - マンダレー -- 1:1,000,000 Unnan - Mandarē, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series, '百万分一圖 雲南 - マンダレー -- 1:1,000,000 Unnan - Mandarē.' This map series was originally produced by the Japanese Land Survey Department of the General Staff Headquarters [1941]. Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or\n'maps of outer lands.' These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "wz242zy4095"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-wz242zy4095"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-wz242zy4095",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/wz242zy4095",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/wz242zy4095.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/wz242zy4095/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/wz242zy4095%2Findex_12271078/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/js825wr9537/iiif/canvas/cocina-fileSet-js825wr9537-js825wr9537_1",
+      "type": "Canvas",
+      "height": 19342,
+      "width": 26494,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/js825wr9537/js825wr9537_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (92.1 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/js825wr9537/iiif/canvas/cocina-fileSet-js825wr9537-js825wr9537_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/js825wr9537/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fjs825wr9537-js825wr9537_1%2Fjs825wr9537_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/js825wr9537/iiif/canvas/cocina-fileSet-js825wr9537-js825wr9537_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/js825wr9537%2Fjs825wr9537_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19342,
+                "width": 26494,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/js825wr9537%2Fjs825wr9537_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "雲南 - マンダレー"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/js825wr9537/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/wz242zy4095/manifest.json#navplace-js825wr9537",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/wz242zy4095/manifest.json#navplace-js825wr9537-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "雲南 - マンダレー"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/js825wr9537/iiif/manifest",
+              "recid": "js825wr9537",
+              "callNumber": "G7823 .Y8 1941 .G4",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "bbox": [
+                96.00000000000001,
+                21.6,
+                104,
+                27.9
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    96.00000000000001,
+                    21.6
+                  ],
+                  [
+                    96.00000000000001,
+                    27.9
+                  ],
+                  [
+                    104,
+                    27.9
+                  ],
+                  [
+                    104,
+                    21.6
+                  ],
+                  [
+                    96.00000000000001,
+                    21.6
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              96.00000000000001,
+              21.6,
+              104,
+              27.9
+            ]
+          }
+        ],
+        "bbox": [
+          96.00000000000001,
+          21.6,
+          104,
+          27.9
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/js825wr9537/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "雲南 - マンダレー"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/wz242zy4095/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/wz242zy4095/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "百万分一圖 雲南 - マンダレー -- 1:1,000,000 Unnan - Mandarē, Maps Index"
+            ]
+          },
+          "seriesDruid": "wz242zy4095",
+          "sheetCount": 1,
+          "sourceFeatureCount": 1
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              96.00000000000001,
+              21.6
+            ],
+            [
+              96.00000000000001,
+              27.9
+            ],
+            [
+              104,
+              27.9
+            ],
+            [
+              104,
+              21.6
+            ],
+            [
+              96.00000000000001,
+              21.6
+            ]
+          ]
+        },
+        "bbox": [
+          96.00000000000001,
+          21.6,
+          104,
+          27.9
+        ]
+      }
+    ],
+    "bbox": [
+      96.00000000000001,
+      21.6,
+      104,
+      27.9
+    ]
+  }
+}

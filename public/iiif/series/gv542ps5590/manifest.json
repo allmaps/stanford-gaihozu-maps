@@ -1,0 +1,432 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/gv542ps5590/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "二十万分一圖 セレベス島 -- 1:200,000 Serebesutō, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series, '二十万分一圖 セレベス島 -- 1:200,000 Serebesutō.' This map series was originally produced by the Japanese Land Survey Department of the General Staff Headquarters [1942]. Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or\n'maps of outer lands.' These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "gv542ps5590"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-gv542ps5590"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-gv542ps5590",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/gv542ps5590",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/gv542ps5590.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/gv542ps5590/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/gv542ps5590%2Findex_13897305/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/dq045rb9387/iiif/canvas/cocina-fileSet-dq045rb9387-2a205070-3090-4b3f-8f05-592225cfa871",
+      "type": "Canvas",
+      "height": 17582,
+      "width": 12927,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/dq045rb9387/dq045rb9387_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (40.8 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/dq045rb9387/iiif/canvas/cocina-fileSet-dq045rb9387-2a205070-3090-4b3f-8f05-592225cfa871/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/dq045rb9387/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fdq045rb9387-2a205070-3090-4b3f-8f05-592225cfa871%2Fdq045rb9387_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/dq045rb9387/iiif/canvas/cocina-fileSet-dq045rb9387-2a205070-3090-4b3f-8f05-592225cfa871",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/dq045rb9387%2Fdq045rb9387_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 17582,
+                "width": 12927,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/dq045rb9387%2Fdq045rb9387_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "Kendari"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/dq045rb9387/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/gv542ps5590/manifest.json#navplace-dq045rb9387",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/gv542ps5590/manifest.json#navplace-dq045rb9387-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "Kendari"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/dq045rb9387/iiif/manifest",
+              "recid": "dq045rb9387",
+              "callNumber": "G8110 S200 .J3 SHEET 84-85/XXX-XXXI",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "bbox": [
+                122.50000000000001,
+                -4.599999999999966,
+                123.26000000000012,
+                -3.7666669999998703
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    122.50000000000001,
+                    -4.599999999999966
+                  ],
+                  [
+                    122.50000000000001,
+                    -3.7666669999998703
+                  ],
+                  [
+                    123.26000000000012,
+                    -3.7666669999999267
+                  ],
+                  [
+                    123.26000000000012,
+                    -4.599999999999966
+                  ],
+                  [
+                    122.50000000000001,
+                    -4.599999999999966
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              122.50000000000001,
+              -4.599999999999966,
+              123.26000000000012,
+              -3.7666669999998703
+            ]
+          },
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/gv542ps5590/manifest.json#navplace-dq045rb9387-feature-1",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "P. Manoei_inset"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/dq045rb9387/iiif/manifest",
+              "recid": "dq045rb9387",
+              "callNumber": "G8110 S200 .J3 SHEET 84-85/XXX-XXXI",
+              "sourceFeatureIndex": 1
+            },
+            "geometry": {
+              "bbox": [
+                123.01666699999998,
+                -3.6499999999999773,
+                123.18333299999995,
+                -3.483333000000016
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    123.01666699999998,
+                    -3.483333000000016
+                  ],
+                  [
+                    123.18333299999995,
+                    -3.483333000000016
+                  ],
+                  [
+                    123.18333299999995,
+                    -3.6499999999999773
+                  ],
+                  [
+                    123.01666699999998,
+                    -3.6499999999999773
+                  ],
+                  [
+                    123.01666699999998,
+                    -3.483333000000016
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              123.01666699999998,
+              -3.6499999999999773,
+              123.18333299999995,
+              -3.483333000000016
+            ]
+          }
+        ],
+        "bbox": [
+          122.50000000000001,
+          -4.599999999999966,
+          123.26000000000012,
+          -3.483333000000016
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/dq045rb9387/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "Kendari"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/gv542ps5590/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/gv542ps5590/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "二十万分一圖 セレベス島 -- 1:200,000 Serebesutō, Maps Index"
+            ]
+          },
+          "seriesDruid": "gv542ps5590",
+          "sheetCount": 1,
+          "sourceFeatureCount": 2
+        },
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  122.50000000000001,
+                  -4.599999999999966
+                ],
+                [
+                  123.26000000000012,
+                  -4.599999999999966
+                ],
+                [
+                  123.26000000000012,
+                  -3.7666669999999267
+                ],
+                [
+                  122.50000000000001,
+                  -3.7666669999998703
+                ],
+                [
+                  122.50000000000001,
+                  -4.599999999999966
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  123.01666699999998,
+                  -3.6499999999999773
+                ],
+                [
+                  123.18333299999995,
+                  -3.6499999999999773
+                ],
+                [
+                  123.18333299999995,
+                  -3.483333000000016
+                ],
+                [
+                  123.01666699999998,
+                  -3.483333000000016
+                ],
+                [
+                  123.01666699999998,
+                  -3.6499999999999773
+                ]
+              ]
+            ]
+          ]
+        },
+        "bbox": [
+          122.50000000000001,
+          -4.599999999999966,
+          123.26000000000012,
+          -3.483333000000016
+        ]
+      }
+    ],
+    "bbox": [
+      122.50000000000001,
+      -4.599999999999966,
+      123.26000000000012,
+      -3.483333000000016
+    ]
+  }
+}

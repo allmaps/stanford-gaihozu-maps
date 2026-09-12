@@ -1,0 +1,505 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/dt534ng8192/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "パラナ -- Parana, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series \"パラナ -- Parana\" (1943). Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or \"maps of outer lands.\" These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection.This layer provides an index map that can be used to locate individual scanned map sheets."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "dt534ng8192"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-dt534ng8192"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "2"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "2"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-dt534ng8192",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/dt534ng8192",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/dt534ng8192.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/dt534ng8192/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/dt534ng8192%2Findex_9954935/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/dv780xp2095/iiif/canvas/cocina-fileSet-dv780xp2095-dv780xp2095_1",
+      "type": "Canvas",
+      "height": 9539,
+      "width": 21364,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/dv780xp2095/dv780xp2095_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (36.6 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/dv780xp2095/iiif/canvas/cocina-fileSet-dv780xp2095-dv780xp2095_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/dv780xp2095/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fdv780xp2095-dv780xp2095_1%2Fdv780xp2095_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/dv780xp2095/iiif/canvas/cocina-fileSet-dv780xp2095-dv780xp2095_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/dv780xp2095%2Fdv780xp2095_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 9539,
+                "width": 21364,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/dv780xp2095%2Fdv780xp2095_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "第1號. パラナ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/dv780xp2095/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/dt534ng8192/manifest.json#navplace-dv780xp2095",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/dt534ng8192/manifest.json#navplace-dv780xp2095-feature-1",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "第1號. パラナ"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/dv780xp2095/iiif/manifest",
+              "recid": "dv780xp2095",
+              "callNumber": "G7322 .K3 1943 .J3 SHEET 1",
+              "sourceFeatureIndex": 1
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    160.1739034,
+                    59.1475898
+                  ],
+                  [
+                    160.0673889,
+                    59.3168711
+                  ],
+                  [
+                    159.6470251,
+                    59.048777
+                  ],
+                  [
+                    159.7545685,
+                    58.8801519
+                  ],
+                  [
+                    160.1739034,
+                    59.1475898
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              159.6470251,
+              58.8801519,
+              160.1739034,
+              59.3168711
+            ]
+          }
+        ],
+        "bbox": [
+          159.6470251,
+          58.8801519,
+          160.1739034,
+          59.3168711
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/dv780xp2095/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "第1號. パラナ"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/hf873qs0581/iiif/canvas/cocina-fileSet-hf873qs0581-hf873qs0581_1",
+      "type": "Canvas",
+      "height": 9353,
+      "width": 21331,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/hf873qs0581/hf873qs0581_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (35.8 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/hf873qs0581/iiif/canvas/cocina-fileSet-hf873qs0581-hf873qs0581_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/hf873qs0581/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fhf873qs0581-hf873qs0581_1%2Fhf873qs0581_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/hf873qs0581/iiif/canvas/cocina-fileSet-hf873qs0581-hf873qs0581_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/hf873qs0581%2Fhf873qs0581_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 9353,
+                "width": 21331,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/hf873qs0581%2Fhf873qs0581_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "第2號. キンキリ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/hf873qs0581/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/dt534ng8192/manifest.json#navplace-hf873qs0581",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/dt534ng8192/manifest.json#navplace-hf873qs0581-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "第2號. キンキリ"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/hf873qs0581/iiif/manifest",
+              "recid": "hf873qs0581",
+              "callNumber": "G7322 .K3 1943 .J3 SHEET 2",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    160.1739034,
+                    59.1475898
+                  ],
+                  [
+                    160.5976937,
+                    59.4178693
+                  ],
+                  [
+                    160.4901502,
+                    59.5864943
+                  ],
+                  [
+                    160.0673889,
+                    59.3168711
+                  ],
+                  [
+                    160.1739034,
+                    59.1475898
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              160.0673889,
+              59.1475898,
+              160.5976937,
+              59.5864943
+            ]
+          }
+        ],
+        "bbox": [
+          160.0673889,
+          59.1475898,
+          160.5976937,
+          59.5864943
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/hf873qs0581/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "第2號. キンキリ"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/dt534ng8192/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/dt534ng8192/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "パラナ -- Parana, Maps Index"
+            ]
+          },
+          "seriesDruid": "dt534ng8192",
+          "sheetCount": 2,
+          "sourceFeatureCount": 2
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                159.6470251,
+                59.048777
+              ],
+              [
+                159.7545685,
+                58.8801519
+              ],
+              [
+                160.1739034,
+                59.1475898
+              ],
+              [
+                160.5976937,
+                59.4178693
+              ],
+              [
+                160.4901502,
+                59.5864943
+              ],
+              [
+                160.0673889,
+                59.3168711
+              ],
+              [
+                159.6470251,
+                59.048777
+              ]
+            ]
+          ]
+        },
+        "bbox": [
+          159.6470251,
+          58.8801519,
+          160.5976937,
+          59.5864943
+        ]
+      }
+    ],
+    "bbox": [
+      159.6470251,
+      58.8801519,
+      160.5976937,
+      59.5864943
+    ]
+  }
+}

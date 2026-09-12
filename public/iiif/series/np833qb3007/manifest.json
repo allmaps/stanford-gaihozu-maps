@@ -1,0 +1,344 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/np833qb3007/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "サイパン島及テニアン島 | 五万分一陸海偏合圖 -- Saipantō oyobi Teniantō / 1:50,000 rikukai hengōzu, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series, 'サイパン島及テニアン島 | 五万分一陸海偏合圖 -- Saipantō oyobi Teniantō / 1:50,000 rikukai hengōzu.' This map series was originally produced by the Japanese Land Survey Department of the General Staff Headquarters [1944]. Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or\n'maps of outer lands.' These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "np833qb3007"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-np833qb3007"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-np833qb3007",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/np833qb3007",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/np833qb3007.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/np833qb3007/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/np833qb3007%2Findex_12437955/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/yd073wj0833/iiif/canvas/cocina-fileSet-yd073wj0833-yd073wj0833_1",
+      "type": "Canvas",
+      "height": 27137,
+      "width": 19842,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/yd073wj0833/yd073wj0833_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (96.8 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/yd073wj0833/iiif/canvas/cocina-fileSet-yd073wj0833-yd073wj0833_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/yd073wj0833/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fyd073wj0833-yd073wj0833_1%2Fyd073wj0833_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/yd073wj0833/iiif/canvas/cocina-fileSet-yd073wj0833-yd073wj0833_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/yd073wj0833%2Fyd073wj0833_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 27137,
+                "width": 19842,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/yd073wj0833%2Fyd073wj0833_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "サイパン島及テニアン島"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/yd073wj0833/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/np833qb3007/manifest.json#navplace-yd073wj0833",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/np833qb3007/manifest.json#navplace-yd073wj0833-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "サイパン島及テニアン島"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/yd073wj0833/iiif/manifest",
+              "recid": "yd073wj0833",
+              "callNumber": "G9412 .S3 P5 1944 .J3",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    145.5,
+                    14.808333
+                  ],
+                  [
+                    145.866667,
+                    14.808333
+                  ],
+                  [
+                    145.866667,
+                    15.316667
+                  ],
+                  [
+                    145.5,
+                    15.316667
+                  ],
+                  [
+                    145.5,
+                    14.808333
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              145.5,
+              14.808333,
+              145.866667,
+              15.316667
+            ]
+          }
+        ],
+        "bbox": [
+          145.5,
+          14.808333,
+          145.866667,
+          15.316667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/yd073wj0833/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "サイパン島及テニアン島"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/np833qb3007/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/np833qb3007/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "サイパン島及テニアン島 | 五万分一陸海偏合圖 -- Saipantō oyobi Teniantō / 1:50,000 rikukai hengōzu, Maps Index"
+            ]
+          },
+          "seriesDruid": "np833qb3007",
+          "sheetCount": 1,
+          "sourceFeatureCount": 1
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              145.5,
+              14.808333
+            ],
+            [
+              145.866667,
+              14.808333
+            ],
+            [
+              145.866667,
+              15.316667
+            ],
+            [
+              145.5,
+              15.316667
+            ],
+            [
+              145.5,
+              14.808333
+            ]
+          ]
+        },
+        "bbox": [
+          145.5,
+          14.808333,
+          145.866667,
+          15.316667
+        ]
+      }
+    ],
+    "bbox": [
+      145.5,
+      14.808333,
+      145.866667,
+      15.316667
+    ]
+  }
+}

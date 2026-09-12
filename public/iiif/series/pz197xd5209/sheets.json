@@ -1,0 +1,76 @@
+{
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/pz197xd5209/sheets.json",
+  "type": "Dataset",
+  "label": "ロタ島 | 二万五千分一陸海編合圖 -- Rotatō | 1:25,000 rikukai hengōzu, Maps Index",
+  "sourceGeojson": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/pz197xd5209.geojson",
+  "sheets": [
+    {
+      "label": "ロタ島",
+      "manifestUrl": "https://purl.stanford.edu/rm863yt1960/iiif/manifest",
+      "recid": "rm863yt1960",
+      "websiteUrl": "https://purl.stanford.edu/rm863yt1960",
+      "callNumber": "G9412 .R6 S25 .J3",
+      "featureIndex": 0,
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/pz197xd5209/manifest.json#navplace-rm863yt1960",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/pz197xd5209/manifest.json#navplace-rm863yt1960-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "ロタ島"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/rm863yt1960/iiif/manifest",
+              "recid": "rm863yt1960",
+              "callNumber": "G9412 .R6 S25 .J3",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    145.108333,
+                    14.083333
+                  ],
+                  [
+                    145.308333,
+                    14.083333
+                  ],
+                  [
+                    145.308333,
+                    14.219444
+                  ],
+                  [
+                    145.108333,
+                    14.219444
+                  ],
+                  [
+                    145.108333,
+                    14.083333
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              145.108333,
+              14.083333,
+              145.308333,
+              14.219444
+            ]
+          }
+        ],
+        "bbox": [
+          145.108333,
+          14.083333,
+          145.308333,
+          14.219444
+        ]
+      }
+    }
+  ]
+}

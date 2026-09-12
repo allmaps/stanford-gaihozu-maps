@@ -1,0 +1,76 @@
+{
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ry185pq8882/sheets.json",
+  "type": "Dataset",
+  "label": "二万分一杭州近傍圖 -- 1:20,000 Kōshū kinbōzu, Maps Index",
+  "sourceGeojson": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/ry185pq8882.geojson",
+  "sheets": [
+    {
+      "label": "杭州近傍",
+      "manifestUrl": "https://purl.stanford.edu/jk583dp9826/iiif/manifest",
+      "recid": "jk583dp9826",
+      "websiteUrl": "https://purl.stanford.edu/jk583dp9826",
+      "callNumber": "G7824 .H2 1937 .J3",
+      "featureIndex": 0,
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ry185pq8882/manifest.json#navplace-jk583dp9826",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ry185pq8882/manifest.json#navplace-jk583dp9826-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "杭州近傍"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/jk583dp9826/iiif/manifest",
+              "recid": "jk583dp9826",
+              "callNumber": "G7824 .H2 1937 .J3",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    120.1,
+                    30.183333
+                  ],
+                  [
+                    120.216667,
+                    30.183333
+                  ],
+                  [
+                    120.216667,
+                    30.319444
+                  ],
+                  [
+                    120.1,
+                    30.319444
+                  ],
+                  [
+                    120.1,
+                    30.183333
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              120.1,
+              30.183333,
+              120.216667,
+              30.319444
+            ]
+          }
+        ],
+        "bbox": [
+          120.1,
+          30.183333,
+          120.216667,
+          30.319444
+        ]
+      }
+    }
+  ]
+}

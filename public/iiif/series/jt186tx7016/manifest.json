@@ -1,0 +1,344 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/jt186tx7016/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "オーシャン島 -- Ōshantō 1:10,000, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series \"オーシャン島 -- Ōshantō 1:10,000\" (1943). Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or \"maps of outer lands.\" These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection.This layer provides an index map that can be used to locate individual scanned map sheets."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "jt186tx7016"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-jt186tx7016"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-jt186tx7016",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/jt186tx7016",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/jt186tx7016.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/jt186tx7016/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/jt186tx7016%2Findex_10475260/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/zv166fv5955/iiif/canvas/cocina-fileSet-zv166fv5955-zv166fv5955_1",
+      "type": "Canvas",
+      "height": 13424,
+      "width": 18455,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/zv166fv5955/zv166fv5955_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (44.5 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/zv166fv5955/iiif/canvas/cocina-fileSet-zv166fv5955-zv166fv5955_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/zv166fv5955/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fzv166fv5955-zv166fv5955_1%2Fzv166fv5955_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/zv166fv5955/iiif/canvas/cocina-fileSet-zv166fv5955-zv166fv5955_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/zv166fv5955%2Fzv166fv5955_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 13424,
+                "width": 18455,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/zv166fv5955%2Fzv166fv5955_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "オーシャン島"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/zv166fv5955/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/jt186tx7016/manifest.json#navplace-zv166fv5955",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/jt186tx7016/manifest.json#navplace-zv166fv5955-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "オーシャン島"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/zv166fv5955/iiif/manifest",
+              "recid": "zv166fv5955",
+              "callNumber": "G9482.B3 1943 .J3",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    169.518056,
+                    -0.875
+                  ],
+                  [
+                    169.551389,
+                    -0.875
+                  ],
+                  [
+                    169.551389,
+                    -0.841667
+                  ],
+                  [
+                    169.518056,
+                    -0.841667
+                  ],
+                  [
+                    169.518056,
+                    -0.875
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              169.518056,
+              -0.875,
+              169.551389,
+              -0.841667
+            ]
+          }
+        ],
+        "bbox": [
+          169.518056,
+          -0.875,
+          169.551389,
+          -0.841667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/zv166fv5955/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "オーシャン島"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/jt186tx7016/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/jt186tx7016/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "オーシャン島 -- Ōshantō 1:10,000, Maps Index"
+            ]
+          },
+          "seriesDruid": "jt186tx7016",
+          "sheetCount": 1,
+          "sourceFeatureCount": 1
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              169.518056,
+              -0.875
+            ],
+            [
+              169.551389,
+              -0.875
+            ],
+            [
+              169.551389,
+              -0.841667
+            ],
+            [
+              169.518056,
+              -0.841667
+            ],
+            [
+              169.518056,
+              -0.875
+            ]
+          ]
+        },
+        "bbox": [
+          169.518056,
+          -0.875,
+          169.551389,
+          -0.841667
+        ]
+      }
+    ],
+    "bbox": [
+      169.518056,
+      -0.875,
+      169.551389,
+      -0.841667
+    ]
+  }
+}

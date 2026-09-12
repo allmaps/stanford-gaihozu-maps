@@ -1,0 +1,525 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/md095vt8329/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "百万分一圖 [千島列島] -- 1:1,000,000 [Chishima Rettō], Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series \"百万分一圖 [千島列島] -- 1:1,000,000 [Chishima Rettō]\" (1941). Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or \"maps of outer lands.\" These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection.This layer provides an index map that can be used to locate individual scanned map sheets."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "md095vt8329"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-md095vt8329"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "2"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "2"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-md095vt8329",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/md095vt8329",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/md095vt8329.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/md095vt8329/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/md095vt8329%2Findex_10563447/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/jx418rz0875/iiif/canvas/cocina-fileSet-jx418rz0875-jx418rz0875_1",
+      "type": "Canvas",
+      "height": 26534,
+      "width": 16702,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/jx418rz0875/jx418rz0875_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (79.6 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/jx418rz0875/iiif/canvas/cocina-fileSet-jx418rz0875-jx418rz0875_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/jx418rz0875/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fjx418rz0875-jx418rz0875_1%2Fjx418rz0875_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/jx418rz0875/iiif/canvas/cocina-fileSet-jx418rz0875-jx418rz0875_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/jx418rz0875%2Fjx418rz0875_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26534,
+                "width": 16702,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/jx418rz0875%2Fjx418rz0875_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "[1.] 千島北部 - 勘察加南部"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/jx418rz0875/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/md095vt8329/manifest.json#navplace-jx418rz0875",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/md095vt8329/manifest.json#navplace-jx418rz0875-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "[1.] 千島北部 - 勘察加南部"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/jx418rz0875/iiif/manifest",
+              "recid": "jx418rz0875",
+              "callNumber": "G7341 .P6 S1000 .J3 SHEET 1",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    148.1629993,
+                    50.510531
+                  ],
+                  [
+                    152.8648297,
+                    45.324705
+                  ],
+                  [
+                    161.0139848,
+                    52.7132956
+                  ],
+                  [
+                    156.3121545,
+                    57.8991216
+                  ],
+                  [
+                    148.1629993,
+                    50.510531
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              148.1629993,
+              45.324705,
+              161.0139848,
+              57.8991216
+            ]
+          }
+        ],
+        "bbox": [
+          148.1629993,
+          45.324705,
+          161.0139848,
+          57.8991216
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/jx418rz0875/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "[1.] 千島北部 - 勘察加南部"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/pw482sp4622/iiif/canvas/cocina-fileSet-pw482sp4622-pw482sp4622_1",
+      "type": "Canvas",
+      "height": 12325,
+      "width": 26488,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/pw482sp4622/pw482sp4622_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (58.7 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/pw482sp4622/iiif/canvas/cocina-fileSet-pw482sp4622-pw482sp4622_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/pw482sp4622/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fpw482sp4622-pw482sp4622_1%2Fpw482sp4622_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/pw482sp4622/iiif/canvas/cocina-fileSet-pw482sp4622-pw482sp4622_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/pw482sp4622%2Fpw482sp4622_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12325,
+                "width": 26488,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/pw482sp4622%2Fpw482sp4622_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "[2.] 千島南部 - 北海道東部"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/pw482sp4622/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/md095vt8329/manifest.json#navplace-pw482sp4622",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/md095vt8329/manifest.json#navplace-pw482sp4622-feature-1",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "[2.] 千島南部 - 北海道東部"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/pw482sp4622/iiif/manifest",
+              "recid": "pw482sp4622",
+              "callNumber": "G7341 .P6 S1000 .J3 SHEET 2",
+              "sourceFeatureIndex": 1
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    143.8483521,
+                    45.3229221
+                  ],
+                  [
+                    145.6972009,
+                    41.7758446
+                  ],
+                  [
+                    154.5648945,
+                    46.3979665
+                  ],
+                  [
+                    152.7160457,
+                    49.9450439
+                  ],
+                  [
+                    143.8483521,
+                    45.3229221
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              143.8483521,
+              41.7758446,
+              154.5648945,
+              49.9450439
+            ]
+          }
+        ],
+        "bbox": [
+          143.8483521,
+          41.7758446,
+          154.5648945,
+          49.9450439
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/pw482sp4622/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "[2.] 千島南部 - 北海道東部"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/md095vt8329/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/md095vt8329/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "百万分一圖 [千島列島] -- 1:1,000,000 [Chishima Rettō], Maps Index"
+            ]
+          },
+          "seriesDruid": "md095vt8329",
+          "sheetCount": 2,
+          "sourceFeatureCount": 2
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                143.8483521,
+                45.3229221
+              ],
+              [
+                145.6972009,
+                41.7758446
+              ],
+              [
+                152.7496113849467,
+                45.45178362322716
+              ],
+              [
+                152.8648297,
+                45.324705
+              ],
+              [
+                153.35033987345332,
+                45.764902279320594
+              ],
+              [
+                154.5648945,
+                46.3979665
+              ],
+              [
+                154.39919471503325,
+                46.71586700243182
+              ],
+              [
+                161.0139848,
+                52.7132956
+              ],
+              [
+                156.3121545,
+                57.8991216
+              ],
+              [
+                148.1629993,
+                50.510531
+              ],
+              [
+                149.97234187446608,
+                48.51493886516392
+              ],
+              [
+                143.8483521,
+                45.3229221
+              ]
+            ]
+          ]
+        },
+        "bbox": [
+          143.8483521,
+          41.7758446,
+          161.0139848,
+          57.8991216
+        ]
+      }
+    ],
+    "bbox": [
+      143.8483521,
+      41.7758446,
+      161.0139848,
+      57.8991216
+    ]
+  }
+}

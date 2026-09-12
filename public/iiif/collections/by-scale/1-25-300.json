@@ -1,0 +1,132 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collections/by-scale/1-25-300.json",
+  "type": "Collection",
+  "label": {
+    "none": [
+      "1:25,300"
+    ]
+  },
+  "summary": {
+    "none": [
+      "1 series."
+    ]
+  },
+  "items": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/jd237pb9931/manifest.json",
+      "type": "Manifest",
+      "label": {
+        "none": [
+          "ナウル島 -- Naurutō ca. 1:25,300, Maps Index"
+        ]
+      },
+      "summary": {
+        "none": [
+          "This polygon shapefile is an index to the map series, 'ナウル島 -- Naurutō ca. 1:25,300.' This map series was originally produced by the Japanese Land Survey Department of the General Staff Headquarters [1943]. Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or\n'maps of outer lands.' These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection."
+        ]
+      },
+      "thumbnail": [
+        {
+          "id": "https://stacks.stanford.edu/image/iiif/jd237pb9931%2Findex_10496676/full/!400,400/0/default.jpg",
+          "type": "Image",
+          "format": "image/jpeg"
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Series DRUID"
+            ]
+          },
+          "value": {
+            "none": [
+              "jd237pb9931"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Available sheets"
+            ]
+          },
+          "value": {
+            "none": [
+              "1"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Scale"
+            ]
+          },
+          "value": {
+            "none": [
+              "1:25,300"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Broad region"
+            ]
+          },
+          "value": {
+            "none": [
+              "Pacific and Oceania"
+            ]
+          }
+        }
+      ],
+      "homepage": [
+        {
+          "id": "https://earthworks.stanford.edu/catalog/stanford-jd237pb9931",
+          "type": "Text",
+          "label": {
+            "none": [
+              "EarthWorks record"
+            ]
+          },
+          "format": "text/html"
+        },
+        {
+          "id": "https://purl.stanford.edu/jd237pb9931",
+          "type": "Text",
+          "label": {
+            "none": [
+              "Stanford PURL"
+            ]
+          },
+          "format": "text/html"
+        }
+      ],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/jd237pb9931.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/jd237pb9931/sheets.json",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Extracted sheet manifest URLs"
+            ]
+          },
+          "format": "application/json"
+        }
+      ]
+    }
+  ]
+}

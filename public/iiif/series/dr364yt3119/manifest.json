@@ -1,0 +1,344 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/dr364yt3119/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "新疆省迪化 (ウルムチ) 市街圖 -- Shinkyō-shō Teikika (Urumuchi) shigaizu, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series \"新疆省迪化 (ウルムチ) 市街圖 -- Shinkyō-shō Teikika (Urumuchi) shigaizu\" (1938). Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or \"maps of outer lands.\" These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection.This layer provides an index map that can be used to locate individual scanned map sheets."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "dr364yt3119"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-dr364yt3119"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-dr364yt3119",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/dr364yt3119",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/dr364yt3119.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/dr364yt3119/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/dr364yt3119%2Findex_9680839/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/tr802by9969/iiif/canvas/cocina-fileSet-tr802by9969-59beff24-3810-4fff-b57a-f6a27e421af6",
+      "type": "Canvas",
+      "height": 14401,
+      "width": 12820,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/tr802by9969/tr802by9969_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (33.2 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/tr802by9969/iiif/canvas/cocina-fileSet-tr802by9969-59beff24-3810-4fff-b57a-f6a27e421af6/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/tr802by9969/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Ftr802by9969-59beff24-3810-4fff-b57a-f6a27e421af6%2Ftr802by9969_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/tr802by9969/iiif/canvas/cocina-fileSet-tr802by9969-59beff24-3810-4fff-b57a-f6a27e421af6",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/tr802by9969%2Ftr802by9969_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 14401,
+                "width": 12820,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/tr802by9969%2Ftr802by9969_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "ウルムチ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/tr802by9969/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/dr364yt3119/manifest.json#navplace-tr802by9969",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/dr364yt3119/manifest.json#navplace-tr802by9969-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "ウルムチ"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/tr802by9969/iiif/manifest",
+              "recid": "tr802by9969",
+              "callNumber": "G7824 .U5 1938 .J3",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    87.533333,
+                    43.766667
+                  ],
+                  [
+                    87.641667,
+                    43.766667
+                  ],
+                  [
+                    87.641667,
+                    43.866667
+                  ],
+                  [
+                    87.533333,
+                    43.866667
+                  ],
+                  [
+                    87.533333,
+                    43.766667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              87.533333,
+              43.766667,
+              87.641667,
+              43.866667
+            ]
+          }
+        ],
+        "bbox": [
+          87.533333,
+          43.766667,
+          87.641667,
+          43.866667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/tr802by9969/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "ウルムチ"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/dr364yt3119/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/dr364yt3119/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "新疆省迪化 (ウルムチ) 市街圖 -- Shinkyō-shō Teikika (Urumuchi) shigaizu, Maps Index"
+            ]
+          },
+          "seriesDruid": "dr364yt3119",
+          "sheetCount": 1,
+          "sourceFeatureCount": 1
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              87.533333,
+              43.766667
+            ],
+            [
+              87.641667,
+              43.766667
+            ],
+            [
+              87.641667,
+              43.866667
+            ],
+            [
+              87.533333,
+              43.866667
+            ],
+            [
+              87.533333,
+              43.766667
+            ]
+          ]
+        },
+        "bbox": [
+          87.533333,
+          43.766667,
+          87.641667,
+          43.866667
+        ]
+      }
+    ],
+    "bbox": [
+      87.533333,
+      43.766667,
+      87.641667,
+      43.866667
+    ]
+  }
+}

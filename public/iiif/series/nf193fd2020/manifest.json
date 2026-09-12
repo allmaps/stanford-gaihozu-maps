@@ -1,0 +1,344 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/nf193fd2020/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "トラック諸島南東部 | 協同兵要地點圖 -- Torakku shotō nantōbu 1:50,000 | Kyōdō heiyō chitenzu, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series \"トラック諸島南東部 | 協同兵要地點圖 -- Torakku shotō nantōbu 1:50,000 | Kyōdō heiyō chitenzu\" (1944). Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or \"maps of outer lands.\" These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection.This layer provides an index map that can be used to locate individual scanned map sheets."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "nf193fd2020"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-nf193fd2020"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-nf193fd2020",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/nf193fd2020",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/nf193fd2020.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/nf193fd2020/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/nf193fd2020%2Findex_12784636/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/vv405gy0162/iiif/canvas/cocina-fileSet-vv405gy0162-vv405gy0162_1",
+      "type": "Canvas",
+      "height": 26106,
+      "width": 19001,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/vv405gy0162/vv405gy0162_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (89.1 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/vv405gy0162/iiif/canvas/cocina-fileSet-vv405gy0162-vv405gy0162_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/vv405gy0162/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fvv405gy0162-vv405gy0162_1%2Fvv405gy0162_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/vv405gy0162/iiif/canvas/cocina-fileSet-vv405gy0162-vv405gy0162_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/vv405gy0162%2Fvv405gy0162_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 26106,
+                "width": 19001,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/vv405gy0162%2Fvv405gy0162_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "トラック諸島南東部"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/vv405gy0162/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/nf193fd2020/manifest.json#navplace-vv405gy0162",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/nf193fd2020/manifest.json#navplace-vv405gy0162-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "トラック諸島南東部"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/vv405gy0162/iiif/manifest",
+              "recid": "vv405gy0162",
+              "callNumber": "G9442 .T75 1944 .G8",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    151.766667,
+                    6.983333
+                  ],
+                  [
+                    152.058333,
+                    6.983333
+                  ],
+                  [
+                    152.058333,
+                    7.425
+                  ],
+                  [
+                    151.766667,
+                    7.425
+                  ],
+                  [
+                    151.766667,
+                    6.983333
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              151.766667,
+              6.983333,
+              152.058333,
+              7.425
+            ]
+          }
+        ],
+        "bbox": [
+          151.766667,
+          6.983333,
+          152.058333,
+          7.425
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/vv405gy0162/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "トラック諸島南東部"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/nf193fd2020/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/nf193fd2020/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "トラック諸島南東部 | 協同兵要地點圖 -- Torakku shotō nantōbu 1:50,000 | Kyōdō heiyō chitenzu, Maps Index"
+            ]
+          },
+          "seriesDruid": "nf193fd2020",
+          "sheetCount": 1,
+          "sourceFeatureCount": 1
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              151.766667,
+              6.983333
+            ],
+            [
+              152.058333,
+              6.983333
+            ],
+            [
+              152.058333,
+              7.425
+            ],
+            [
+              151.766667,
+              7.425
+            ],
+            [
+              151.766667,
+              6.983333
+            ]
+          ]
+        },
+        "bbox": [
+          151.766667,
+          6.983333,
+          152.058333,
+          7.425
+        ]
+      }
+    ],
+    "bbox": [
+      151.766667,
+      6.983333,
+      152.058333,
+      7.425
+    ]
+  }
+}

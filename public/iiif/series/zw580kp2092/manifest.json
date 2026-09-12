@@ -1,0 +1,3335 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "滿洲五万分一拜泉克山附近 -- Manshū Haisen Kokusan fukin 1:50,000, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series, '滿洲五万分一拜泉克山附近 -- Manshū Haisen Kokusan fukin 1:50,000.' This map series was originally produced by the Japanese Land Survey Department of the General Staff Headquarters [1933-1935, 1947]. Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or\n'maps of outer lands.' These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "zw580kp2092"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-zw580kp2092"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "20"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "20"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-zw580kp2092",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/zw580kp2092",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/zw580kp2092.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/zw580kp2092%2Findex_11051731/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/kv028hz9783/iiif/canvas/cocina-fileSet-kv028hz9783-kv028hz9783_1",
+      "type": "Canvas",
+      "height": 12188,
+      "width": 13827,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/kv028hz9783/kv028hz9783_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (30.3 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/kv028hz9783/iiif/canvas/cocina-fileSet-kv028hz9783-kv028hz9783_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/kv028hz9783/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fkv028hz9783-kv028hz9783_1%2Fkv028hz9783_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/kv028hz9783/iiif/canvas/cocina-fileSet-kv028hz9783-kv028hz9783_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/kv028hz9783%2Fkv028hz9783_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12188,
+                "width": 13827,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/kv028hz9783%2Fkv028hz9783_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SHEET 1"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/kv028hz9783/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-kv028hz9783",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-kv028hz9783-feature-19",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SHEET 1"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/kv028hz9783/iiif/manifest",
+              "recid": "kv028hz9783",
+              "callNumber": "G7822 .M2 A1 S50 .J3 SHEET 1",
+              "sourceFeatureIndex": 19
+            },
+            "geometry": {
+              "bbox": [
+                126.25000000000001,
+                48.00000025,
+                126.5,
+                48.166667
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    126.25000000000001,
+                    48.00000025
+                  ],
+                  [
+                    126.25000000000001,
+                    48.166667
+                  ],
+                  [
+                    126.5,
+                    48.166667
+                  ],
+                  [
+                    126.5,
+                    48.00000025
+                  ],
+                  [
+                    126.25000000000001,
+                    48.00000025
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              126.25000000000001,
+              48.00000025,
+              126.5,
+              48.166667
+            ]
+          }
+        ],
+        "bbox": [
+          126.25000000000001,
+          48.00000025,
+          126.5,
+          48.166667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/kv028hz9783/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SHEET 1"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/zp239yv9919/iiif/canvas/cocina-fileSet-zp239yv9919-zp239yv9919_1",
+      "type": "Canvas",
+      "height": 12200,
+      "width": 13828,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/zp239yv9919/zp239yv9919_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (30.3 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/zp239yv9919/iiif/canvas/cocina-fileSet-zp239yv9919-zp239yv9919_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/zp239yv9919/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fzp239yv9919-zp239yv9919_1%2Fzp239yv9919_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/zp239yv9919/iiif/canvas/cocina-fileSet-zp239yv9919-zp239yv9919_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/zp239yv9919%2Fzp239yv9919_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12200,
+                "width": 13828,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/zp239yv9919%2Fzp239yv9919_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SHEET 2"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/zp239yv9919/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-zp239yv9919",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-zp239yv9919-feature-14",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SHEET 2"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/zp239yv9919/iiif/manifest",
+              "recid": "zp239yv9919",
+              "callNumber": "G7822 .M2 A1 S50 .J3 SHEET 2",
+              "sourceFeatureIndex": 14
+            },
+            "geometry": {
+              "bbox": [
+                126.25000000000001,
+                47.833333499999995,
+                126.5,
+                48.00000024999999
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    126.25000000000001,
+                    47.833333499999995
+                  ],
+                  [
+                    126.25000000000001,
+                    48.00000024999999
+                  ],
+                  [
+                    126.5,
+                    48.00000024999999
+                  ],
+                  [
+                    126.5,
+                    47.833333499999995
+                  ],
+                  [
+                    126.25000000000001,
+                    47.833333499999995
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              126.25000000000001,
+              47.833333499999995,
+              126.5,
+              48.00000024999999
+            ]
+          }
+        ],
+        "bbox": [
+          126.25000000000001,
+          47.833333499999995,
+          126.5,
+          48.00000024999999
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/zp239yv9919/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SHEET 2"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/vt946hf8078/iiif/canvas/cocina-fileSet-vt946hf8078-vt946hf8078_1",
+      "type": "Canvas",
+      "height": 12200,
+      "width": 13821,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/vt946hf8078/vt946hf8078_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (30.3 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/vt946hf8078/iiif/canvas/cocina-fileSet-vt946hf8078-vt946hf8078_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/vt946hf8078/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fvt946hf8078-vt946hf8078_1%2Fvt946hf8078_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/vt946hf8078/iiif/canvas/cocina-fileSet-vt946hf8078-vt946hf8078_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/vt946hf8078%2Fvt946hf8078_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12200,
+                "width": 13821,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/vt946hf8078%2Fvt946hf8078_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SHEET 3"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/vt946hf8078/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-vt946hf8078",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-vt946hf8078-feature-9",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SHEET 3"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/vt946hf8078/iiif/manifest",
+              "recid": "vt946hf8078",
+              "callNumber": "G7822 .M2 A1 S50 .J3 SHEET 3",
+              "sourceFeatureIndex": 9
+            },
+            "geometry": {
+              "bbox": [
+                126.25000000000001,
+                47.66666675,
+                126.5,
+                47.833333499999995
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    126.25000000000001,
+                    47.66666675
+                  ],
+                  [
+                    126.25000000000001,
+                    47.833333499999995
+                  ],
+                  [
+                    126.5,
+                    47.833333499999995
+                  ],
+                  [
+                    126.5,
+                    47.66666675
+                  ],
+                  [
+                    126.25000000000001,
+                    47.66666675
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              126.25000000000001,
+              47.66666675,
+              126.5,
+              47.833333499999995
+            ]
+          }
+        ],
+        "bbox": [
+          126.25000000000001,
+          47.66666675,
+          126.5,
+          47.833333499999995
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/vt946hf8078/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SHEET 3"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/bp291cx1708/iiif/canvas/cocina-fileSet-bp291cx1708-bp291cx1708_1",
+      "type": "Canvas",
+      "height": 12179,
+      "width": 13839,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/bp291cx1708/bp291cx1708_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (30.3 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/bp291cx1708/iiif/canvas/cocina-fileSet-bp291cx1708-bp291cx1708_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/bp291cx1708/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fbp291cx1708-bp291cx1708_1%2Fbp291cx1708_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/bp291cx1708/iiif/canvas/cocina-fileSet-bp291cx1708-bp291cx1708_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/bp291cx1708%2Fbp291cx1708_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12179,
+                "width": 13839,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/bp291cx1708%2Fbp291cx1708_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SHEET 4"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/bp291cx1708/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-bp291cx1708",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-bp291cx1708-feature-4",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SHEET 4"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/bp291cx1708/iiif/manifest",
+              "recid": "bp291cx1708",
+              "callNumber": "G7822 .M2 A1 S50 .J3 SHEET 4",
+              "sourceFeatureIndex": 4
+            },
+            "geometry": {
+              "bbox": [
+                126.25000000000001,
+                47.5,
+                126.5,
+                47.66666675
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    126.25000000000001,
+                    47.5
+                  ],
+                  [
+                    126.25000000000001,
+                    47.66666675
+                  ],
+                  [
+                    126.5,
+                    47.66666675
+                  ],
+                  [
+                    126.5,
+                    47.5
+                  ],
+                  [
+                    126.25000000000001,
+                    47.5
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              126.25000000000001,
+              47.5,
+              126.5,
+              47.66666675
+            ]
+          }
+        ],
+        "bbox": [
+          126.25000000000001,
+          47.5,
+          126.5,
+          47.66666675
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/bp291cx1708/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SHEET 4"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/pj543ck7012/iiif/canvas/cocina-fileSet-pj543ck7012-pj543ck7012_1",
+      "type": "Canvas",
+      "height": 12179,
+      "width": 13878,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/pj543ck7012/pj543ck7012_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (30.4 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/pj543ck7012/iiif/canvas/cocina-fileSet-pj543ck7012-pj543ck7012_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/pj543ck7012/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fpj543ck7012-pj543ck7012_1%2Fpj543ck7012_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/pj543ck7012/iiif/canvas/cocina-fileSet-pj543ck7012-pj543ck7012_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/pj543ck7012%2Fpj543ck7012_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12179,
+                "width": 13878,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/pj543ck7012%2Fpj543ck7012_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SHEET 5"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/pj543ck7012/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-pj543ck7012",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-pj543ck7012-feature-18",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SHEET 5"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/pj543ck7012/iiif/manifest",
+              "recid": "pj543ck7012",
+              "callNumber": "G7822 .M2 A1 S50 .J3 SHEET 5",
+              "sourceFeatureIndex": 18
+            },
+            "geometry": {
+              "bbox": [
+                126,
+                48.00000025,
+                126.25000000000001,
+                48.166667
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    126,
+                    48.00000025
+                  ],
+                  [
+                    126,
+                    48.166667
+                  ],
+                  [
+                    126.25000000000001,
+                    48.166667
+                  ],
+                  [
+                    126.25000000000001,
+                    48.00000025
+                  ],
+                  [
+                    126,
+                    48.00000025
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              126,
+              48.00000025,
+              126.25000000000001,
+              48.166667
+            ]
+          }
+        ],
+        "bbox": [
+          126,
+          48.00000025,
+          126.25000000000001,
+          48.166667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/pj543ck7012/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SHEET 5"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/qj722hw5999/iiif/canvas/cocina-fileSet-qj722hw5999-qj722hw5999_1",
+      "type": "Canvas",
+      "height": 12208,
+      "width": 13811,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/qj722hw5999/qj722hw5999_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (30.3 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/qj722hw5999/iiif/canvas/cocina-fileSet-qj722hw5999-qj722hw5999_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/qj722hw5999/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fqj722hw5999-qj722hw5999_1%2Fqj722hw5999_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/qj722hw5999/iiif/canvas/cocina-fileSet-qj722hw5999-qj722hw5999_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/qj722hw5999%2Fqj722hw5999_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12208,
+                "width": 13811,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/qj722hw5999%2Fqj722hw5999_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SHEET 6"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/qj722hw5999/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-qj722hw5999",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-qj722hw5999-feature-13",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SHEET 6"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/qj722hw5999/iiif/manifest",
+              "recid": "qj722hw5999",
+              "callNumber": "G7822 .M2 A1 S50 .J3 SHEET 6",
+              "sourceFeatureIndex": 13
+            },
+            "geometry": {
+              "bbox": [
+                126,
+                47.833333499999995,
+                126.25000000000001,
+                48.00000024999999
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    126,
+                    47.833333499999995
+                  ],
+                  [
+                    126,
+                    48.00000024999999
+                  ],
+                  [
+                    126.25000000000001,
+                    48.00000024999999
+                  ],
+                  [
+                    126.25000000000001,
+                    47.833333499999995
+                  ],
+                  [
+                    126,
+                    47.833333499999995
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              126,
+              47.833333499999995,
+              126.25000000000001,
+              48.00000024999999
+            ]
+          }
+        ],
+        "bbox": [
+          126,
+          47.833333499999995,
+          126.25000000000001,
+          48.00000024999999
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/qj722hw5999/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SHEET 6"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/sp939kg2643/iiif/canvas/cocina-fileSet-sp939kg2643-sp939kg2643_1",
+      "type": "Canvas",
+      "height": 12172,
+      "width": 13840,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/sp939kg2643/sp939kg2643_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (30.3 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/sp939kg2643/iiif/canvas/cocina-fileSet-sp939kg2643-sp939kg2643_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/sp939kg2643/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fsp939kg2643-sp939kg2643_1%2Fsp939kg2643_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/sp939kg2643/iiif/canvas/cocina-fileSet-sp939kg2643-sp939kg2643_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/sp939kg2643%2Fsp939kg2643_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12172,
+                "width": 13840,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/sp939kg2643%2Fsp939kg2643_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SHEET 7"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/sp939kg2643/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-sp939kg2643",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-sp939kg2643-feature-8",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SHEET 7"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/sp939kg2643/iiif/manifest",
+              "recid": "sp939kg2643",
+              "callNumber": "G7822 .M2 A1 S50 .J3 SHEET 7",
+              "sourceFeatureIndex": 8
+            },
+            "geometry": {
+              "bbox": [
+                126,
+                47.66666675,
+                126.25000000000001,
+                47.833333499999995
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    126,
+                    47.66666675
+                  ],
+                  [
+                    126,
+                    47.833333499999995
+                  ],
+                  [
+                    126.25000000000001,
+                    47.833333499999995
+                  ],
+                  [
+                    126.25000000000001,
+                    47.66666675
+                  ],
+                  [
+                    126,
+                    47.66666675
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              126,
+              47.66666675,
+              126.25000000000001,
+              47.833333499999995
+            ]
+          }
+        ],
+        "bbox": [
+          126,
+          47.66666675,
+          126.25000000000001,
+          47.833333499999995
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/sp939kg2643/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SHEET 7"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/tf700qq2119/iiif/canvas/cocina-fileSet-tf700qq2119-tf700qq2119_1",
+      "type": "Canvas",
+      "height": 12202,
+      "width": 13857,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/tf700qq2119/tf700qq2119_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (30.4 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/tf700qq2119/iiif/canvas/cocina-fileSet-tf700qq2119-tf700qq2119_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/tf700qq2119/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Ftf700qq2119-tf700qq2119_1%2Ftf700qq2119_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/tf700qq2119/iiif/canvas/cocina-fileSet-tf700qq2119-tf700qq2119_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/tf700qq2119%2Ftf700qq2119_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12202,
+                "width": 13857,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/tf700qq2119%2Ftf700qq2119_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SHEET 8"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/tf700qq2119/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-tf700qq2119",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-tf700qq2119-feature-3",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SHEET 8"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/tf700qq2119/iiif/manifest",
+              "recid": "tf700qq2119",
+              "callNumber": "G7822 .M2 A1 S50 .J3 SHEET 8",
+              "sourceFeatureIndex": 3
+            },
+            "geometry": {
+              "bbox": [
+                126,
+                47.5,
+                126.25000000000001,
+                47.66666675
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    126,
+                    47.5
+                  ],
+                  [
+                    126,
+                    47.66666675
+                  ],
+                  [
+                    126.25000000000001,
+                    47.66666675
+                  ],
+                  [
+                    126.25000000000001,
+                    47.5
+                  ],
+                  [
+                    126,
+                    47.5
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              126,
+              47.5,
+              126.25000000000001,
+              47.66666675
+            ]
+          }
+        ],
+        "bbox": [
+          126,
+          47.5,
+          126.25000000000001,
+          47.66666675
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/tf700qq2119/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SHEET 8"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/jv982ch7026/iiif/canvas/cocina-fileSet-jv982ch7026-jv982ch7026_1",
+      "type": "Canvas",
+      "height": 12208,
+      "width": 13820,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/jv982ch7026/jv982ch7026_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (30.3 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/jv982ch7026/iiif/canvas/cocina-fileSet-jv982ch7026-jv982ch7026_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/jv982ch7026/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fjv982ch7026-jv982ch7026_1%2Fjv982ch7026_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/jv982ch7026/iiif/canvas/cocina-fileSet-jv982ch7026-jv982ch7026_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/jv982ch7026%2Fjv982ch7026_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12208,
+                "width": 13820,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/jv982ch7026%2Fjv982ch7026_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SHEET 9"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/jv982ch7026/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-jv982ch7026",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-jv982ch7026-feature-17",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SHEET 9"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/jv982ch7026/iiif/manifest",
+              "recid": "jv982ch7026",
+              "callNumber": "G7822 .M2 A1 S50 .J3 SHEET 9",
+              "sourceFeatureIndex": 17
+            },
+            "geometry": {
+              "bbox": [
+                125.74999999999999,
+                48.00000025,
+                126,
+                48.166667
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    125.74999999999999,
+                    48.00000025
+                  ],
+                  [
+                    125.74999999999999,
+                    48.166667
+                  ],
+                  [
+                    126,
+                    48.166667
+                  ],
+                  [
+                    126,
+                    48.00000025
+                  ],
+                  [
+                    125.74999999999999,
+                    48.00000025
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              125.74999999999999,
+              48.00000025,
+              126,
+              48.166667
+            ]
+          }
+        ],
+        "bbox": [
+          125.74999999999999,
+          48.00000025,
+          126,
+          48.166667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/jv982ch7026/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SHEET 9"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/ks689yd6085/iiif/canvas/cocina-fileSet-ks689yd6085-ks689yd6085_1",
+      "type": "Canvas",
+      "height": 12218,
+      "width": 13811,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/ks689yd6085/ks689yd6085_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (30.3 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/ks689yd6085/iiif/canvas/cocina-fileSet-ks689yd6085-ks689yd6085_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/ks689yd6085/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fks689yd6085-ks689yd6085_1%2Fks689yd6085_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/ks689yd6085/iiif/canvas/cocina-fileSet-ks689yd6085-ks689yd6085_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/ks689yd6085%2Fks689yd6085_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12218,
+                "width": 13811,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/ks689yd6085%2Fks689yd6085_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SHEET 10"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/ks689yd6085/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-ks689yd6085",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-ks689yd6085-feature-12",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SHEET 10"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/ks689yd6085/iiif/manifest",
+              "recid": "ks689yd6085",
+              "callNumber": "G7822 .M2 A1 S50 .J3 SHEET 10",
+              "sourceFeatureIndex": 12
+            },
+            "geometry": {
+              "bbox": [
+                125.74999999999999,
+                47.833333499999995,
+                126,
+                48.00000024999999
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    125.74999999999999,
+                    47.833333499999995
+                  ],
+                  [
+                    125.74999999999999,
+                    48.00000024999999
+                  ],
+                  [
+                    126,
+                    48.00000024999999
+                  ],
+                  [
+                    126,
+                    47.833333499999995
+                  ],
+                  [
+                    125.74999999999999,
+                    47.833333499999995
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              125.74999999999999,
+              47.833333499999995,
+              126,
+              48.00000024999999
+            ]
+          }
+        ],
+        "bbox": [
+          125.74999999999999,
+          47.833333499999995,
+          126,
+          48.00000024999999
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/ks689yd6085/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SHEET 10"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/yb190rq3742/iiif/canvas/cocina-fileSet-yb190rq3742-yb190rq3742_1",
+      "type": "Canvas",
+      "height": 12170,
+      "width": 13836,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/yb190rq3742/yb190rq3742_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (30.3 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/yb190rq3742/iiif/canvas/cocina-fileSet-yb190rq3742-yb190rq3742_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/yb190rq3742/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fyb190rq3742-yb190rq3742_1%2Fyb190rq3742_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/yb190rq3742/iiif/canvas/cocina-fileSet-yb190rq3742-yb190rq3742_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/yb190rq3742%2Fyb190rq3742_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12170,
+                "width": 13836,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/yb190rq3742%2Fyb190rq3742_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SHEET 11"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/yb190rq3742/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-yb190rq3742",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-yb190rq3742-feature-7",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SHEET 11"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/yb190rq3742/iiif/manifest",
+              "recid": "yb190rq3742",
+              "callNumber": "G7822 .M2 A1 S50 .J3 SHEET 11",
+              "sourceFeatureIndex": 7
+            },
+            "geometry": {
+              "bbox": [
+                125.74999999999999,
+                47.66666675,
+                126,
+                47.833333499999995
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    125.74999999999999,
+                    47.66666675
+                  ],
+                  [
+                    125.74999999999999,
+                    47.833333499999995
+                  ],
+                  [
+                    126,
+                    47.833333499999995
+                  ],
+                  [
+                    126,
+                    47.66666675
+                  ],
+                  [
+                    125.74999999999999,
+                    47.66666675
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              125.74999999999999,
+              47.66666675,
+              126,
+              47.833333499999995
+            ]
+          }
+        ],
+        "bbox": [
+          125.74999999999999,
+          47.66666675,
+          126,
+          47.833333499999995
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/yb190rq3742/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SHEET 11"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/jy770cv3013/iiif/canvas/cocina-fileSet-jy770cv3013-jy770cv3013_1",
+      "type": "Canvas",
+      "height": 12180,
+      "width": 13839,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/jy770cv3013/jy770cv3013_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (30.3 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/jy770cv3013/iiif/canvas/cocina-fileSet-jy770cv3013-jy770cv3013_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/jy770cv3013/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fjy770cv3013-jy770cv3013_1%2Fjy770cv3013_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/jy770cv3013/iiif/canvas/cocina-fileSet-jy770cv3013-jy770cv3013_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/jy770cv3013%2Fjy770cv3013_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12180,
+                "width": 13839,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/jy770cv3013%2Fjy770cv3013_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SHEET 12"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/jy770cv3013/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-jy770cv3013",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-jy770cv3013-feature-2",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SHEET 12"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/jy770cv3013/iiif/manifest",
+              "recid": "jy770cv3013",
+              "callNumber": "G7822 .M2 A1 S50 .J3 SHEET 12",
+              "sourceFeatureIndex": 2
+            },
+            "geometry": {
+              "bbox": [
+                125.74999999999999,
+                47.5,
+                126,
+                47.66666675
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    125.74999999999999,
+                    47.5
+                  ],
+                  [
+                    125.74999999999999,
+                    47.66666675
+                  ],
+                  [
+                    126,
+                    47.66666675
+                  ],
+                  [
+                    126,
+                    47.5
+                  ],
+                  [
+                    125.74999999999999,
+                    47.5
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              125.74999999999999,
+              47.5,
+              126,
+              47.66666675
+            ]
+          }
+        ],
+        "bbox": [
+          125.74999999999999,
+          47.5,
+          126,
+          47.66666675
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/jy770cv3013/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SHEET 12"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/ct582nd2043/iiif/canvas/cocina-fileSet-ct582nd2043-ct582nd2043_1",
+      "type": "Canvas",
+      "height": 12190,
+      "width": 13775,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/ct582nd2043/ct582nd2043_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (30.2 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/ct582nd2043/iiif/canvas/cocina-fileSet-ct582nd2043-ct582nd2043_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/ct582nd2043/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fct582nd2043-ct582nd2043_1%2Fct582nd2043_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/ct582nd2043/iiif/canvas/cocina-fileSet-ct582nd2043-ct582nd2043_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/ct582nd2043%2Fct582nd2043_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12190,
+                "width": 13775,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/ct582nd2043%2Fct582nd2043_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SHEET 13"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/ct582nd2043/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-ct582nd2043",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-ct582nd2043-feature-16",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SHEET 13"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/ct582nd2043/iiif/manifest",
+              "recid": "ct582nd2043",
+              "callNumber": "G7822 .M2 A1 S50 .J3 SHEET 13",
+              "sourceFeatureIndex": 16
+            },
+            "geometry": {
+              "bbox": [
+                125.5,
+                48.00000025,
+                125.74999999999999,
+                48.166667
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    125.5,
+                    48.00000025
+                  ],
+                  [
+                    125.5,
+                    48.166667
+                  ],
+                  [
+                    125.74999999999999,
+                    48.166667
+                  ],
+                  [
+                    125.74999999999999,
+                    48.00000025
+                  ],
+                  [
+                    125.5,
+                    48.00000025
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              125.5,
+              48.00000025,
+              125.74999999999999,
+              48.166667
+            ]
+          }
+        ],
+        "bbox": [
+          125.5,
+          48.00000025,
+          125.74999999999999,
+          48.166667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/ct582nd2043/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SHEET 13"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/mj597qq7091/iiif/canvas/cocina-fileSet-mj597qq7091-mj597qq7091_1",
+      "type": "Canvas",
+      "height": 12183,
+      "width": 13802,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/mj597qq7091/mj597qq7091_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (30.2 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/mj597qq7091/iiif/canvas/cocina-fileSet-mj597qq7091-mj597qq7091_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/mj597qq7091/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fmj597qq7091-mj597qq7091_1%2Fmj597qq7091_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/mj597qq7091/iiif/canvas/cocina-fileSet-mj597qq7091-mj597qq7091_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/mj597qq7091%2Fmj597qq7091_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12183,
+                "width": 13802,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/mj597qq7091%2Fmj597qq7091_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SHEET 14"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/mj597qq7091/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-mj597qq7091",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-mj597qq7091-feature-11",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SHEET 14"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/mj597qq7091/iiif/manifest",
+              "recid": "mj597qq7091",
+              "callNumber": "G7822 .M2 A1 S50 .J3 SHEET 14",
+              "sourceFeatureIndex": 11
+            },
+            "geometry": {
+              "bbox": [
+                125.5,
+                47.833333499999995,
+                125.74999999999999,
+                48.00000024999999
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    125.5,
+                    47.833333499999995
+                  ],
+                  [
+                    125.5,
+                    48.00000024999999
+                  ],
+                  [
+                    125.74999999999999,
+                    48.00000024999999
+                  ],
+                  [
+                    125.74999999999999,
+                    47.833333499999995
+                  ],
+                  [
+                    125.5,
+                    47.833333499999995
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              125.5,
+              47.833333499999995,
+              125.74999999999999,
+              48.00000024999999
+            ]
+          }
+        ],
+        "bbox": [
+          125.5,
+          47.833333499999995,
+          125.74999999999999,
+          48.00000024999999
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/mj597qq7091/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SHEET 14"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/hz260vq6735/iiif/canvas/cocina-fileSet-hz260vq6735-hz260vq6735_1",
+      "type": "Canvas",
+      "height": 12183,
+      "width": 13845,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/hz260vq6735/hz260vq6735_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (30.3 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/hz260vq6735/iiif/canvas/cocina-fileSet-hz260vq6735-hz260vq6735_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/hz260vq6735/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fhz260vq6735-hz260vq6735_1%2Fhz260vq6735_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/hz260vq6735/iiif/canvas/cocina-fileSet-hz260vq6735-hz260vq6735_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/hz260vq6735%2Fhz260vq6735_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12183,
+                "width": 13845,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/hz260vq6735%2Fhz260vq6735_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SHEET 15"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/hz260vq6735/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-hz260vq6735",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-hz260vq6735-feature-6",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SHEET 15"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/hz260vq6735/iiif/manifest",
+              "recid": "hz260vq6735",
+              "callNumber": "G7822 .M2 A1 S50 .J3 SHEET 15",
+              "sourceFeatureIndex": 6
+            },
+            "geometry": {
+              "bbox": [
+                125.5,
+                47.66666675,
+                125.74999999999999,
+                47.833333499999995
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    125.5,
+                    47.66666675
+                  ],
+                  [
+                    125.5,
+                    47.833333499999995
+                  ],
+                  [
+                    125.74999999999999,
+                    47.833333499999995
+                  ],
+                  [
+                    125.74999999999999,
+                    47.66666675
+                  ],
+                  [
+                    125.5,
+                    47.66666675
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              125.5,
+              47.66666675,
+              125.74999999999999,
+              47.833333499999995
+            ]
+          }
+        ],
+        "bbox": [
+          125.5,
+          47.66666675,
+          125.74999999999999,
+          47.833333499999995
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/hz260vq6735/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SHEET 15"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/tm610nh0787/iiif/canvas/cocina-fileSet-tm610nh0787-tm610nh0787_1",
+      "type": "Canvas",
+      "height": 12351,
+      "width": 14068,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/tm610nh0787/tm610nh0787_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (31.2 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/tm610nh0787/iiif/canvas/cocina-fileSet-tm610nh0787-tm610nh0787_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/tm610nh0787/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Ftm610nh0787-tm610nh0787_1%2Ftm610nh0787_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/tm610nh0787/iiif/canvas/cocina-fileSet-tm610nh0787-tm610nh0787_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/tm610nh0787%2Ftm610nh0787_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12351,
+                "width": 14068,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/tm610nh0787%2Ftm610nh0787_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SHEET 16"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/tm610nh0787/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-tm610nh0787",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-tm610nh0787-feature-1",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SHEET 16"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/tm610nh0787/iiif/manifest",
+              "recid": "tm610nh0787",
+              "callNumber": "G7822 .M2 A1 S50 .J3 SHEET 16",
+              "sourceFeatureIndex": 1
+            },
+            "geometry": {
+              "bbox": [
+                125.5,
+                47.5,
+                125.74999999999999,
+                47.66666675
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    125.5,
+                    47.5
+                  ],
+                  [
+                    125.5,
+                    47.66666675
+                  ],
+                  [
+                    125.74999999999999,
+                    47.66666675
+                  ],
+                  [
+                    125.74999999999999,
+                    47.5
+                  ],
+                  [
+                    125.5,
+                    47.5
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              125.5,
+              47.5,
+              125.74999999999999,
+              47.66666675
+            ]
+          }
+        ],
+        "bbox": [
+          125.5,
+          47.5,
+          125.74999999999999,
+          47.66666675
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/tm610nh0787/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SHEET 16"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/vc463dh5346/iiif/canvas/cocina-fileSet-vc463dh5346-vc463dh5346_1",
+      "type": "Canvas",
+      "height": 12461,
+      "width": 14203,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/vc463dh5346/vc463dh5346_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (31.8 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/vc463dh5346/iiif/canvas/cocina-fileSet-vc463dh5346-vc463dh5346_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/vc463dh5346/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fvc463dh5346-vc463dh5346_1%2Fvc463dh5346_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/vc463dh5346/iiif/canvas/cocina-fileSet-vc463dh5346-vc463dh5346_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/vc463dh5346%2Fvc463dh5346_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12461,
+                "width": 14203,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/vc463dh5346%2Fvc463dh5346_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SHEET 17"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/vc463dh5346/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-vc463dh5346",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-vc463dh5346-feature-15",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SHEET 17"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/vc463dh5346/iiif/manifest",
+              "recid": "vc463dh5346",
+              "callNumber": "G7822 .M2 A1 S50 .J3 SHEET 17",
+              "sourceFeatureIndex": 15
+            },
+            "geometry": {
+              "bbox": [
+                125.25,
+                48.00000025,
+                125.5,
+                48.166667
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    125.25,
+                    48.00000025
+                  ],
+                  [
+                    125.25,
+                    48.166667
+                  ],
+                  [
+                    125.5,
+                    48.166667
+                  ],
+                  [
+                    125.5,
+                    48.00000025
+                  ],
+                  [
+                    125.25,
+                    48.00000025
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              125.25,
+              48.00000025,
+              125.5,
+              48.166667
+            ]
+          }
+        ],
+        "bbox": [
+          125.25,
+          48.00000025,
+          125.5,
+          48.166667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/vc463dh5346/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SHEET 17"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/cj359wt3590/iiif/canvas/cocina-fileSet-cj359wt3590-cj359wt3590_1",
+      "type": "Canvas",
+      "height": 12201,
+      "width": 13843,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/cj359wt3590/cj359wt3590_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (30.4 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/cj359wt3590/iiif/canvas/cocina-fileSet-cj359wt3590-cj359wt3590_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/cj359wt3590/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fcj359wt3590-cj359wt3590_1%2Fcj359wt3590_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/cj359wt3590/iiif/canvas/cocina-fileSet-cj359wt3590-cj359wt3590_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/cj359wt3590%2Fcj359wt3590_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12201,
+                "width": 13843,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/cj359wt3590%2Fcj359wt3590_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SHEET 18"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/cj359wt3590/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-cj359wt3590",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-cj359wt3590-feature-10",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SHEET 18"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/cj359wt3590/iiif/manifest",
+              "recid": "cj359wt3590",
+              "callNumber": "G7822 .M2 A1 S50 .J3 SHEET 18",
+              "sourceFeatureIndex": 10
+            },
+            "geometry": {
+              "bbox": [
+                125.25,
+                47.833333499999995,
+                125.5,
+                48.00000024999999
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    125.25,
+                    47.833333499999995
+                  ],
+                  [
+                    125.25,
+                    48.00000024999999
+                  ],
+                  [
+                    125.5,
+                    48.00000024999999
+                  ],
+                  [
+                    125.5,
+                    47.833333499999995
+                  ],
+                  [
+                    125.25,
+                    47.833333499999995
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              125.25,
+              47.833333499999995,
+              125.5,
+              48.00000024999999
+            ]
+          }
+        ],
+        "bbox": [
+          125.25,
+          47.833333499999995,
+          125.5,
+          48.00000024999999
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/cj359wt3590/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SHEET 18"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/rr420jn3682/iiif/canvas/cocina-fileSet-rr420jn3682-rr420jn3682_1",
+      "type": "Canvas",
+      "height": 12328,
+      "width": 13977,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/rr420jn3682/rr420jn3682_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (31 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/rr420jn3682/iiif/canvas/cocina-fileSet-rr420jn3682-rr420jn3682_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/rr420jn3682/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Frr420jn3682-rr420jn3682_1%2Frr420jn3682_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/rr420jn3682/iiif/canvas/cocina-fileSet-rr420jn3682-rr420jn3682_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/rr420jn3682%2Frr420jn3682_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12328,
+                "width": 13977,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/rr420jn3682%2Frr420jn3682_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SHEET 19"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/rr420jn3682/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-rr420jn3682",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-rr420jn3682-feature-5",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SHEET 19"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/rr420jn3682/iiif/manifest",
+              "recid": "rr420jn3682",
+              "callNumber": "G7822 .M2 A1 S50 .J3 SHEET 19",
+              "sourceFeatureIndex": 5
+            },
+            "geometry": {
+              "bbox": [
+                125.25,
+                47.66666675,
+                125.5,
+                47.833333499999995
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    125.25,
+                    47.66666675
+                  ],
+                  [
+                    125.25,
+                    47.833333499999995
+                  ],
+                  [
+                    125.5,
+                    47.833333499999995
+                  ],
+                  [
+                    125.5,
+                    47.66666675
+                  ],
+                  [
+                    125.25,
+                    47.66666675
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              125.25,
+              47.66666675,
+              125.5,
+              47.833333499999995
+            ]
+          }
+        ],
+        "bbox": [
+          125.25,
+          47.66666675,
+          125.5,
+          47.833333499999995
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/rr420jn3682/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SHEET 19"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/gv290pr6641/iiif/canvas/cocina-fileSet-gv290pr6641-gv290pr6641_1",
+      "type": "Canvas",
+      "height": 12186,
+      "width": 13898,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/gv290pr6641/gv290pr6641_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (30.4 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/gv290pr6641/iiif/canvas/cocina-fileSet-gv290pr6641-gv290pr6641_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/gv290pr6641/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fgv290pr6641-gv290pr6641_1%2Fgv290pr6641_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/gv290pr6641/iiif/canvas/cocina-fileSet-gv290pr6641-gv290pr6641_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/gv290pr6641%2Fgv290pr6641_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12186,
+                "width": 13898,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/gv290pr6641%2Fgv290pr6641_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SHEET 20"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/gv290pr6641/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-gv290pr6641",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-gv290pr6641-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SHEET 20"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/gv290pr6641/iiif/manifest",
+              "recid": "gv290pr6641",
+              "callNumber": "G7822 .M2 A1 S50 .J3 SHEET 20",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "bbox": [
+                125.25,
+                47.5,
+                125.5,
+                47.66666675
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    125.25,
+                    47.5
+                  ],
+                  [
+                    125.25,
+                    47.66666675
+                  ],
+                  [
+                    125.5,
+                    47.66666675
+                  ],
+                  [
+                    125.5,
+                    47.5
+                  ],
+                  [
+                    125.25,
+                    47.5
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              125.25,
+              47.5,
+              125.5,
+              47.66666675
+            ]
+          }
+        ],
+        "bbox": [
+          125.25,
+          47.5,
+          125.5,
+          47.66666675
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/gv290pr6641/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SHEET 20"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/zw580kp2092/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "滿洲五万分一拜泉克山附近 -- Manshū Haisen Kokusan fukin 1:50,000, Maps Index"
+            ]
+          },
+          "seriesDruid": "zw580kp2092",
+          "sheetCount": 20,
+          "sourceFeatureCount": 20
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                125.25,
+                47.5
+              ],
+              [
+                126.5,
+                47.5
+              ],
+              [
+                126.5,
+                48.166667
+              ],
+              [
+                125.25,
+                48.166667
+              ],
+              [
+                125.25,
+                47.5
+              ]
+            ]
+          ]
+        },
+        "bbox": [
+          125.25,
+          47.5,
+          126.5,
+          48.166667
+        ]
+      }
+    ],
+    "bbox": [
+      125.25,
+      47.5,
+      126.5,
+      48.166667
+    ]
+  }
+}

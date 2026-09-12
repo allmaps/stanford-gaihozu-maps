@@ -1,0 +1,513 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/sb159tf3867/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "空中寫眞要圖 三万五千分一「ビスマルク」群島 「アラウエ」-「 マーカス」岬間 -- Kūchū shashin yōzu Sanman Gosen bun no ichi \"Bisumaruku\" Guntō \"Araue\" - \"Mākasu\" misaki kan 1:35,000, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series \"空中寫眞要圖 三万五千分一「ビスマルク」群島 「アラウエ」-「 マーカス」岬間 -- Kūchū shashin yōzu Sanman Gosen bun no ichi \"Bisumaruku\" Guntō \"Araue\" - \"Mākasu\" misaki kan 1:35,000\" (1943). Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or \"maps of outer lands.\" These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection.This layer provides an index map that can be used to locate individual scanned map sheets."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "sb159tf3867"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-sb159tf3867"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "2"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "2"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-sb159tf3867",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/sb159tf3867",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/sb159tf3867.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/sb159tf3867/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/sb159tf3867%2Findex_10425274/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/sv955fw2847/iiif/canvas/cocina-fileSet-sv955fw2847-sv955fw2847_1",
+      "type": "Canvas",
+      "height": 11547,
+      "width": 14398,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/sv955fw2847/sv955fw2847_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (29.9 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/sv955fw2847/iiif/canvas/cocina-fileSet-sv955fw2847-sv955fw2847_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/sv955fw2847/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fsv955fw2847-sv955fw2847_1%2Fsv955fw2847_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/sv955fw2847/iiif/canvas/cocina-fileSet-sv955fw2847-sv955fw2847_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/sv955fw2847%2Fsv955fw2847_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 11547,
+                "width": 14398,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/sv955fw2847%2Fsv955fw2847_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "1. アラウエ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/sv955fw2847/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/sb159tf3867/manifest.json#navplace-sv955fw2847",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/sb159tf3867/manifest.json#navplace-sv955fw2847-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "1. アラウエ"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/sv955fw2847/iiif/manifest",
+              "recid": "sv955fw2847",
+              "callNumber": "G8180 S35 .J3 MAP 1",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    149.091667,
+                    -6.166667
+                  ],
+                  [
+                    149.25,
+                    -6.166667
+                  ],
+                  [
+                    149.25,
+                    -6.0625
+                  ],
+                  [
+                    149.091667,
+                    -6.0625
+                  ],
+                  [
+                    149.091667,
+                    -6.166667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              149.091667,
+              -6.166667,
+              149.25,
+              -6.0625
+            ]
+          }
+        ],
+        "bbox": [
+          149.091667,
+          -6.166667,
+          149.25,
+          -6.0625
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/sv955fw2847/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "1. アラウエ"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/hm770fq4962/iiif/canvas/cocina-fileSet-hm770fq4962-hm770fq4962_1",
+      "type": "Canvas",
+      "height": 14294,
+      "width": 11464,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/hm770fq4962/hm770fq4962_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (29.4 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/hm770fq4962/iiif/canvas/cocina-fileSet-hm770fq4962-hm770fq4962_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/hm770fq4962/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fhm770fq4962-hm770fq4962_1%2Fhm770fq4962_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/hm770fq4962/iiif/canvas/cocina-fileSet-hm770fq4962-hm770fq4962_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/hm770fq4962%2Fhm770fq4962_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 14294,
+                "width": 11464,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/hm770fq4962%2Fhm770fq4962_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "2. マーカス岬"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/hm770fq4962/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/sb159tf3867/manifest.json#navplace-hm770fq4962",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/sb159tf3867/manifest.json#navplace-hm770fq4962-feature-1",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "2. マーカス岬"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/hm770fq4962/iiif/manifest",
+              "recid": "hm770fq4962",
+              "callNumber": "G8180 S35 .J3 MAP 2",
+              "sourceFeatureIndex": 1
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    149.091667,
+                    -6.1625
+                  ],
+                  [
+                    149.091667,
+                    -6.0125
+                  ],
+                  [
+                    148.958333,
+                    -6.0125
+                  ],
+                  [
+                    148.958333,
+                    -6.1625
+                  ],
+                  [
+                    149.091667,
+                    -6.1625
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              148.958333,
+              -6.1625,
+              149.091667,
+              -6.0125
+            ]
+          }
+        ],
+        "bbox": [
+          148.958333,
+          -6.1625,
+          149.091667,
+          -6.0125
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/hm770fq4962/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "2. マーカス岬"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/sb159tf3867/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/sb159tf3867/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "空中寫眞要圖 三万五千分一「ビスマルク」群島 「アラウエ」-「 マーカス」岬間 -- Kūchū shashin yōzu Sanman Gosen bun no ichi \"Bisumaruku\" Guntō \"Araue\" - \"Mākasu\" misaki kan 1:35,000, Maps Index"
+            ]
+          },
+          "seriesDruid": "sb159tf3867",
+          "sheetCount": 2,
+          "sourceFeatureCount": 2
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                148.958333,
+                -6.1625
+              ],
+              [
+                149.091667,
+                -6.1625
+              ],
+              [
+                149.091667,
+                -6.166667
+              ],
+              [
+                149.25,
+                -6.166667
+              ],
+              [
+                149.25,
+                -6.0625
+              ],
+              [
+                149.091667,
+                -6.0625
+              ],
+              [
+                149.091667,
+                -6.0125
+              ],
+              [
+                148.958333,
+                -6.0125
+              ],
+              [
+                148.958333,
+                -6.1625
+              ]
+            ]
+          ]
+        },
+        "bbox": [
+          148.958333,
+          -6.166667,
+          149.25,
+          -6.0125
+        ]
+      }
+    ],
+    "bbox": [
+      148.958333,
+      -6.166667,
+      149.25,
+      -6.0125
+    ]
+  }
+}

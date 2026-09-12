@@ -1,0 +1,344 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/xc840kp0897/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "カガヤン近傍圖 -- Kagayan kinbō zu 1:50,000, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series, 'カガヤン近傍圖 -- Kagayan kinbō zu 1:50,000.' This map series was originally produced by the Japanese Land Survey Department of the General Staff Headquarters [1944]. Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or\n'maps of outer lands.' These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "xc840kp0897"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-xc840kp0897"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-xc840kp0897",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/xc840kp0897",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/xc840kp0897.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/xc840kp0897/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/xc840kp0897%2Findex_13835368/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/rf010xx6667/iiif/canvas/cocina-fileSet-rf010xx6667-1b64569d-55b8-4053-9f59-72df908b83cd",
+      "type": "Canvas",
+      "height": 11526,
+      "width": 15547,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/rf010xx6667/rf010xx6667_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (32.1 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/rf010xx6667/iiif/canvas/cocina-fileSet-rf010xx6667-1b64569d-55b8-4053-9f59-72df908b83cd/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/rf010xx6667/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Frf010xx6667-1b64569d-55b8-4053-9f59-72df908b83cd%2Frf010xx6667_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/rf010xx6667/iiif/canvas/cocina-fileSet-rf010xx6667-1b64569d-55b8-4053-9f59-72df908b83cd",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/rf010xx6667%2Frf010xx6667_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 11526,
+                "width": 15547,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/rf010xx6667%2Frf010xx6667_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "2. ルンビヤ"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/rf010xx6667/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/xc840kp0897/manifest.json#navplace-rf010xx6667",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/xc840kp0897/manifest.json#navplace-rf010xx6667-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "2. ルンビヤ"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/rf010xx6667/iiif/manifest",
+              "recid": "rf010xx6667",
+              "callNumber": "G8064 .C13 1944 .J3 SHEET 2",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    124.5,
+                    8.266667
+                  ],
+                  [
+                    124.75,
+                    8.266667
+                  ],
+                  [
+                    124.75,
+                    8.4333335
+                  ],
+                  [
+                    124.5,
+                    8.4333335
+                  ],
+                  [
+                    124.5,
+                    8.266667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              124.5,
+              8.266667,
+              124.75,
+              8.4333335
+            ]
+          }
+        ],
+        "bbox": [
+          124.5,
+          8.266667,
+          124.75,
+          8.4333335
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/rf010xx6667/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "2. ルンビヤ"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/xc840kp0897/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/xc840kp0897/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "カガヤン近傍圖 -- Kagayan kinbō zu 1:50,000, Maps Index"
+            ]
+          },
+          "seriesDruid": "xc840kp0897",
+          "sheetCount": 1,
+          "sourceFeatureCount": 1
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              124.5,
+              8.266667
+            ],
+            [
+              124.75,
+              8.266667
+            ],
+            [
+              124.75,
+              8.4333335
+            ],
+            [
+              124.5,
+              8.4333335
+            ],
+            [
+              124.5,
+              8.266667
+            ]
+          ]
+        },
+        "bbox": [
+          124.5,
+          8.266667,
+          124.75,
+          8.4333335
+        ]
+      }
+    ],
+    "bbox": [
+      124.5,
+      8.266667,
+      124.75,
+      8.4333335
+    ]
+  }
+}

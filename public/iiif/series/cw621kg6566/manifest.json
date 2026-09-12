@@ -1,0 +1,1125 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cw621kg6566/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "空中寫真測圖要圖 アドミラルティ諸島十万分一 -- Kūchū shashin sokuzu yōzu Adomirarutī shotō 1:100,000, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series, '空中寫真測圖要圖 アドミラルティ諸島十万分一 -- Kūchū shashin sokuzu yōzu Adomirarutī shotō 1:100,000.' This map series was originally produced by the Japanese Land Survey Department of the General Staff Headquarters [1944]. Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or\n'maps of outer lands.' These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "cw621kg6566"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-cw621kg6566"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "6"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "6"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-cw621kg6566",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/cw621kg6566",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/cw621kg6566.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cw621kg6566/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/cw621kg6566%2Findex_10550201/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/ft087zh8503/iiif/canvas/cocina-fileSet-ft087zh8503-d42ecde7-ed2d-4b4a-a386-476a32050ace",
+      "type": "Canvas",
+      "height": 11475,
+      "width": 14291,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/ft087zh8503/ft087zh8503_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (29.5 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/ft087zh8503/iiif/canvas/cocina-fileSet-ft087zh8503-d42ecde7-ed2d-4b4a-a386-476a32050ace/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/ft087zh8503/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fft087zh8503-d42ecde7-ed2d-4b4a-a386-476a32050ace%2Fft087zh8503_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/ft087zh8503/iiif/canvas/cocina-fileSet-ft087zh8503-d42ecde7-ed2d-4b4a-a386-476a32050ace",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/ft087zh8503%2Fft087zh8503_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 11475,
+                "width": 14291,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/ft087zh8503%2Fft087zh8503_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "七南イ156. マヌス島東北部"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/ft087zh8503/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cw621kg6566/manifest.json#navplace-ft087zh8503",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cw621kg6566/manifest.json#navplace-ft087zh8503-feature-6",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "七南イ156. マヌス島東北部"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/ft087zh8503/iiif/manifest",
+              "recid": "ft087zh8503",
+              "callNumber": "G8182 .A2 S100 .J3 SHEET 7SI/156",
+              "sourceFeatureIndex": 6
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    147,
+                    -2.0000003
+                  ],
+                  [
+                    147.5,
+                    -2.0000003
+                  ],
+                  [
+                    147.5,
+                    -1.666667
+                  ],
+                  [
+                    147,
+                    -1.666667
+                  ],
+                  [
+                    147,
+                    -2.0000003
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              147,
+              -2.0000003,
+              147.5,
+              -1.666667
+            ]
+          }
+        ],
+        "bbox": [
+          147,
+          -2.0000003,
+          147.5,
+          -1.666667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/ft087zh8503/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "七南イ156. マヌス島東北部"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/pd319xh7719/iiif/canvas/cocina-fileSet-pd319xh7719-a1cf4c73-859b-47dd-bc2b-87c14f9ad796",
+      "type": "Canvas",
+      "height": 11519,
+      "width": 14378,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/pd319xh7719/pd319xh7719_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (29.8 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/pd319xh7719/iiif/canvas/cocina-fileSet-pd319xh7719-a1cf4c73-859b-47dd-bc2b-87c14f9ad796/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/pd319xh7719/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fpd319xh7719-a1cf4c73-859b-47dd-bc2b-87c14f9ad796%2Fpd319xh7719_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/pd319xh7719/iiif/canvas/cocina-fileSet-pd319xh7719-a1cf4c73-859b-47dd-bc2b-87c14f9ad796",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/pd319xh7719%2Fpd319xh7719_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 11519,
+                "width": 14378,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/pd319xh7719%2Fpd319xh7719_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "七南イ157. マヌス島東南部"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/pd319xh7719/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cw621kg6566/manifest.json#navplace-pd319xh7719",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cw621kg6566/manifest.json#navplace-pd319xh7719-feature-3",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "七南イ157. マヌス島東南部"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/pd319xh7719/iiif/manifest",
+              "recid": "pd319xh7719",
+              "callNumber": "G8182 .A2 S100 .J3 SHEET 7SI/157",
+              "sourceFeatureIndex": 3
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    147,
+                    -2.3333337
+                  ],
+                  [
+                    147.5,
+                    -2.3333337
+                  ],
+                  [
+                    147.5,
+                    -2.0000003
+                  ],
+                  [
+                    147,
+                    -2.0000003
+                  ],
+                  [
+                    147,
+                    -2.3333337
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              147,
+              -2.3333337,
+              147.5,
+              -2.0000003
+            ]
+          }
+        ],
+        "bbox": [
+          147,
+          -2.3333337,
+          147.5,
+          -2.0000003
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/pd319xh7719/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "七南イ157. マヌス島東南部"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/jq552cw6585/iiif/canvas/cocina-fileSet-jq552cw6585-6c544ceb-3d0a-47b8-9a1a-930b933ec1ae",
+      "type": "Canvas",
+      "height": 11464,
+      "width": 14361,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/jq552cw6585/jq552cw6585_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (29.6 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/jq552cw6585/iiif/canvas/cocina-fileSet-jq552cw6585-6c544ceb-3d0a-47b8-9a1a-930b933ec1ae/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/jq552cw6585/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fjq552cw6585-6c544ceb-3d0a-47b8-9a1a-930b933ec1ae%2Fjq552cw6585_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/jq552cw6585/iiif/canvas/cocina-fileSet-jq552cw6585-6c544ceb-3d0a-47b8-9a1a-930b933ec1ae",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/jq552cw6585%2Fjq552cw6585_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 11464,
+                "width": 14361,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/jq552cw6585%2Fjq552cw6585_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "七南イ166. マヌス島西北部"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/jq552cw6585/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cw621kg6566/manifest.json#navplace-jq552cw6585",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cw621kg6566/manifest.json#navplace-jq552cw6585-feature-5",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "七南イ166. マヌス島西北部"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/jq552cw6585/iiif/manifest",
+              "recid": "jq552cw6585",
+              "callNumber": "G8182 .A2 S100 .J3 SHEET 7SI/166",
+              "sourceFeatureIndex": 5
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    146.5,
+                    -2.0000003
+                  ],
+                  [
+                    147,
+                    -2.0000003
+                  ],
+                  [
+                    147,
+                    -1.666667
+                  ],
+                  [
+                    146.5,
+                    -1.666667
+                  ],
+                  [
+                    146.5,
+                    -2.0000003
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              146.5,
+              -2.0000003,
+              147,
+              -1.666667
+            ]
+          }
+        ],
+        "bbox": [
+          146.5,
+          -2.0000003,
+          147,
+          -1.666667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/jq552cw6585/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "七南イ166. マヌス島西北部"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/km822bb1338/iiif/canvas/cocina-fileSet-km822bb1338-398f8fb7-04f1-4882-ba73-63ff72521339",
+      "type": "Canvas",
+      "height": 11463,
+      "width": 14316,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/km822bb1338/km822bb1338_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (29.5 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/km822bb1338/iiif/canvas/cocina-fileSet-km822bb1338-398f8fb7-04f1-4882-ba73-63ff72521339/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/km822bb1338/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fkm822bb1338-398f8fb7-04f1-4882-ba73-63ff72521339%2Fkm822bb1338_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/km822bb1338/iiif/canvas/cocina-fileSet-km822bb1338-398f8fb7-04f1-4882-ba73-63ff72521339",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/km822bb1338%2Fkm822bb1338_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 11463,
+                "width": 14316,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/km822bb1338%2Fkm822bb1338_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "七南イ167. マヌス島西南部"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/km822bb1338/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cw621kg6566/manifest.json#navplace-km822bb1338",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cw621kg6566/manifest.json#navplace-km822bb1338-feature-2",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "七南イ167. マヌス島西南部"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/km822bb1338/iiif/manifest",
+              "recid": "km822bb1338",
+              "callNumber": "G8182 .A2 S100 .J3 SHEET 7SI/167",
+              "sourceFeatureIndex": 2
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    146.5,
+                    -2.3333337
+                  ],
+                  [
+                    147,
+                    -2.3333337
+                  ],
+                  [
+                    147,
+                    -2.0000003
+                  ],
+                  [
+                    146.5,
+                    -2.0000003
+                  ],
+                  [
+                    146.5,
+                    -2.3333337
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              146.5,
+              -2.3333337,
+              147,
+              -2.0000003
+            ]
+          }
+        ],
+        "bbox": [
+          146.5,
+          -2.3333337,
+          147,
+          -2.0000003
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/km822bb1338/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "七南イ167. マヌス島西南部"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/np186mp3161/iiif/canvas/cocina-fileSet-np186mp3161-d7241146-22da-404b-b358-29782f9cf238",
+      "type": "Canvas",
+      "height": 11420,
+      "width": 14317,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/np186mp3161/np186mp3161_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (29.4 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/np186mp3161/iiif/canvas/cocina-fileSet-np186mp3161-d7241146-22da-404b-b358-29782f9cf238/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/np186mp3161/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fnp186mp3161-d7241146-22da-404b-b358-29782f9cf238%2Fnp186mp3161_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/np186mp3161/iiif/canvas/cocina-fileSet-np186mp3161-d7241146-22da-404b-b358-29782f9cf238",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/np186mp3161%2Fnp186mp3161_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 11420,
+                "width": 14317,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/np186mp3161%2Fnp186mp3161_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "七南イ168. ムブケ島"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/np186mp3161/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cw621kg6566/manifest.json#navplace-np186mp3161",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cw621kg6566/manifest.json#navplace-np186mp3161-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "七南イ168. ムブケ島"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/np186mp3161/iiif/manifest",
+              "recid": "np186mp3161",
+              "callNumber": "G8182 .A2 S100 .J3 SHEET 7SI/168",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    146.5,
+                    -2.666667
+                  ],
+                  [
+                    147,
+                    -2.666667
+                  ],
+                  [
+                    147,
+                    -2.3333337
+                  ],
+                  [
+                    146.5,
+                    -2.3333337
+                  ],
+                  [
+                    146.5,
+                    -2.666667
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              146.5,
+              -2.666667,
+              147,
+              -2.3333337
+            ]
+          }
+        ],
+        "bbox": [
+          146.5,
+          -2.666667,
+          147,
+          -2.3333337
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/np186mp3161/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "七南イ168. ムブケ島"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/cm954rs8788/iiif/canvas/cocina-fileSet-cm954rs8788-f5798bea-2166-4b5e-8cd4-19f66a812681",
+      "type": "Canvas",
+      "height": 11579,
+      "width": 14393,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/cm954rs8788/cm954rs8788_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (29.9 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/cm954rs8788/iiif/canvas/cocina-fileSet-cm954rs8788-f5798bea-2166-4b5e-8cd4-19f66a812681/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/cm954rs8788/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fcm954rs8788-f5798bea-2166-4b5e-8cd4-19f66a812681%2Fcm954rs8788_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/cm954rs8788/iiif/canvas/cocina-fileSet-cm954rs8788-f5798bea-2166-4b5e-8cd4-19f66a812681",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/cm954rs8788%2Fcm954rs8788_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 11579,
+                "width": 14393,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/cm954rs8788%2Fcm954rs8788_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "七南イ177. パヒ島"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/cm954rs8788/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cw621kg6566/manifest.json#navplace-cm954rs8788",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cw621kg6566/manifest.json#navplace-cm954rs8788-feature-1",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "七南イ177. パヒ島"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/cm954rs8788/iiif/manifest",
+              "recid": "cm954rs8788",
+              "callNumber": "G8182 .A2 S100 .J3 SHEET 7SI/177",
+              "sourceFeatureIndex": 1
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    146,
+                    -2.3333337
+                  ],
+                  [
+                    146.5,
+                    -2.3333337
+                  ],
+                  [
+                    146.5,
+                    -2.0000003
+                  ],
+                  [
+                    146,
+                    -2.0000003
+                  ],
+                  [
+                    146,
+                    -2.3333337
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              146,
+              -2.3333337,
+              146.5,
+              -2.0000003
+            ]
+          }
+        ],
+        "bbox": [
+          146,
+          -2.3333337,
+          146.5,
+          -2.0000003
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/cm954rs8788/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "七南イ177. パヒ島"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cw621kg6566/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cw621kg6566/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "空中寫真測圖要圖 アドミラルティ諸島十万分一 -- Kūchū shashin sokuzu yōzu Adomirarutī shotō 1:100,000, Maps Index"
+            ]
+          },
+          "seriesDruid": "cw621kg6566",
+          "sheetCount": 6,
+          "sourceFeatureCount": 6
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                146,
+                -2.3333337
+              ],
+              [
+                146.5,
+                -2.3333337
+              ],
+              [
+                146.5,
+                -2.666667
+              ],
+              [
+                147,
+                -2.666667
+              ],
+              [
+                147,
+                -2.3333337
+              ],
+              [
+                147.5,
+                -2.3333337
+              ],
+              [
+                147.5,
+                -1.666667
+              ],
+              [
+                146.5,
+                -1.666667
+              ],
+              [
+                146.5,
+                -2.0000003
+              ],
+              [
+                146,
+                -2.0000003
+              ],
+              [
+                146,
+                -2.3333337
+              ]
+            ]
+          ]
+        },
+        "bbox": [
+          146,
+          -2.666667,
+          147.5,
+          -1.666667
+        ]
+      }
+    ],
+    "bbox": [
+      146,
+      -2.666667,
+      147.5,
+      -1.666667
+    ]
+  }
+}

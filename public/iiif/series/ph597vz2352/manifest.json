@@ -1,0 +1,807 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ph597vz2352/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "「ロティ」島兵要地誌資料圖 -- \"Roti\"-tō heiyō chishi shiryōzu 1:100,000, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series, '「ロティ」島兵要地誌資料圖 -- \"Roti\"-tō heiyō chishi shiryōzu 1:100,000.' This map series was originally produced by the Japanese Land Survey Department of the General Staff Headquarters [1943]. Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or\n'maps of outer lands.' These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "ph597vz2352"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-ph597vz2352"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "4"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "4"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-ph597vz2352",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/ph597vz2352",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/ph597vz2352.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ph597vz2352/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/ph597vz2352%2Findex_10425374/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/gk414rt9197/iiif/canvas/cocina-fileSet-gk414rt9197-gk414rt9197_1",
+      "type": "Canvas",
+      "height": 13246,
+      "width": 12280,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/gk414rt9197/gk414rt9197_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (29.2 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/gk414rt9197/iiif/canvas/cocina-fileSet-gk414rt9197-gk414rt9197_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/gk414rt9197/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fgk414rt9197-gk414rt9197_1%2Fgk414rt9197_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/gk414rt9197/iiif/canvas/cocina-fileSet-gk414rt9197-gk414rt9197_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/gk414rt9197%2Fgk414rt9197_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 13246,
+                "width": 12280,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/gk414rt9197%2Fgk414rt9197_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "ス2-A_チモール島 24"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/gk414rt9197/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ph597vz2352/manifest.json#navplace-gk414rt9197",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ph597vz2352/manifest.json#navplace-gk414rt9197-feature-3",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "ス2-A_チモール島 24"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/gk414rt9197/iiif/manifest",
+              "recid": "gk414rt9197",
+              "callNumber": "G8117 .R6 S100 .J3 2-A",
+              "sourceFeatureIndex": 3
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    123.1,
+                    -10.661111
+                  ],
+                  [
+                    123.483333,
+                    -10.661111
+                  ],
+                  [
+                    123.483333,
+                    -10.327778
+                  ],
+                  [
+                    123.1,
+                    -10.327778
+                  ],
+                  [
+                    123.1,
+                    -10.661111
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              123.1,
+              -10.661111,
+              123.483333,
+              -10.327778
+            ]
+          }
+        ],
+        "bbox": [
+          123.1,
+          -10.661111,
+          123.483333,
+          -10.327778
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/gk414rt9197/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "ス2-A_チモール島 24"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/wx279fk3844/iiif/canvas/cocina-fileSet-wx279fk3844-wx279fk3844_1",
+      "type": "Canvas",
+      "height": 12988,
+      "width": 10830,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/wx279fk3844/wx279fk3844_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (25.3 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/wx279fk3844/iiif/canvas/cocina-fileSet-wx279fk3844-wx279fk3844_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/wx279fk3844/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fwx279fk3844-wx279fk3844_1%2Fwx279fk3844_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/wx279fk3844/iiif/canvas/cocina-fileSet-wx279fk3844-wx279fk3844_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/wx279fk3844%2Fwx279fk3844_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12988,
+                "width": 10830,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/wx279fk3844%2Fwx279fk3844_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "ス2-B_チモール島 27"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/wx279fk3844/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ph597vz2352/manifest.json#navplace-wx279fk3844",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ph597vz2352/manifest.json#navplace-wx279fk3844-feature-2",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "ス2-B_チモール島 27"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/wx279fk3844/iiif/manifest",
+              "recid": "wx279fk3844",
+              "callNumber": "G8117 .R6 S100 .J3 2-B",
+              "sourceFeatureIndex": 2
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    123.1499997,
+                    -11.02
+                  ],
+                  [
+                    123.483333,
+                    -11.02
+                  ],
+                  [
+                    123.483333,
+                    -10.661111
+                  ],
+                  [
+                    123.1499997,
+                    -10.661111
+                  ],
+                  [
+                    123.1499997,
+                    -11.02
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              123.1499997,
+              -11.02,
+              123.483333,
+              -10.661111
+            ]
+          }
+        ],
+        "bbox": [
+          123.1499997,
+          -11.02,
+          123.483333,
+          -10.661111
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/wx279fk3844/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "ス2-B_チモール島 27"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/tz504zd1353/iiif/canvas/cocina-fileSet-tz504zd1353-tz504zd1353_1",
+      "type": "Canvas",
+      "height": 12986,
+      "width": 10828,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/tz504zd1353/tz504zd1353_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (25.3 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/tz504zd1353/iiif/canvas/cocina-fileSet-tz504zd1353-tz504zd1353_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/tz504zd1353/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Ftz504zd1353-tz504zd1353_1%2Ftz504zd1353_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/tz504zd1353/iiif/canvas/cocina-fileSet-tz504zd1353-tz504zd1353_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/tz504zd1353%2Ftz504zd1353_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 12986,
+                "width": 10828,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/tz504zd1353%2Ftz504zd1353_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "ス2-C_チモール島 26"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/tz504zd1353/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ph597vz2352/manifest.json#navplace-tz504zd1353",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ph597vz2352/manifest.json#navplace-tz504zd1353-feature-1",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "ス2-C_チモール島 26"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/tz504zd1353/iiif/manifest",
+              "recid": "tz504zd1353",
+              "callNumber": "G8117 .R6 S100 .J3 2-C",
+              "sourceFeatureIndex": 1
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    122.8166663,
+                    -11.02
+                  ],
+                  [
+                    123.1499997,
+                    -11.02
+                  ],
+                  [
+                    123.1499997,
+                    -10.661111
+                  ],
+                  [
+                    122.8166663,
+                    -10.661111
+                  ],
+                  [
+                    122.8166663,
+                    -11.02
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              122.8166663,
+              -11.02,
+              123.1499997,
+              -10.661111
+            ]
+          }
+        ],
+        "bbox": [
+          122.8166663,
+          -11.02,
+          123.1499997,
+          -10.661111
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/tz504zd1353/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "ス2-C_チモール島 26"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/fm576wn6315/iiif/canvas/cocina-fileSet-fm576wn6315-fm576wn6315_1",
+      "type": "Canvas",
+      "height": 13174,
+      "width": 11044,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/fm576wn6315/fm576wn6315_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (26.2 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/fm576wn6315/iiif/canvas/cocina-fileSet-fm576wn6315-fm576wn6315_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/fm576wn6315/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Ffm576wn6315-fm576wn6315_1%2Ffm576wn6315_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/fm576wn6315/iiif/canvas/cocina-fileSet-fm576wn6315-fm576wn6315_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/fm576wn6315%2Ffm576wn6315_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 13174,
+                "width": 11044,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/fm576wn6315%2Ffm576wn6315_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "ス2-D_チモール島 25"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/fm576wn6315/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ph597vz2352/manifest.json#navplace-fm576wn6315",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ph597vz2352/manifest.json#navplace-fm576wn6315-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "ス2-D_チモール島 25"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/fm576wn6315/iiif/manifest",
+              "recid": "fm576wn6315",
+              "callNumber": "G8117 .R6 S100 .J3 2-D",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    122.483333,
+                    -11.02
+                  ],
+                  [
+                    122.8166663,
+                    -11.02
+                  ],
+                  [
+                    122.816667,
+                    -10.661111
+                  ],
+                  [
+                    122.483333,
+                    -10.661111
+                  ],
+                  [
+                    122.483333,
+                    -11.02
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              122.483333,
+              -11.02,
+              122.816667,
+              -10.661111
+            ]
+          }
+        ],
+        "bbox": [
+          122.483333,
+          -11.02,
+          122.816667,
+          -10.661111
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/fm576wn6315/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "ス2-D_チモール島 25"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ph597vz2352/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ph597vz2352/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "「ロティ」島兵要地誌資料圖 -- \"Roti\"-tō heiyō chishi shiryōzu 1:100,000, Maps Index"
+            ]
+          },
+          "seriesDruid": "ph597vz2352",
+          "sheetCount": 4,
+          "sourceFeatureCount": 4
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                122.483333,
+                -11.02
+              ],
+              [
+                123.483333,
+                -11.02
+              ],
+              [
+                123.483333,
+                -10.327778
+              ],
+              [
+                123.1,
+                -10.327778
+              ],
+              [
+                123.1,
+                -10.661111
+              ],
+              [
+                122.483333,
+                -10.661111
+              ],
+              [
+                122.483333,
+                -11.02
+              ]
+            ]
+          ]
+        },
+        "bbox": [
+          122.483333,
+          -11.02,
+          123.483333,
+          -10.327778
+        ]
+      }
+    ],
+    "bbox": [
+      122.483333,
+      -11.02,
+      123.483333,
+      -10.327778
+    ]
+  }
+}

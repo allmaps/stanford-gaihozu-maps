@@ -1,0 +1,535 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/vd745nh8392/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "清津 -- Seishin 1:10,000, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series, '清津 -- Seishin 1:10,000.' This map series was originally produced by the Japanese Land Survey Department of the General Staff Headquarters [1935, 1946]. Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or\n'maps of outer lands.' These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "vd745nh8392"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-vd745nh8392"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "2"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "2"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-vd745nh8392",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/vd745nh8392",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/vd745nh8392.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/vd745nh8392/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/vd745nh8392%2Findex_11351821/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/mc592sm2502/iiif/canvas/cocina-fileSet-mc592sm2502-mc592sm2502_1",
+      "type": "Canvas",
+      "height": 22800,
+      "width": 15367,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/mc592sm2502/mc592sm2502_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (62.9 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/mc592sm2502/iiif/canvas/cocina-fileSet-mc592sm2502-mc592sm2502_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/mc592sm2502/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fmc592sm2502-mc592sm2502_1%2Fmc592sm2502_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/mc592sm2502/iiif/canvas/cocina-fileSet-mc592sm2502-mc592sm2502_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/mc592sm2502%2Fmc592sm2502_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 22800,
+                "width": 15367,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/mc592sm2502%2Fmc592sm2502_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "右 / EAST"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/mc592sm2502/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/vd745nh8392/manifest.json#navplace-mc592sm2502",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/vd745nh8392/manifest.json#navplace-mc592sm2502-feature-1",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "右 / EAST"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/mc592sm2502/iiif/manifest",
+              "recid": "mc592sm2502",
+              "callNumber": "G7909 .C548 1935 .K6 1947 EAST",
+              "sourceFeatureIndex": 1
+            },
+            "geometry": {
+              "bbox": [
+                129.80000000000007,
+                41.75833299999999,
+                129.85000000000014,
+                41.81111100000004
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    129.80000000000007,
+                    41.75833299999999
+                  ],
+                  [
+                    129.80000000000007,
+                    41.81111100000004
+                  ],
+                  [
+                    129.85000000000014,
+                    41.81111100000004
+                  ],
+                  [
+                    129.85000000000014,
+                    41.75833299999999
+                  ],
+                  [
+                    129.80000000000007,
+                    41.75833299999999
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              129.80000000000007,
+              41.75833299999999,
+              129.85000000000014,
+              41.81111100000004
+            ]
+          }
+        ],
+        "bbox": [
+          129.80000000000007,
+          41.75833299999999,
+          129.85000000000014,
+          41.81111100000004
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/mc592sm2502/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "右 / EAST"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/yt069nf4417/iiif/canvas/cocina-fileSet-yt069nf4417-7697da23-8e89-40b9-9744-434d90bb9a32",
+      "type": "Canvas",
+      "height": 22895,
+      "width": 15345,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/yt069nf4417/yt069nf4417_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (63.1 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/yt069nf4417/iiif/canvas/cocina-fileSet-yt069nf4417-7697da23-8e89-40b9-9744-434d90bb9a32/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/yt069nf4417/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fyt069nf4417-7697da23-8e89-40b9-9744-434d90bb9a32%2Fyt069nf4417_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/yt069nf4417/iiif/canvas/cocina-fileSet-yt069nf4417-7697da23-8e89-40b9-9744-434d90bb9a32",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/yt069nf4417%2Fyt069nf4417_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 22895,
+                "width": 15345,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/yt069nf4417%2Fyt069nf4417_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "左 / WEST"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/yt069nf4417/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/vd745nh8392/manifest.json#navplace-yt069nf4417",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/vd745nh8392/manifest.json#navplace-yt069nf4417-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "左 / WEST"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/yt069nf4417/iiif/manifest",
+              "recid": "yt069nf4417",
+              "callNumber": "G7909 .C548 1935 .K6 1947 WEST",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "bbox": [
+                129.75,
+                41.761111,
+                129.8,
+                41.811111
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    129.75,
+                    41.761111
+                  ],
+                  [
+                    129.75,
+                    41.811111
+                  ],
+                  [
+                    129.8,
+                    41.811111
+                  ],
+                  [
+                    129.8,
+                    41.761111
+                  ],
+                  [
+                    129.75,
+                    41.761111
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              129.75,
+              41.761111,
+              129.8,
+              41.811111
+            ]
+          }
+        ],
+        "bbox": [
+          129.75,
+          41.761111,
+          129.8,
+          41.811111
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/yt069nf4417/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "左 / WEST"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/vd745nh8392/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/vd745nh8392/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "清津 -- Seishin 1:10,000, Maps Index"
+            ]
+          },
+          "seriesDruid": "vd745nh8392",
+          "sheetCount": 2,
+          "sourceFeatureCount": 2
+        },
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [
+                  129.75,
+                  41.761111
+                ],
+                [
+                  129.8,
+                  41.761111
+                ],
+                [
+                  129.8,
+                  41.811111
+                ],
+                [
+                  129.75,
+                  41.811111
+                ],
+                [
+                  129.75,
+                  41.761111
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  129.80000000000007,
+                  41.75833299999999
+                ],
+                [
+                  129.85000000000014,
+                  41.75833299999999
+                ],
+                [
+                  129.85000000000014,
+                  41.81111100000004
+                ],
+                [
+                  129.80000000000007,
+                  41.81111100000004
+                ],
+                [
+                  129.80000000000007,
+                  41.75833299999999
+                ]
+              ]
+            ]
+          ]
+        },
+        "bbox": [
+          129.75,
+          41.75833299999999,
+          129.85000000000014,
+          41.81111100000004
+        ]
+      }
+    ],
+    "bbox": [
+      129.75,
+      41.75833299999999,
+      129.85000000000014,
+      41.81111100000004
+    ]
+  }
+}

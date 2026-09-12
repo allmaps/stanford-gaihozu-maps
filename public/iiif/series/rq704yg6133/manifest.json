@@ -1,0 +1,545 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/rq704yg6133/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "釜山 | 一萬分一地形圖釜山 -- Fuzan | 1:10,000 Chikeizu Fuzan, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series \"釜山 | 一萬分一地形圖釜山 -- Fuzan | 1:10,000 Chikeizu Fuzan\" (1934, 1947). Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or \"maps of outer lands.\" These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection.This layer provides an index map that can be used to locate individual scanned map sheets."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "rq704yg6133"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-rq704yg6133"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "2"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "2"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-rq704yg6133",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/rq704yg6133",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/rq704yg6133.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/rq704yg6133/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/rq704yg6133%2Findex_11349573/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/ws322bv7348/iiif/canvas/cocina-fileSet-ws322bv7348-ws322bv7348_1",
+      "type": "Canvas",
+      "height": 18769,
+      "width": 26270,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/ws322bv7348/ws322bv7348_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (88.6 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/ws322bv7348/iiif/canvas/cocina-fileSet-ws322bv7348-ws322bv7348_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/ws322bv7348/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fws322bv7348-ws322bv7348_1%2Fws322bv7348_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/ws322bv7348/iiif/canvas/cocina-fileSet-ws322bv7348-ws322bv7348_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/ws322bv7348%2Fws322bv7348_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 18769,
+                "width": 26270,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/ws322bv7348%2Fws322bv7348_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "交通略圖 / INSET"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/ws322bv7348/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/rq704yg6133/manifest.json#navplace-ws322bv7348",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/rq704yg6133/manifest.json#navplace-ws322bv7348-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "交通略圖 / INSET"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/ws322bv7348/iiif/manifest",
+              "recid": "ws322bv7348",
+              "callNumber": "G7904 .P987 1934 .K6 NORTH",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    126.6,
+                    34.55
+                  ],
+                  [
+                    129.6,
+                    34.55
+                  ],
+                  [
+                    129.6,
+                    36.483333
+                  ],
+                  [
+                    126.6,
+                    36.483333
+                  ],
+                  [
+                    126.6,
+                    34.55
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              126.6,
+              34.55,
+              129.6,
+              36.483333
+            ]
+          },
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/rq704yg6133/manifest.json#navplace-ws322bv7348-feature-2",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "北部 / NORTH"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/ws322bv7348/iiif/manifest",
+              "recid": "ws322bv7348",
+              "callNumber": "G7904 .P987 1934 .K6 NORTH",
+              "sourceFeatureIndex": 2
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    128.985556,
+                    35.122222
+                  ],
+                  [
+                    129.085556,
+                    35.122222
+                  ],
+                  [
+                    129.085556,
+                    35.172222
+                  ],
+                  [
+                    128.985556,
+                    35.172222
+                  ],
+                  [
+                    128.985556,
+                    35.122222
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              128.985556,
+              35.122222,
+              129.085556,
+              35.172222
+            ]
+          }
+        ],
+        "bbox": [
+          126.6,
+          34.55,
+          129.6,
+          36.483333
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/ws322bv7348/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "交通略圖 / INSET"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "https://purl.stanford.edu/sr417vx5336/iiif/canvas/cocina-fileSet-sr417vx5336-sr417vx5336_1",
+      "type": "Canvas",
+      "height": 18969,
+      "width": 26458,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/sr417vx5336/sr417vx5336_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (90.2 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/sr417vx5336/iiif/canvas/cocina-fileSet-sr417vx5336-sr417vx5336_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/sr417vx5336/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fsr417vx5336-sr417vx5336_1%2Fsr417vx5336_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/sr417vx5336/iiif/canvas/cocina-fileSet-sr417vx5336-sr417vx5336_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/sr417vx5336%2Fsr417vx5336_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 18969,
+                "width": 26458,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/sr417vx5336%2Fsr417vx5336_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "南部 / SOUTH"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/sr417vx5336/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/rq704yg6133/manifest.json#navplace-sr417vx5336",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/rq704yg6133/manifest.json#navplace-sr417vx5336-feature-1",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "南部 / SOUTH"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/sr417vx5336/iiif/manifest",
+              "recid": "sr417vx5336",
+              "callNumber": "G7904 .P987 1934 .K6 SOUTH",
+              "sourceFeatureIndex": 1
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    128.985556,
+                    35.072222
+                  ],
+                  [
+                    129.085556,
+                    35.072222
+                  ],
+                  [
+                    129.085556,
+                    35.122222
+                  ],
+                  [
+                    128.985556,
+                    35.122222
+                  ],
+                  [
+                    128.985556,
+                    35.072222
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              128.985556,
+              35.072222,
+              129.085556,
+              35.122222
+            ]
+          }
+        ],
+        "bbox": [
+          128.985556,
+          35.072222,
+          129.085556,
+          35.122222
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/sr417vx5336/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "南部 / SOUTH"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/rq704yg6133/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/rq704yg6133/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "釜山 | 一萬分一地形圖釜山 -- Fuzan | 1:10,000 Chikeizu Fuzan, Maps Index"
+            ]
+          },
+          "seriesDruid": "rq704yg6133",
+          "sheetCount": 2,
+          "sourceFeatureCount": 3
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                126.6,
+                34.55
+              ],
+              [
+                129.6,
+                34.55
+              ],
+              [
+                129.6,
+                36.483333
+              ],
+              [
+                126.6,
+                36.483333
+              ],
+              [
+                126.6,
+                34.55
+              ]
+            ]
+          ]
+        },
+        "bbox": [
+          126.6,
+          34.55,
+          129.6,
+          36.483333
+        ]
+      }
+    ],
+    "bbox": [
+      126.6,
+      34.55,
+      129.6,
+      36.483333
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/tr128fm7038/sheets.json",
+  "type": "Dataset",
+  "label": "大連 -- Dairen 1:10,000, Maps Index",
+  "sourceGeojson": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/tr128fm7038.geojson",
+  "sheets": [
+    {
+      "label": "大連",
+      "manifestUrl": "https://purl.stanford.edu/gs354wf1995/iiif/manifest",
+      "recid": "gs354wf1995",
+      "websiteUrl": "https://purl.stanford.edu/gs354wf1995",
+      "callNumber": "G7824 .D3 1935 .J3",
+      "featureIndex": 0,
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/tr128fm7038/manifest.json#navplace-gs354wf1995",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/tr128fm7038/manifest.json#navplace-gs354wf1995-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "大連"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/gs354wf1995/iiif/manifest",
+              "recid": "gs354wf1995",
+              "callNumber": "G7824 .D3 1935 .J3",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    121.597222,
+                    38.9
+                  ],
+                  [
+                    121.6875,
+                    38.9
+                  ],
+                  [
+                    121.6875,
+                    38.948611
+                  ],
+                  [
+                    121.597222,
+                    38.948611
+                  ],
+                  [
+                    121.597222,
+                    38.9
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              121.597222,
+              38.9,
+              121.6875,
+              38.948611
+            ]
+          }
+        ],
+        "bbox": [
+          121.597222,
+          38.9,
+          121.6875,
+          38.948611
+        ]
+      }
+    }
+  ]
+}

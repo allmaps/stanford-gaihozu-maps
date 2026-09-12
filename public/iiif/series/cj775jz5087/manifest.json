@@ -1,0 +1,344 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cj775jz5087/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "極東「ソ」領飛行場一覧圖 (黒河地方) | 五十万分一黒河地方素圖 -- Kyokutō \"So\" ryō hikōjō ichiran zu (Kokuga chihō) | 1:500,000 Kokuga chihō sozu, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series, '極東「ソ」領飛行場一覧圖 (黒河地方) | 五十万分一黒河地方素圖 -- Kyokutō \"So\" ryō hikōjō ichiran zu (Kokuga chihō) | 1:500,000 Kokuga chihō sozu.' This map series was originally produced by the Japanese Land Survey Department of the General Staff Headquarters [1941, 1947]. Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or\n'maps of outer lands.' These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "cj775jz5087"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-cj775jz5087"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-cj775jz5087",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/cj775jz5087",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/cj775jz5087.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cj775jz5087/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/cj775jz5087%2Findex_12381383/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/yf913xh0809/iiif/canvas/cocina-fileSet-yf913xh0809-yf913xh0809_1",
+      "type": "Canvas",
+      "height": 19158,
+      "width": 26440,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/yf913xh0809/yf913xh0809_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (91 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/yf913xh0809/iiif/canvas/cocina-fileSet-yf913xh0809-yf913xh0809_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/yf913xh0809/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fyf913xh0809-yf913xh0809_1%2Fyf913xh0809_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/yf913xh0809/iiif/canvas/cocina-fileSet-yf913xh0809-yf913xh0809_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/yf913xh0809%2Fyf913xh0809_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 19158,
+                "width": 26440,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/yf913xh0809%2Fyf913xh0809_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "黒河地方"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/yf913xh0809/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cj775jz5087/manifest.json#navplace-yf913xh0809",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cj775jz5087/manifest.json#navplace-yf913xh0809-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "黒河地方"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/yf913xh0809/iiif/manifest",
+              "recid": "yf913xh0809",
+              "callNumber": "G7064 .B56P61 1941 .J3",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    125,
+                    48.333333
+                  ],
+                  [
+                    130,
+                    48.333333
+                  ],
+                  [
+                    130,
+                    51.666667
+                  ],
+                  [
+                    125,
+                    51.666667
+                  ],
+                  [
+                    125,
+                    48.333333
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              125,
+              48.333333,
+              130,
+              51.666667
+            ]
+          }
+        ],
+        "bbox": [
+          125,
+          48.333333,
+          130,
+          51.666667
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/yf913xh0809/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "黒河地方"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cj775jz5087/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/cj775jz5087/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "極東「ソ」領飛行場一覧圖 (黒河地方) | 五十万分一黒河地方素圖 -- Kyokutō \"So\" ryō hikōjō ichiran zu (Kokuga chihō) | 1:500,000 Kokuga chihō sozu, Maps Index"
+            ]
+          },
+          "seriesDruid": "cj775jz5087",
+          "sheetCount": 1,
+          "sourceFeatureCount": 1
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              125,
+              48.333333
+            ],
+            [
+              130,
+              48.333333
+            ],
+            [
+              130,
+              51.666667
+            ],
+            [
+              125,
+              51.666667
+            ],
+            [
+              125,
+              48.333333
+            ]
+          ]
+        },
+        "bbox": [
+          125,
+          48.333333,
+          130,
+          51.666667
+        ]
+      }
+    ],
+    "bbox": [
+      125,
+      48.333333,
+      130,
+      51.666667
+    ]
+  }
+}

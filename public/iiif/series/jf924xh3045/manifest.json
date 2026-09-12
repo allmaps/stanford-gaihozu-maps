@@ -1,0 +1,350 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/jf924xh3045/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "二十万分一圖 サウ諸島 -- 1:200,000 Sau shotō, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series, '二十万分一圖 サウ諸島 -- 1:200,000 Sau shotō.' This map series was originally produced by the Japanese Land Survey Department of the General Staff Headquarters [1942]. Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or\n'maps of outer lands.' These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "jf924xh3045"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-jf924xh3045"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-jf924xh3045",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/jf924xh3045",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/jf924xh3045.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/jf924xh3045/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/jf924xh3045%2Findex_10531179/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/kv237jg1154/iiif/canvas/cocina-fileSet-kv237jg1154-kv237jg1154_1",
+      "type": "Canvas",
+      "height": 13240,
+      "width": 11160,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/kv237jg1154/kv237jg1154_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (26.5 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/kv237jg1154/iiif/canvas/cocina-fileSet-kv237jg1154-kv237jg1154_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/kv237jg1154/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fkv237jg1154-kv237jg1154_1%2Fkv237jg1154_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/kv237jg1154/iiif/canvas/cocina-fileSet-kv237jg1154-kv237jg1154_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/kv237jg1154%2Fkv237jg1154_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 13240,
+                "width": 11160,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/kv237jg1154%2Fkv237jg1154_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "SAWOE - EILANDEN"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/kv237jg1154/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/jf924xh3045/manifest.json#navplace-kv237jg1154",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/jf924xh3045/manifest.json#navplace-kv237jg1154-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "SAWOE - EILANDEN"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/kv237jg1154/iiif/manifest",
+              "recid": "kv237jg1154",
+              "callNumber": "G8072 .S27 1942 .J3",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "bbox": [
+                121.25972200000001,
+                -10.839722,
+                122.01805600000002,
+                -10.406389
+              ],
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    121.25972200000001,
+                    -10.839722
+                  ],
+                  [
+                    121.25972200000001,
+                    -10.406389
+                  ],
+                  [
+                    122.01805600000002,
+                    -10.406389
+                  ],
+                  [
+                    122.01805600000002,
+                    -10.839722
+                  ],
+                  [
+                    121.25972200000001,
+                    -10.839722
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              121.25972200000001,
+              -10.839722,
+              122.01805600000002,
+              -10.406389
+            ]
+          }
+        ],
+        "bbox": [
+          121.25972200000001,
+          -10.839722,
+          122.01805600000002,
+          -10.406389
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/kv237jg1154/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "SAWOE - EILANDEN"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/jf924xh3045/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/jf924xh3045/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "二十万分一圖 サウ諸島 -- 1:200,000 Sau shotō, Maps Index"
+            ]
+          },
+          "seriesDruid": "jf924xh3045",
+          "sheetCount": 1,
+          "sourceFeatureCount": 1
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              121.25972200000001,
+              -10.839722
+            ],
+            [
+              121.25972200000001,
+              -10.406389
+            ],
+            [
+              122.01805600000002,
+              -10.406389
+            ],
+            [
+              122.01805600000002,
+              -10.839722
+            ],
+            [
+              121.25972200000001,
+              -10.839722
+            ]
+          ]
+        },
+        "bbox": [
+          121.25972200000001,
+          -10.839722,
+          122.01805600000002,
+          -10.406389
+        ]
+      }
+    ],
+    "bbox": [
+      121.25972200000001,
+      -10.839722,
+      122.01805600000002,
+      -10.406389
+    ]
+  }
+}

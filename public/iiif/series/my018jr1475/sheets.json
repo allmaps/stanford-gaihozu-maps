@@ -1,0 +1,144 @@
+{
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/my018jr1475/sheets.json",
+  "type": "Dataset",
+  "label": "五十万分一圖 ハバロフスク方面素圖 -- 1:500,000 Habarofusuku hōmen sozu, Maps Index",
+  "sourceGeojson": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/my018jr1475.geojson",
+  "sheets": [
+    {
+      "label": "1. EAST",
+      "manifestUrl": "https://purl.stanford.edu/pg017rr6061/iiif/manifest",
+      "recid": "pg017rr6061",
+      "websiteUrl": "https://purl.stanford.edu/pg017rr6061",
+      "callNumber": "G7323 .K5 1941 .J3 MAP 1 (EAST)",
+      "featureIndex": 1,
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/my018jr1475/manifest.json#navplace-pg017rr6061",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/my018jr1475/manifest.json#navplace-pg017rr6061-feature-1",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "1. EAST"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/pg017rr6061/iiif/manifest",
+              "recid": "pg017rr6061",
+              "callNumber": "G7323 .K5 1941 .J3 MAP 1 (EAST)",
+              "sourceFeatureIndex": 1
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    135.25,
+                    46.75
+                  ],
+                  [
+                    140.25,
+                    46.75
+                  ],
+                  [
+                    140.75,
+                    51.5
+                  ],
+                  [
+                    135.25,
+                    51.5
+                  ],
+                  [
+                    135.25,
+                    46.75
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              135.25,
+              46.75,
+              140.75,
+              51.5
+            ]
+          }
+        ],
+        "bbox": [
+          135.25,
+          46.75,
+          140.75,
+          51.5
+        ]
+      }
+    },
+    {
+      "label": "2. WEST",
+      "manifestUrl": "https://purl.stanford.edu/dk159dv1164/iiif/manifest",
+      "recid": "dk159dv1164",
+      "websiteUrl": "https://purl.stanford.edu/dk159dv1164",
+      "callNumber": "G7323 .K5 1941 .J3 MAP 2 (WEST)",
+      "featureIndex": 0,
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/my018jr1475/manifest.json#navplace-dk159dv1164",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/my018jr1475/manifest.json#navplace-dk159dv1164-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "2. WEST"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/dk159dv1164/iiif/manifest",
+              "recid": "dk159dv1164",
+              "callNumber": "G7323 .K5 1941 .J3 MAP 2 (WEST)",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    130.25,
+                    46.75
+                  ],
+                  [
+                    135.25,
+                    46.75
+                  ],
+                  [
+                    135.25,
+                    51.5
+                  ],
+                  [
+                    129.75,
+                    51.5
+                  ],
+                  [
+                    130.25,
+                    46.75
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              129.75,
+              46.75,
+              135.25,
+              51.5
+            ]
+          }
+        ],
+        "bbox": [
+          129.75,
+          46.75,
+          135.25,
+          51.5
+        ]
+      }
+    }
+  ]
+}

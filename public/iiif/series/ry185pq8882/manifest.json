@@ -1,0 +1,344 @@
+{
+  "@context": [
+    "http://iiif.io/api/extension/navplace/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ry185pq8882/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "二万分一杭州近傍圖 -- 1:20,000 Kōshū kinbōzu, Maps Index"
+    ]
+  },
+  "summary": {
+    "none": [
+      "This polygon shapefile is an index to the map series \"二万分一杭州近傍圖 -- 1:20,000 Kōshū kinbōzu\" (1937). Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihōzu, or \"maps of outer lands.\" These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army. The Library is in the process of scanning and making available all of the maps in the collection.This layer provides an index map that can be used to locate individual scanned map sheets."
+    ]
+  },
+  "rights": "http://creativecommons.org/publicdomain/mark/1.0/",
+  "behavior": [
+    "individuals"
+  ],
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Series DRUID"
+        ]
+      },
+      "value": {
+        "none": [
+          "ry185pq8882"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-ry185pq8882"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Available sheets"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Combined canvases"
+        ]
+      },
+      "value": {
+        "none": [
+          "1"
+        ]
+      }
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https://earthworks.stanford.edu/catalog/stanford-ry185pq8882",
+      "type": "Text",
+      "label": {
+        "none": [
+          "EarthWorks record"
+        ]
+      },
+      "format": "text/html"
+    },
+    {
+      "id": "https://purl.stanford.edu/ry185pq8882",
+      "type": "Text",
+      "label": {
+        "none": [
+          "Stanford PURL"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/ry185pq8882.geojson",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Sheet index GeoJSON"
+        ]
+      },
+      "format": "application/geo+json"
+    },
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ry185pq8882/sheets.json",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Extracted sheet manifest URLs"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https://stacks.stanford.edu/image/iiif/ry185pq8882%2Findex_9635127/full/!400,400/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/collection.json",
+      "type": "Collection",
+      "label": {
+        "none": [
+          "Gaihozu Index Maps"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://purl.stanford.edu/jk583dp9826/iiif/canvas/cocina-fileSet-jk583dp9826-jk583dp9826_1",
+      "type": "Canvas",
+      "height": 23193,
+      "width": 16484,
+      "label": {
+        "none": [
+          "Image 1"
+        ]
+      },
+      "rendering": [
+        {
+          "id": "https://stacks.stanford.edu/file/jk583dp9826/jk583dp9826_00_0001.jp2",
+          "type": "Image",
+          "format": "image/jp2",
+          "label": {
+            "none": [
+              "Original source file (68.7 MB)"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "https://purl.stanford.edu/jk583dp9826/iiif/canvas/cocina-fileSet-jk583dp9826-jk583dp9826_1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://purl.stanford.edu/jk583dp9826/iiif/annotation/https:%2F%2Fcocina.sul.stanford.edu%2Ffile%2Fjk583dp9826-jk583dp9826_1%2Fjk583dp9826_00_0001.jp2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://purl.stanford.edu/jk583dp9826/iiif/canvas/cocina-fileSet-jk583dp9826-jk583dp9826_1",
+              "body": {
+                "id": "https://stacks.stanford.edu/image/iiif/jk583dp9826%2Fjk583dp9826_00_0001/full/full/0/default.jpg",
+                "type": "Image",
+                "height": 23193,
+                "width": 16484,
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://stacks.stanford.edu/image/iiif/jk583dp9826%2Fjk583dp9826_00_0001",
+                    "@type": "ImageService2",
+                    "profile": "level2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "none": [
+              "Sheet label"
+            ]
+          },
+          "value": {
+            "none": [
+              "杭州近傍"
+            ]
+          }
+        },
+        {
+          "label": {
+            "none": [
+              "Sheet manifest"
+            ]
+          },
+          "value": {
+            "none": [
+              "https://purl.stanford.edu/jk583dp9826/iiif/manifest"
+            ]
+          }
+        }
+      ],
+      "navPlace": {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ry185pq8882/manifest.json#navplace-jk583dp9826",
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ry185pq8882/manifest.json#navplace-jk583dp9826-feature-0",
+            "type": "Feature",
+            "properties": {
+              "label": {
+                "none": [
+                  "杭州近傍"
+                ]
+              },
+              "manifestUrl": "https://purl.stanford.edu/jk583dp9826/iiif/manifest",
+              "recid": "jk583dp9826",
+              "callNumber": "G7824 .H2 1937 .J3",
+              "sourceFeatureIndex": 0
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    120.1,
+                    30.183333
+                  ],
+                  [
+                    120.216667,
+                    30.183333
+                  ],
+                  [
+                    120.216667,
+                    30.319444
+                  ],
+                  [
+                    120.1,
+                    30.319444
+                  ],
+                  [
+                    120.1,
+                    30.183333
+                  ]
+                ]
+              ]
+            },
+            "bbox": [
+              120.1,
+              30.183333,
+              120.216667,
+              30.319444
+            ]
+          }
+        ],
+        "bbox": [
+          120.1,
+          30.183333,
+          120.216667,
+          30.319444
+        ]
+      },
+      "behavior": [],
+      "annotations": [],
+      "seeAlso": [],
+      "partOf": [
+        {
+          "id": "https://purl.stanford.edu/jk583dp9826/iiif/manifest",
+          "type": "Manifest",
+          "label": {
+            "none": [
+              "杭州近傍"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "navPlace": {
+    "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ry185pq8882/manifest.json#navplace",
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/ry185pq8882/manifest.json#navplace-feature",
+        "type": "Feature",
+        "properties": {
+          "label": {
+            "none": [
+              "二万分一杭州近傍圖 -- 1:20,000 Kōshū kinbōzu, Maps Index"
+            ]
+          },
+          "seriesDruid": "ry185pq8882",
+          "sheetCount": 1,
+          "sourceFeatureCount": 1
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              120.1,
+              30.183333
+            ],
+            [
+              120.216667,
+              30.183333
+            ],
+            [
+              120.216667,
+              30.319444
+            ],
+            [
+              120.1,
+              30.319444
+            ],
+            [
+              120.1,
+              30.183333
+            ]
+          ]
+        },
+        "bbox": [
+          120.1,
+          30.183333,
+          120.216667,
+          30.319444
+        ]
+      }
+    ],
+    "bbox": [
+      120.1,
+      30.183333,
+      120.216667,
+      30.319444
+    ]
+  }
+}
