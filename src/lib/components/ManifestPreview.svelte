@@ -88,13 +88,6 @@
     </div>
   </header>
 
-  <dl class="stats">
-    <div>
-      <dt>Canvases</dt>
-      <dd>{canvases.length}</dd>
-    </div>
-  </dl>
-
   {#if metadataEntries.length}
     <section class="manifest-metadata" aria-label="Manifest metadata">
       <h3>Metadata</h3>

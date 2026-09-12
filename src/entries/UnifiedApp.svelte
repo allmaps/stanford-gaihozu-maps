@@ -32,6 +32,14 @@
   const openFreeMapUrl = "https://openfreemap.org/";
   const mapLibreUrl = "https://maplibre.org/";
   const bitsUiUrl = "https://www.bits-ui.com/";
+  const collectionDescription = [
+    "Index maps to Japanese military and imperial maps held at Stanford Libraries.",
+    "Stanford University Libraries holds a large collection of Japanese military and imperial maps, referred to as gaihozu, or \"maps of outer lands.\"",
+    "These maps were produced starting in the early Meiji (1868-1912) era and the end of World War II by the Land Survey Department of the General Staff Headquarters, the former Japanese Army.",
+    "The first charge was to map specific territories beyond Japan's borders.",
+    "Over time the mapping efforts grew to including \"mapping of interimperial boundaries, cadastral surveys of the colonies, and detailed drawings of strategic cities and fortifications.\"",
+    "Geographically the Stanford maps cover a broad area including Japan, China, Mongolia, North Korea, South Korea, the Philippines, and beyond.",
+  ].join(" ");
   const appBasePath = normalizeAppBasePath(import.meta.env.BASE_URL || "/");
   const initialManifestId = manifestFromLocation();
 
@@ -495,6 +503,10 @@
               </Dialog.Description>
 
               <div class="about-copy">
+                <section class="collection-description" aria-label="Collection description">
+                  <h3>Gaihozu Index Maps</h3>
+                  <p>{collectionDescription}</p>
+                </section>
                 <p>
                   This local preview starts from the Stanford EarthWorks collection of Japanese military and imperial map sheet indexes, then builds a browsable IIIF Presentation 3 collection around the scanned sheets.
                 </p>
