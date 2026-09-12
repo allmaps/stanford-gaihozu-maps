@@ -793,6 +793,53 @@ code {
   line-height: 1.35;
 }
 
+.pagination-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 18px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface-muted);
+  padding: 10px;
+}
+
+.pagination-bar span {
+  min-width: 0;
+  color: var(--stanford-cool-grey);
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.pagination-button {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid var(--border-strong);
+  border-radius: 4px;
+  background: #ffffff;
+  color: var(--stanford-digital-green-dark);
+  cursor: pointer;
+  font-weight: 800;
+  padding: 6px 10px;
+}
+
+.pagination-button:hover,
+.pagination-button:focus-visible {
+  border-color: var(--stanford-digital-green-dark);
+  outline: 2px solid rgba(0, 133, 102, 0.2);
+  outline-offset: 1px;
+}
+
+.pagination-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
+}
+
 .maplibregl-ctrl-group {
   border-radius: 4px !important;
   box-shadow: 0 8px 24px rgba(46, 45, 41, 0.16) !important;
@@ -1197,6 +1244,16 @@ code {
   box-shadow: inset 3px 0 0 var(--stanford-digital-red);
 }
 
+.map-entry.is-selected .map-entry-summary {
+  background: var(--surface-muted);
+}
+
+.map-entry-view {
+  width: fit-content;
+  min-width: 128px;
+  justify-self: start;
+}
+
 .map-entry-summary.with-thumbnail {
   grid-template-columns: 54px minmax(0, 1fr);
   min-height: 72px;
@@ -1421,6 +1478,14 @@ code {
     right: 12px;
     bottom: 12px;
     top: auto;
+  }
+
+  .pagination-bar {
+    align-items: stretch;
+  }
+
+  .pagination-button {
+    min-width: 0;
   }
 
   .filter-popover {

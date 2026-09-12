@@ -1,6 +1,6 @@
 <script lang="ts">
   import { canvasImage, label, localPath } from "../iiif";
-  import { Braces, ExternalLink, ScrollText } from "@lucide/svelte";
+  import { Braces, ChevronLeft, ChevronRight, ExternalLink, ScrollText } from "@lucide/svelte";
   import type { IiifManifest, IiifResource } from "../types";
 
   type Props = {
@@ -13,17 +13,43 @@
 
   let { manifest, manifestRef, loading, error, showTitle = true }: Props = $props();
 
+  const pageSize = 24;
+  let currentPage = $state<number>(1);
+  let previousManifestId = "";
+
   let canvases = $derived(manifest?.items || []);
   let previewImages = $derived(
     canvases
       .map((canvas) => ({ canvas, image: canvasImage(canvas) }))
-      .filter((item) => Boolean(item.image))
-      .slice(0, 24),
+      .filter((item) => Boolean(item.image)),
   );
+  let totalPages = $derived(Math.max(1, Math.ceil(previewImages.length / pageSize)));
+  let pageStart = $derived((currentPage - 1) * pageSize);
+  let paginatedPreviewImages = $derived(previewImages.slice(pageStart, pageStart + pageSize));
+  let pageLabel = $derived("Page " + currentPage + " of " + totalPages);
+
   let geojsonPath = $derived.by(() => {
     const geojson = manifest?.seeAlso?.find((item) => item.id.endsWith(".geojson"));
     return geojson ? localPath(geojson.id) : "";
   });
+
+  $effect(() => {
+    const manifestId = manifest?.id || "";
+    if (manifestId !== previousManifestId) {
+      previousManifestId = manifestId;
+      currentPage = 1;
+    } else if (currentPage > totalPages) {
+      currentPage = totalPages;
+    }
+  });
+
+  function previousPage() {
+    currentPage = Math.max(1, currentPage - 1);
+  }
+
+  function nextPage() {
+    currentPage = Math.min(totalPages, currentPage + 1);
+  }
 </script>
 
 {#if loading}
@@ -54,13 +80,27 @@
       <dd>{canvases.length}</dd>
     </div>
     <div>
-      <dt>Images Shown</dt>
+      <dt>Images</dt>
       <dd>{previewImages.length}</dd>
     </div>
   </dl>
 
+  {#if totalPages > 1}
+    <nav class="pagination-bar" aria-label="Thumbnail pages">
+      <button class="pagination-button" type="button" onclick={previousPage} disabled={currentPage === 1}>
+        <ChevronLeft size={16} strokeWidth={2.25} aria-hidden="true" />
+        Previous
+      </button>
+      <span>{pageLabel}</span>
+      <button class="pagination-button" type="button" onclick={nextPage} disabled={currentPage === totalPages}>
+        Next
+        <ChevronRight size={16} strokeWidth={2.25} aria-hidden="true" />
+      </button>
+    </nav>
+  {/if}
+
   <section class="thumb-grid" aria-label="Manifest thumbnails">
-    {#each previewImages as item (item.canvas.id)}
+    {#each paginatedPreviewImages as item (item.canvas.id)}
       <figure>
         <img src={item.image} alt="" loading="lazy" />
         <figcaption>{label(item.canvas.label) || item.canvas.id}</figcaption>

@@ -1,5 +1,7 @@
 <script lang="ts">
+  import { tick } from "svelte";
   import { Button } from "bits-ui";
+  import { ExternalLink } from "@lucide/svelte";
   import { featureId, featureLabel, propertyList } from "../map-data";
   import type { SeriesIndexFeature } from "../types";
 
@@ -13,7 +15,8 @@
     filteredCount: number;
     selectedFeatureId?: FeatureId | null;
     boundsActive: boolean;
-    onFeatureOpen: (id: FeatureId) => void;
+    onFeatureSelect: (id: FeatureId) => void;
+    onFeatureView: (id: FeatureId) => void;
     onFeatureHover: (id: FeatureId | null) => void;
   };
 
@@ -25,9 +28,21 @@
     filteredCount,
     selectedFeatureId = null,
     boundsActive,
-    onFeatureOpen,
+    onFeatureSelect,
+    onFeatureView,
     onFeatureHover,
   }: Props = $props();
+
+  let sidebarEl = $state.raw<HTMLElement | null>(null);
+
+  $effect(() => {
+    const id = selectedFeatureId;
+    if (!sidebarEl || id === null || id === "") return;
+    void tick().then(() => {
+      const entry = sidebarEl?.querySelector<HTMLElement>('[data-feature-key="' + String(id) + '"]');
+      entry?.scrollIntoView({ block: "nearest" });
+    });
+  });
 
   function scaleLabel(feature: SeriesIndexFeature) {
     return propertyList(feature.properties?.scales).join("; ") || "Unknown scale";
@@ -39,11 +54,20 @@
 
   function sheetCountLabel(feature: SeriesIndexFeature) {
     const count = feature.properties?.sheetCount;
-    return typeof count === "number" ? String(count) + " sheets" : "Unknown sheets";
+    return typeof count === "number" ? formatNumber(count) + " sheets" : "Unknown sheets";
+  }
+
+  function sourceFeatureCountLabel(feature: SeriesIndexFeature) {
+    const count = feature.properties?.sourceFeatureCount;
+    return typeof count === "number" ? formatNumber(count) + " source footprints" : "Unknown footprints";
+  }
+
+  function formatNumber(value: number) {
+    return new Intl.NumberFormat("en-US").format(value);
   }
 </script>
 
-<aside class="sidebar shared-sidebar list-sidebar" aria-label="Visible map series">
+<aside bind:this={sidebarEl} class="sidebar shared-sidebar list-sidebar" aria-label="Visible map series">
   <header class="map-panel-header">
     <h1>Visible Series</h1>
     <p>
@@ -65,14 +89,16 @@
           {#each listedFeatures as feature (featureId(feature))}
             {@const id = featureId(feature)}
             {@const thumbnail = feature.properties?.thumbnailId || ""}
+            {@const isSelected = String(selectedFeatureId) === String(id)}
             <article
               class="map-entry"
-              class:is-selected={String(selectedFeatureId) === String(id)}
+              class:is-selected={isSelected}
+              data-state={isSelected ? "open" : "closed"}
               data-feature-key={String(id)}
               onmouseenter={() => onFeatureHover(id)}
               onmouseleave={() => onFeatureHover(null)}
             >
-              <Button.Root class="map-entry-summary with-thumbnail" type="button" onclick={() => onFeatureOpen(id)}>
+              <Button.Root class="map-entry-summary with-thumbnail" type="button" aria-expanded={isSelected} onclick={() => onFeatureSelect(id)}>
                 {#if thumbnail}
                   <img class="entry-thumbnail" src={thumbnail} alt="" loading="lazy" />
                 {:else}
@@ -84,6 +110,33 @@
                   <span class="map-entry-region">{regionLabel(feature)}</span>
                 </span>
               </Button.Root>
+
+              {#if isSelected}
+                <div class="map-entry-detail">
+                  <dl>
+                    <div>
+                      <dt>Series DRUID</dt>
+                      <dd>{feature.properties?.seriesDruid || id}</dd>
+                    </div>
+                    <div>
+                      <dt>Scale</dt>
+                      <dd>{scaleLabel(feature)}</dd>
+                    </div>
+                    <div>
+                      <dt>Region</dt>
+                      <dd>{regionLabel(feature)}</dd>
+                    </div>
+                    <div>
+                      <dt>Sheets</dt>
+                      <dd>{sheetCountLabel(feature)}; {sourceFeatureCountLabel(feature)}</dd>
+                    </div>
+                  </dl>
+                  <Button.Root class="control-button map-entry-view" type="button" onclick={() => onFeatureView(id)}>
+                    <ExternalLink size={15} strokeWidth={2.25} aria-hidden="true" />
+                    View more
+                  </Button.Root>
+                </div>
+              {/if}
             </article>
           {/each}
         </div>

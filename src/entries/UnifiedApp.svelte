@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { Button, Dialog, Popover, Select, Slider, Switch } from "bits-ui";
-  import { Braces, Database, ExternalLink, Eye, EyeOff, Funnel, Info, Maximize2, PanelLeftClose, PanelLeftOpen, RotateCcw, X } from "@lucide/svelte";
+  import { Braces, Database, ExternalLink, Eye, EyeOff, Funnel, Info, ListTree, Maximize2, RotateCcw, X } from "@lucide/svelte";
   import ManifestPreview from "../lib/components/ManifestPreview.svelte";
   import MapViewer from "../lib/components/MapViewer.svelte";
   import SharedSidebar from "../lib/components/SharedSidebar.svelte";
@@ -32,6 +32,7 @@
   const openFreeMapUrl = "https://openfreemap.org/";
   const mapLibreUrl = "https://maplibre.org/";
   const bitsUiUrl = "https://www.bits-ui.com/";
+  const appBasePath = normalizeAppBasePath(import.meta.env.BASE_URL || "/");
   const initialManifestId = manifestFromLocation();
 
   let requestedManifestId = $state<string>(initialManifestId);
@@ -185,14 +186,21 @@
     }
   }
 
-  function openCollectionFeature(id: FeatureId, options: { fit?: boolean; updateHistory?: boolean } = {}) {
+  function selectFeature(id: FeatureId, options: { fit?: boolean } = {}) {
     const feature = featureById(features, id);
-    if (!feature) return;
+    if (!feature) return null;
     selectedFeatureId = featureId(feature);
+    filtersOpen = false;
+    if (options.fit !== false) fitToSelectedKey += 1;
+    return feature;
+  }
+
+  function openCollectionFeature(id: FeatureId, options: { fit?: boolean; updateHistory?: boolean } = {}) {
+    const feature = selectFeature(id, { fit: options.fit });
+    if (!feature) return;
     requestedManifestId = feature.properties?.manifestId || "";
     collectionOpen = true;
     filtersOpen = false;
-    if (options.fit !== false) fitToSelectedKey += 1;
     if (options.updateHistory !== false) updateManifestUrl(requestedManifestId, "pushState");
   }
 
@@ -249,9 +257,15 @@
 
   function updateManifestUrl(manifestId: string, method: "pushState" | "replaceState") {
     if (typeof window === "undefined") return;
-    const nextUrl = manifestId ? "/?manifest=" + encodeURIComponent(manifestId) : "/";
+    const nextUrl = manifestId ? appBasePath + "?manifest=" + encodeURIComponent(manifestId) : appBasePath;
     if (window.location.pathname + window.location.search === nextUrl) return;
     window.history[method](null, "", nextUrl);
+  }
+
+  function normalizeAppBasePath(path: string) {
+    if (!path || path === "/") return "/";
+    const normalized = path.startsWith("/") ? path : "/" + path;
+    return normalized.endsWith("/") ? normalized : normalized + "/";
   }
 
   function manifestFromLocation() {
@@ -320,7 +334,8 @@
       filteredCount={filteredFeatures.length}
       {selectedFeatureId}
       boundsActive={Boolean(viewportBbox)}
-      onFeatureOpen={(id) => openCollectionFeature(id)}
+      onFeatureSelect={(id) => selectFeature(id)}
+      onFeatureView={(id) => openCollectionFeature(id, { fit: false })}
       onFeatureHover={(id) => (hoveredFeatureId = id)}
       />
     {/if}
@@ -335,7 +350,7 @@
         {fitToFeaturesKey}
         {fitToSelectedKey}
         onViewportBboxChange={(bbox) => (viewportBbox = bbox)}
-        onSelectFeature={(id) => openCollectionFeature(id, { fit: false })}
+        onSelectFeature={(id) => selectFeature(id, { fit: false })}
         onHoverFeature={(id) => (hoveredFeatureId = id)}
       />
 
@@ -345,13 +360,9 @@
       </section>
 
       <div class="map-action-overlay" aria-label="Map actions">
-        <Button.Root class="overlay-button" type="button" aria-label={sidePanelOpen ? "Hide side panel" : "Show side panel"} onclick={() => (sidePanelOpen = !sidePanelOpen)}>
-          {#if sidePanelOpen}
-            <PanelLeftClose size={18} strokeWidth={2.25} aria-hidden="true" />
-          {:else}
-            <PanelLeftOpen size={18} strokeWidth={2.25} aria-hidden="true" />
-          {/if}
-          <span class="button-label">Panel</span>
+        <Button.Root class="overlay-button" type="button" aria-label={sidePanelOpen ? "Hide series panel" : "Show series panel"} onclick={() => (sidePanelOpen = !sidePanelOpen)}>
+          <ListTree size={18} strokeWidth={2.25} aria-hidden="true" />
+          <span class="button-label">Series</span>
         </Button.Root>
 
         <Popover.Root open={filtersOpen} onOpenChange={(open) => (filtersOpen = open)}>
