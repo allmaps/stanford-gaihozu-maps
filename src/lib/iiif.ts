@@ -1,13 +1,13 @@
-import { base } from "$app/paths";
+import { assets, base } from "$app/paths";
 import type { IiifCanvas, IiifImage, IiifManifest, IiifResource, LanguageMap } from "./types";
 
-const basePath = normalizeBasePath(base || "/");
+const staticBasePath = normalizeBasePath(assets || base || "/");
 
 export function publicPath(path: string) {
   if (/^https?:\/\//i.test(path)) return path;
   const normalizedPath = path.startsWith("/") ? path : "/" + path;
   const withoutExistingBase = stripBasePath(normalizedPath);
-  return basePath === "/" ? withoutExistingBase : basePath.replace(/\/$/, "") + withoutExistingBase;
+  return staticBasePath === "/" ? withoutExistingBase : staticBasePath.replace(/\/$/, "") + withoutExistingBase;
 }
 
 export async function fetchJson<T>(url: string): Promise<T> {
@@ -51,8 +51,8 @@ function normalizeBasePath(path: string) {
 }
 
 function stripBasePath(path: string) {
-  if (basePath === "/" || !path.startsWith(basePath)) return path;
-  return "/" + path.slice(basePath.length).replace(/^\//, "");
+  if (staticBasePath === "/" || !path.startsWith(staticBasePath)) return path;
+  return "/" + path.slice(staticBasePath.length).replace(/^\//, "");
 }
 
 export function countManifests(items: IiifResource[]) {

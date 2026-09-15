@@ -3,22 +3,42 @@ import { existsSync } from "node:fs";
 import { mkdir, readFile, readdir, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
 import clipping from "polygon-clipping";
+import {
+  assetLinksFromRecord,
+  decadesFromRecord,
+  metadataPairsFromRecord,
+  navDateFromRecord,
+  summaryTextFromRecord,
+} from "./iiif-metadata.mjs";
 
 const args = parseArgs(process.argv.slice(2));
 const baseUrl = trimTrailingSlash(
   args["base-url"] || process.env.BASE_URL || "http://localhost:5173",
 );
+const collectionId = normalizeStanfordId(
+  args["collection-id"] || process.env.COLLECTION_ID || "stanford-ch237ht4777",
+);
+const collectionDruid = collectionId.replace(/^stanford-/, "");
+const metadataDir = path.resolve(
+  args["metadata-dir"] ||
+    process.env.OPEN_GEOMETADATA_DIR ||
+    ".cache/opengeometadata/edu.stanford.purl",
+);
 const staticDir = path.resolve("static");
 const dataDir = path.resolve("data");
+const metadataRoot = path.join(metadataDir, "metadata-aardvark");
 const basePath = new URL(baseUrl).pathname.replace(new RegExp("/$"), "");
 const navPlaceContext = "http://iiif.io/api/extension/navplace/context.json";
 const iiifPresentationContext = "http://iiif.io/api/presentation/3/context.json";
 const { union: unionPolygons } = clipping;
+const collectionLabels = new Map();
 
 await main();
 
 async function main() {
   const seriesIds = await discoverSeriesIds();
+  const collectionRecord = await readMetadataRecord(collectionDruid);
+  addCollectionLabel(collectionRecord);
   const enrichedSeries = [];
 
   for (const [index, seriesDruid] of seriesIds.entries()) {
@@ -26,7 +46,7 @@ async function main() {
     if (enriched) enrichedSeries.push(enriched);
   }
 
-  const collection = buildRootCollection(enrichedSeries);
+  const collection = buildRootCollection(enrichedSeries, collectionRecord);
   const seriesIndex = buildSeriesIndex(enrichedSeries);
   await writeCollectionTree(collection);
   await writeJson(path.join(staticDir, "iiif", "series-index.geojson"), seriesIndex);
@@ -35,6 +55,48 @@ async function main() {
   );
   console.log("Collection: " + baseUrl + "/iiif/collection.json");
   console.log("Series index: " + baseUrl + "/iiif/series-index.geojson");
+}
+
+async function readMetadataRecord(druid) {
+  const file = metadataPathForDruid(druid);
+  if (!existsSync(file)) return null;
+  return readJson(file);
+}
+
+async function readRecord(recordPath, seriesDruid) {
+  if (existsSync(recordPath)) return readJson(recordPath);
+  const cached = await readMetadataRecord(seriesDruid);
+  return cached || {};
+}
+
+async function addCollectionLabelsForRecord(record) {
+  for (const id of array(record?.pcdm_memberOf_sm)) {
+    const normalized = normalizeStanfordId(id);
+    if (!normalized || collectionLabels.has(normalized)) continue;
+    const collectionRecord = await readMetadataRecord(normalized);
+    addCollectionLabel(collectionRecord || { id: normalized });
+  }
+}
+
+function addCollectionLabel(record) {
+  if (!record?.id) return;
+  const normalized = normalizeStanfordId(record.id);
+  const bare = normalizeBareDruid(normalized);
+  const title = record.dct_title_s || normalized;
+  collectionLabels.set(normalized, title);
+  collectionLabels.set(bare, title);
+}
+
+function metadataPathForDruid(druid) {
+  const bare = normalizeBareDruid(druid);
+  return path.join(
+    metadataRoot,
+    bare.slice(0, 2),
+    bare.slice(2, 5),
+    bare.slice(5, 7),
+    bare.slice(7),
+    "geoblacklight.json",
+  );
 }
 
 async function discoverSeriesIds() {
@@ -64,8 +126,9 @@ async function enrichSeries(seriesDruid, ordinal, total) {
   const [manifest, geojson, record] = await Promise.all([
     readJson(manifestPath),
     readJson(geojsonPath),
-    existsSync(recordPath) ? readJson(recordPath) : Promise.resolve({}),
+    readRecord(recordPath, seriesDruid),
   ]);
+  await addCollectionLabelsForRecord(record);
   const title = record.dct_title_s || label(manifest.label) || seriesDruid;
   rewriteSeriesManifestUrls(manifest, seriesDruid);
   const sheets = extractSheets(geojson, seriesDruid);
@@ -83,19 +146,43 @@ async function enrichSeries(seriesDruid, ordinal, total) {
     manifest.navPlace = manifestNavPlace;
   }
 
+  const navDate = navDateFromRecord(record);
+  const canvasSeeAlso = canvasSeeAlsoResources(record, seriesDruid);
+  manifest.seeAlso = dedupeResources([
+    ...array(manifest.seeAlso),
+    ...seriesSeeAlsoResources(seriesDruid),
+    ...assetLinksFromRecord(record),
+  ]);
+  if (navDate) {
+    manifest.navDate = navDate;
+  } else {
+    delete manifest.navDate;
+  }
+
   for (const canvas of array(manifest.items)) {
     const sheet = sheetsByManifest.get(normalizeManifestUrl(sheetManifestUrlFromCanvas(canvas)));
     if (sheet?.navPlace) {
       canvas.navPlace = structuredClone(sheet.navPlace);
     }
+    if (navDate) {
+      canvas.navDate = navDate;
+    } else {
+      delete canvas.navDate;
+    }
+    canvas.seeAlso = dedupeResources([...array(canvas.seeAlso), ...canvasSeeAlso]);
   }
+
+  const regions = regionsForRecord(record, manifest, title);
+  const scales = scalesForRecord(record, manifest, title);
+  const themes = themesForRecord(record);
+  const subjects = subjectsForRecord(record);
+  const decades = decadesFromRecord(record);
+  manifest.metadata = buildSeriesMetadata(record, seriesDruid, sheets, manifest, { regions, scales });
 
   await writeJson(manifestPath, manifest);
   await rewriteSheetsJson(seriesDruid);
 
-  const ref = manifestReference(manifest, record, sheets);
-  const regions = regionsForRecord(record, manifest, title);
-  const scales = scalesForRecord(record, manifest, title);
+  const ref = manifestReference(manifest, record, sheets, { regions, scales });
 
   if (ordinal === 1 || ordinal % 25 === 0 || ordinal === total) {
     console.log("[postprocess " + ordinal + "/" + total + "] " + seriesDruid);
@@ -109,6 +196,9 @@ async function enrichSeries(seriesDruid, ordinal, total) {
     ref,
     regions,
     scales,
+    themes,
+    subjects,
+    decades,
     sheets,
   };
 }
@@ -168,6 +258,9 @@ function buildSeriesIndex(series) {
           label: item.title,
           regions: item.regions,
           scales: item.scales,
+          themes: item.themes,
+          decades: item.decades,
+          navDate: item.manifest.navDate,
           sheetCount: item.sheets.length,
           sourceFeatureCount: navFeature.properties?.sourceFeatureCount,
           thumbnailId: item.manifest.thumbnail?.[0]?.id,
@@ -192,14 +285,19 @@ function combineFeatureBboxes(features) {
   return bbox.valid ? [bbox.minX, bbox.minY, bbox.maxX, bbox.maxY] : undefined;
 }
 
-function buildRootCollection(series) {
+function buildRootCollection(series, collectionRecord) {
   const sortedSeries = [...series].sort((left, right) =>
     label(left.ref.label).localeCompare(label(right.ref.label), "en", { numeric: true }),
   );
+  const collectionMetadata = collectionViewMetadata(collectionRecord);
   const allSeries = buildCollection({
     id: baseUrl + "/iiif/collections/all-series.json",
     label: "All Series",
     summary: sortedSeries.length + " Gaihozu index-map series.",
+    metadata: collectionViewMetadata(collectionRecord, [
+      metadataPair("Collection view", "All Series"),
+      metadataPair("Series in view", String(sortedSeries.length)),
+    ]),
     items: sortedSeries.map((item) => item.ref),
   });
   const byRegion = buildGroupingCollection({
@@ -209,6 +307,7 @@ function buildRootCollection(series) {
     basePath: "by-region",
     series: sortedSeries,
     groupsForSeries: (item) => item.regions,
+    collectionRecord,
   });
   const byScale = buildGroupingCollection({
     id: baseUrl + "/iiif/collections/by-scale.json",
@@ -218,15 +317,49 @@ function buildRootCollection(series) {
     series: sortedSeries,
     groupsForSeries: (item) => item.scales,
     compareGroups: compareScaleLabels,
+    collectionRecord,
+  });
+  const byTheme = buildGroupingCollection({
+    id: baseUrl + "/iiif/collections/by-theme.json",
+    label: "By Theme",
+    summary: "Series grouped by OpenGeoMetadata theme headings. A series can appear in more than one theme.",
+    basePath: "by-theme",
+    series: sortedSeries,
+    groupsForSeries: (item) => item.themes,
+    collectionRecord,
+  });
+  const bySubject = buildGroupingCollection({
+    id: baseUrl + "/iiif/collections/by-subject.json",
+    label: "By Subject",
+    summary: "Series grouped by OpenGeoMetadata subject headings. A series can appear in more than one subject.",
+    basePath: "by-subject",
+    series: sortedSeries,
+    groupsForSeries: (item) => item.subjects,
+    collectionRecord,
+  });
+  const byDecade = buildGroupingCollection({
+    id: baseUrl + "/iiif/collections/by-decade.json",
+    label: "By Decade",
+    summary: "Series grouped by decades covered in OpenGeoMetadata temporal coverage. A series can appear in more than one decade.",
+    basePath: "by-decade",
+    series: sortedSeries,
+    groupsForSeries: (item) => item.decades,
+    compareGroups: compareDecadeLabels,
+    collectionRecord,
   });
 
   return buildCollection({
     id: baseUrl + "/iiif/collection.json",
-    label: "Gaihozu Index Maps",
+    label: collectionRecord?.dct_title_s || "Gaihozu Index Maps",
     summary:
+      summaryTextFromRecord(collectionRecord) ||
       "Combined IIIF manifests generated from " +
-      sortedSeries.length +
-      " Stanford EarthWorks Gaihozu index-map records, nested by all series, broad region, and scale.",
+        sortedSeries.length +
+        " Stanford EarthWorks Gaihozu index-map records, nested by all series, broad region, scale, theme, subject, and decade.",
+    metadata: [
+      metadataPair("Series in collection", String(sortedSeries.length)),
+      ...collectionMetadata,
+    ],
     requiredStatement: {
       label: languageMap("Source"),
       value: languageMap(
@@ -235,13 +368,13 @@ function buildRootCollection(series) {
     },
     homepage: [
       {
-        id: "https://earthworks.stanford.edu/catalog/stanford-ch237ht4777",
+        id: earthworksUrl(collectionId),
         type: "Text",
         label: languageMap("EarthWorks collection"),
         format: "text/html",
       },
     ],
-    items: [allSeries, byRegion, byScale],
+    items: [allSeries, byRegion, byScale, byTheme, bySubject, byDecade],
   });
 }
 
@@ -253,6 +386,7 @@ function buildGroupingCollection({
   series,
   groupsForSeries,
   compareGroups = (left, right) => left.localeCompare(right, "en", { numeric: true }),
+  collectionRecord,
 }) {
   const groups = new Map();
   for (const item of series) {
@@ -269,20 +403,35 @@ function buildGroupingCollection({
         id: baseUrl + "/iiif/collections/" + basePath + "/" + slugify(group) + ".json",
         label: group,
         summary: refs.length + " series.",
+        metadata: collectionViewMetadata(collectionRecord, [
+          metadataPair("Collection view", label),
+          metadataPair("Group", group),
+          metadataPair("Series in group", String(refs.length)),
+        ]),
         items: refs,
       }),
     );
 
-  return buildCollection({ id, label, summary, items });
+  return buildCollection({
+    id,
+    label,
+    summary,
+    metadata: collectionViewMetadata(collectionRecord, [
+      metadataPair("Collection view", label),
+      metadataPair("Groups in view", String(items.length)),
+    ]),
+    items,
+  });
 }
 
-function buildCollection({ id, label, summary, requiredStatement, homepage, items }) {
+function buildCollection({ id, label, summary, metadata, requiredStatement, homepage, items }) {
   return compactObject({
     "@context": iiifPresentationContext,
     id,
     type: "Collection",
     label: languageMap(label),
     summary: languageMap(summary),
+    metadata,
     requiredStatement,
     homepage,
     items,
@@ -310,23 +459,81 @@ function localPathForUrl(url) {
   return path.join(staticDir, pathname.replace(/^\//, ""));
 }
 
-function manifestReference(manifest, record, sheets) {
-  const scaleLabels = scalesForRecord(record, manifest);
-  const regionLabels = regionsForRecord(record, manifest);
+function manifestReference(manifest, record, sheets, { regions, scales } = {}) {
+  const scaleLabels = scales || scalesForRecord(record, manifest);
+  const regionLabels = regions || regionsForRecord(record, manifest);
+  const seriesDruid = normalizeBareDruid(record.id || druidFromManifestUrl(manifest.id) || manifest.id);
   return compactObject({
     id: manifest.id,
     type: "Manifest",
     label: manifest.label,
     summary: manifest.summary,
     thumbnail: manifest.thumbnail,
-    metadata: [
-      metadataPair("Series DRUID", normalizeBareDruid(record.id || druidFromManifestUrl(manifest.id) || manifest.id)),
-      metadataPair("Available sheets", String(sheets.length)),
-      metadataPair("Scale", scaleLabels.join("; ")),
-      metadataPair("Broad region", regionLabels.join("; ")),
-    ],
+    navDate: manifest.navDate,
+    metadata: buildSeriesReferenceMetadata(record, {
+      regions: regionLabels,
+      scales: scaleLabels,
+    }),
     homepage: manifest.homepage,
     seeAlso: manifest.seeAlso,
+  });
+}
+
+function collectionViewMetadata(record, extra = []) {
+  return [...extra, ...metadataPairsFromRecord(record, { collectionLabels })];
+}
+
+function buildSeriesReferenceMetadata(record, { regions = [], scales = [] } = {}) {
+  return [
+    metadataPair("EarthWorks ID", record.id),
+    metadataPair("Scale", scales),
+    metadataPair("Broad region", regions),
+  ];
+}
+
+function buildSeriesMetadata(record, seriesDruid, sheets, manifest, { regions = [], scales = [] } = {}) {
+  return [
+    metadataPair("Scale", scales),
+    metadataPair("Broad region", regions),
+    ...metadataPairsFromRecord(record, { collectionLabels }),
+  ];
+}
+
+function seriesSeeAlsoResources(seriesDruid) {
+  return [
+    {
+      id: baseUrl + "/geojson/" + seriesDruid + ".geojson",
+      type: "Dataset",
+      label: languageMap("Sheet index GeoJSON"),
+      format: "application/geo+json",
+    },
+    {
+      id: baseUrl + "/iiif/series/" + seriesDruid + "/sheets.json",
+      type: "Dataset",
+      label: languageMap("Extracted sheet manifest URLs"),
+      format: "application/json",
+    },
+  ];
+}
+
+function canvasSeeAlsoResources(record, seriesDruid) {
+  return dedupeResources([
+    {
+      id: baseUrl + "/geojson/" + seriesDruid + ".geojson",
+      type: "Dataset",
+      label: languageMap("Sheet index GeoJSON"),
+      format: "application/geo+json",
+    },
+    ...assetLinksFromRecord(record),
+  ]);
+}
+
+function dedupeResources(resources) {
+  const seen = new Set();
+  return resources.filter((resource) => {
+    if (!resource?.id || seen.has(resource.id)) return false;
+    seen.add(resource.id);
+    return true;
   });
 }
 
@@ -642,6 +849,20 @@ function regionsForRecord(record, manifest, fallbackTitle = "") {
   return [...new Set(regions)];
 }
 
+function subjectsForRecord(record) {
+  const subjects = array(record.dct_subject_sm)
+    .map((subject) => String(subject || "").trim())
+    .filter(Boolean);
+  return subjects.length ? [...new Set(subjects)] : ["Unspecified subject"];
+}
+
+function themesForRecord(record) {
+  const themes = array(record.dcat_theme_sm)
+    .map((theme) => String(theme || "").trim())
+    .filter(Boolean);
+  return themes.length ? [...new Set(themes)] : ["Unspecified theme"];
+}
+
 function scalesForRecord(record, manifest, fallbackTitle = "") {
   const metadataScales = metadataValues(manifest, "Scale");
   if (metadataScales.length) return metadataScales;
@@ -671,6 +892,15 @@ function compareScaleLabels(left, right) {
   return scaleNumber(left) - scaleNumber(right) || left.localeCompare(right, "en");
 }
 
+function compareDecadeLabels(left, right) {
+  return decadeNumber(left) - decadeNumber(right) || left.localeCompare(right, "en");
+}
+
+function decadeNumber(label) {
+  const match = String(label).match(new RegExp("([0-9]{4})s"));
+  return match ? Number(match[1]) : Number.MAX_SAFE_INTEGER;
+}
+
 function scaleNumber(label) {
   const match = String(label).match(new RegExp("1:([0-9,]+)"));
   return match ? Number(match[1].replace(/,/g, "")) : Number.MAX_SAFE_INTEGER;
@@ -687,6 +917,15 @@ function slugify(value) {
 
 function normalizeManifestUrl(value) {
   return String(value || "").replace("/iiif3/", "/iiif/").replace(new RegExp("/+$"), "");
+}
+
+function normalizeStanfordId(value) {
+  const bare = normalizeBareDruid(value);
+  return bare ? "stanford-" + bare : String(value);
+}
+
+function earthworksUrl(id) {
+  return "https://earthworks.stanford.edu/catalog/" + id;
 }
 
 function druidFromManifestUrl(url) {
@@ -706,12 +945,20 @@ function* deepStrings(value) {
 function metadataPair(label, value) {
   return {
     label: languageMap(label),
-    value: languageMap(value || ""),
+    value: languageMap(value),
   };
 }
 
 function languageMap(value) {
-  return { none: [String(value || "")] };
+  const values = languageValues(value);
+  return { none: values.length ? values : [""] };
+}
+
+function languageValues(value) {
+  if (value === undefined || value === null) return [];
+  if (Array.isArray(value)) return value.flatMap((item) => languageValues(item)).filter(Boolean);
+  const text = typeof value === "string" ? value.trim() : String(value);
+  return text ? [text] : [];
 }
 
 function label(map) {

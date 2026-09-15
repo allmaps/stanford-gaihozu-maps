@@ -51,8 +51,8 @@ export function propertyList(value: unknown) {
 }
 
 export function featureBbox(feature: SeriesIndexFeature) {
-  if (feature.geometry) return bboxForFeatures([feature]);
   if (Array.isArray(feature.bbox) && feature.bbox.length >= 4) return feature.bbox as Bbox;
+  if (feature.geometry) return bboxForFeatures([feature]);
   return undefined;
 }
 
@@ -65,16 +65,16 @@ export function featureIntersectsBbox(feature: SeriesIndexFeature, viewport: Bbo
 }
 
 export function bboxForFeatures(features: SeriesIndexFeature[]) {
+  const entries = features.map(featureBboxEntry).filter((entry): entry is BboxEntry => Boolean(entry));
+  const usableEntries = entries.some((entry) => !isWorldSpanningBbox(entry.bbox))
+    ? entries.filter((entry) => !isWorldSpanningBbox(entry.bbox))
+    : entries;
   const bbox = emptyBbox();
   const longitudes: number[] = [];
 
-  for (const feature of features) {
-    if (feature.geometry) {
-      extendBboxFromGeometry(bbox, feature.geometry, longitudes);
-    } else if (Array.isArray(feature.bbox) && feature.bbox.length >= 4) {
-      extendBbox(bbox, feature.bbox as Bbox);
-      longitudes.push(Number(feature.bbox[0]), Number(feature.bbox[2]));
-    }
+  for (const entry of usableEntries) {
+    extendBbox(bbox, entry.bbox);
+    longitudes.push(...entry.longitudes);
   }
 
   if (!bbox.valid) return undefined;
@@ -92,6 +92,33 @@ export function asFeatureCollection(features: SeriesIndexFeature[]): SeriesIndex
 
 export function compareScaleLabels(left: string, right: string) {
   return scaleNumber(left) - scaleNumber(right) || left.localeCompare(right, "en", { numeric: true });
+}
+
+type BboxEntry = {
+  bbox: Bbox;
+  longitudes: number[];
+};
+
+function featureBboxEntry(feature: SeriesIndexFeature) {
+  const bbox = emptyBbox();
+  const longitudes: number[] = [];
+
+  if (Array.isArray(feature.bbox) && feature.bbox.length >= 4) {
+    extendBbox(bbox, feature.bbox as Bbox);
+    longitudes.push(Number(feature.bbox[0]), Number(feature.bbox[2]));
+  } else if (feature.geometry) {
+    extendBboxFromGeometry(bbox, feature.geometry, longitudes);
+  }
+
+  if (!bbox.valid) return undefined;
+  return {
+    bbox: [bbox.minX, bbox.minY, bbox.maxX, bbox.maxY] as Bbox,
+    longitudes,
+  };
+}
+
+function isWorldSpanningBbox(bbox: Bbox) {
+  return bbox[0] <= -179.999 && bbox[2] >= 179.999 && bbox[2] - bbox[0] >= 359.9;
 }
 
 function scaleNumber(label: string) {

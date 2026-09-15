@@ -14,6 +14,7 @@ const config = {
     }),
     paths: {
       base: basePath === "/" ? "" : basePath,
+      relative: false,
     },
   },
 };

@@ -52,12 +52,19 @@
   let appliedHoveredId = $state<FeatureId | null>(null);
   let previousFitToFeaturesKey = 0;
   let previousFitToSelectedKey = 0;
+  let initialFitDone = false;
+  let layerInteractionHandlersAttached = false;
+  let ensureLayersFrame = 0;
+  let ensureLayersRetryTimer = 0;
 
   onMount(() => {
     if (active) initMaplibre();
     return () => {
+      clearScheduledEnsure();
       map?.remove();
       map = null;
+      loaded = false;
+      layerInteractionHandlersAttached = false;
     };
   });
 
@@ -71,11 +78,11 @@
   });
 
   $effect(() => {
-    if (!map || !loaded) return;
+    if (!map) return;
+    scheduleEnsureIndexLayers();
+    if (!loaded) return;
     const nextFeatures = features;
-    const source = map.getSource(sourceId) as maplibregl.GeoJSONSource | undefined;
-    if (!source) return;
-    source.setData(displayFeatureCollection(nextFeatures));
+    if (!updateSourceData(nextFeatures)) return;
     untrack(() => {
       applyFeatureState(appliedSelectedId, "selected", false);
       applyFeatureState(appliedHoveredId, "hover", false);
@@ -83,6 +90,11 @@
       appliedHoveredId = null;
       syncSelectedState();
       syncHoveredState();
+      if (!initialFitDone && nextFeatures.length) {
+        initialFitDone = true;
+        fitToFeatures(nextFeatures, false);
+        updateViewportBbox();
+      }
     });
   });
 
@@ -122,7 +134,6 @@
     try {
       map = new maplibregl.Map({
         container: mapEl,
-        style: openFreeMapStyle,
         center: [126, 27],
         zoom: 3.15,
         maxPitch: 0,
@@ -143,26 +154,148 @@
     map.addControl(new maplibregl.ScaleControl({ unit: "metric" }), "bottom-left");
     map.addControl(new maplibregl.AttributionControl({ compact: true }), "bottom-right");
 
-    map.on("load", () => {
-      if (!map) return;
-      map.addSource(sourceId, {
-        type: "geojson",
-        data: displayFeatureCollection(features),
-        promoteId: "id",
-      });
-      addIndexLayers();
-      loaded = true;
-      fitToFeatures(features, false);
-      updateViewportBbox();
-      map.on("moveend", updateViewportBbox);
-      map.on("resize", updateViewportBbox);
+    const scheduleLayerSetup = () => scheduleEnsureIndexLayers();
+    map.on("style.load", scheduleLayerSetup);
+    map.on("styledata", scheduleLayerSetup);
+    map.on("load", scheduleLayerSetup);
+    map.on("idle", scheduleLayerSetup);
+    map.on("moveend", updateViewportBbox);
+    map.on("resize", updateViewportBbox);
+    map.on("error", handleMapError);
+    map.setStyle(openFreeMapStyle, { transformStyle: addIndexToStyle });
+    scheduleEnsureIndexLayers();
+  }
+
+  function scheduleEnsureIndexLayers(delay = 0) {
+    if (typeof window === "undefined" || !map) return;
+    if (delay > 0) {
+      if (ensureLayersRetryTimer) return;
+      ensureLayersRetryTimer = window.setTimeout(() => {
+        ensureLayersRetryTimer = 0;
+        scheduleEnsureIndexLayers();
+      }, delay);
+      return;
+    }
+    if (ensureLayersFrame) return;
+    ensureLayersFrame = window.requestAnimationFrame(() => {
+      ensureLayersFrame = 0;
+      ensureIndexLayers();
     });
   }
 
-  function addIndexLayers() {
+  function clearScheduledEnsure() {
+    if (typeof window === "undefined") return;
+    if (ensureLayersFrame) window.cancelAnimationFrame(ensureLayersFrame);
+    if (ensureLayersRetryTimer) window.clearTimeout(ensureLayersRetryTimer);
+    ensureLayersFrame = 0;
+    ensureLayersRetryTimer = 0;
+  }
+
+  function ensureIndexLayers() {
     if (!map) return;
 
-    map.addLayer({
+    try {
+      let source = map.getSource(sourceId) as maplibregl.GeoJSONSource | undefined;
+      if (!source) {
+        map.addSource(sourceId, {
+          type: "geojson",
+          data: displayFeatureCollection(features),
+          promoteId: "id",
+        });
+        source = map.getSource(sourceId) as maplibregl.GeoJSONSource | undefined;
+      }
+
+      addIndexLayers();
+
+      if (!source || !map.getLayer(fillLayerId) || !map.getLayer(lineLayerId)) {
+        scheduleEnsureIndexLayers(80);
+        return;
+      }
+
+      loaded = true;
+      mapError = "";
+      updateSourceData(features);
+      if (!initialFitDone && features.length) {
+        initialFitDone = true;
+        fitToFeatures(features, false);
+      }
+      updateViewportBbox();
+    } catch (caught) {
+      const message = errorMessage(caught);
+      if (isStyleLoadingMessage(message)) {
+        scheduleEnsureIndexLayers(80);
+        return;
+      }
+      mapError = message;
+      onViewportBboxChange(null);
+    }
+  }
+
+  function updateSourceData(nextFeatures: SeriesIndexFeature[]) {
+    if (!map) return false;
+    try {
+      const source = map.getSource(sourceId) as maplibregl.GeoJSONSource | undefined;
+      if (!source) {
+        loaded = false;
+        scheduleEnsureIndexLayers();
+        return false;
+      }
+      source.setData(displayFeatureCollection(nextFeatures));
+      mapError = "";
+      return true;
+    } catch (caught) {
+      const message = errorMessage(caught);
+      if (isStyleLoadingMessage(message)) {
+        loaded = false;
+        scheduleEnsureIndexLayers(80);
+        return false;
+      }
+      mapError = message;
+      onViewportBboxChange(null);
+      return false;
+    }
+  }
+
+  function handleMapError(event: maplibregl.ErrorEvent) {
+    const message = event.error?.message || String(event.error || "");
+    if (isStyleLoadingMessage(message)) {
+      scheduleEnsureIndexLayers(80);
+      return;
+    }
+    if (/geojson|series-index|feature|source|layer/i.test(message)) mapError = message;
+  }
+
+  function errorMessage(caught: unknown) {
+    return caught instanceof Error ? caught.message : String(caught);
+  }
+
+  function isStyleLoadingMessage(message: string) {
+    return /style.*(?:not.*(?:done|loaded|complete|completely)|loading)|loadStyle|before style/i.test(message);
+  }
+
+  const addIndexToStyle: maplibregl.TransformStyleFunction = (_previousStyle, nextStyle) => ({
+    ...nextStyle,
+    sources: {
+      ...nextStyle.sources,
+      [sourceId]: indexSource(),
+    },
+    layers: [
+      ...(nextStyle.layers || []).filter((layer) => layer.id !== fillLayerId && layer.id !== lineLayerId),
+      indexFillLayer(),
+      indexLineLayer(),
+    ],
+  });
+
+  function indexSource(): maplibregl.GeoJSONSourceSpecification {
+    return {
+      type: "geojson",
+      data: displayFeatureCollection(features),
+      promoteId: "id",
+    };
+  }
+
+  function indexFillLayer(): maplibregl.LayerSpecification {
+    return {
       id: fillLayerId,
       type: "fill",
       source: sourceId,
@@ -186,7 +319,7 @@
             0.54,
             ["boolean", ["feature-state", "hover"], false],
             0.42,
-            ["interpolate", ["linear"], ["coalesce", ["get", "_scaleDenominator"], 1000000], 5000, 0.3, 25000, 0.26, 250000, 0.2, 1000000, 0.16],
+            ["interpolate", ["linear"], ["to-number", ["get", "_scaleDenominator"], 1000000], 5000, 0.3, 25000, 0.26, 250000, 0.2, 1000000, 0.16],
           ],
           6,
           [
@@ -195,7 +328,7 @@
             0.54,
             ["boolean", ["feature-state", "hover"], false],
             0.42,
-            ["interpolate", ["linear"], ["coalesce", ["get", "_scaleDenominator"], 1000000], 5000, 0.12, 25000, 0.14, 250000, 0.18, 1000000, 0.16],
+            ["interpolate", ["linear"], ["to-number", ["get", "_scaleDenominator"], 1000000], 5000, 0.12, 25000, 0.14, 250000, 0.18, 1000000, 0.16],
           ],
           9,
           [
@@ -204,13 +337,15 @@
             0.54,
             ["boolean", ["feature-state", "hover"], false],
             0.42,
-            ["interpolate", ["linear"], ["coalesce", ["get", "_scaleDenominator"], 1000000], 5000, 0.04, 25000, 0.07, 250000, 0.14, 1000000, 0.16],
+            ["interpolate", ["linear"], ["to-number", ["get", "_scaleDenominator"], 1000000], 5000, 0.04, 25000, 0.07, 250000, 0.14, 1000000, 0.16],
           ],
         ],
       },
-    });
+    };
+  }
 
-    map.addLayer({
+  function indexLineLayer(): maplibregl.LayerSpecification {
+    return {
       id: lineLayerId,
       type: "line",
       source: sourceId,
@@ -243,7 +378,7 @@
             1,
             ["boolean", ["feature-state", "hover"], false],
             0.98,
-            ["interpolate", ["linear"], ["coalesce", ["get", "_scaleDenominator"], 1000000], 5000, 0.22, 25000, 0.34, 250000, 0.66, 1000000, 0.76],
+            ["interpolate", ["linear"], ["to-number", ["get", "_scaleDenominator"], 1000000], 5000, 0.22, 25000, 0.34, 250000, 0.66, 1000000, 0.76],
           ],
         ],
         "line-width": [
@@ -256,7 +391,19 @@
           ["case", ["boolean", ["feature-state", "selected"], false], 4.2, 2.2],
         ],
       },
-    });
+    };
+  }
+
+  function addIndexLayers() {
+    if (!map) return;
+    if (!map.getLayer(fillLayerId)) map.addLayer(indexFillLayer());
+    if (!map.getLayer(lineLayerId)) map.addLayer(indexLineLayer());
+    attachLayerInteractionHandlers();
+  }
+
+  function attachLayerInteractionHandlers() {
+    if (!map || layerInteractionHandlersAttached || !map.getLayer(fillLayerId)) return;
+    layerInteractionHandlersAttached = true;
 
     map.on("mousemove", fillLayerId, (event: maplibregl.MapLayerMouseEvent) => {
       const feature = event.features?.[0] as SeriesIndexFeature | undefined;

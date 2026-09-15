@@ -15,6 +15,12 @@ import clipping from "polygon-clipping";
 import { geojson as fgbGeojson } from "flatgeobuf";
 import { fetch as fetchIiif } from "@iiif/helpers/fetch";
 import shp from "shpjs";
+import {
+  assetLinksFromRecord,
+  metadataPairsFromRecord,
+  navDateFromRecord,
+  summaryTextFromRecord,
+} from "./iiif-metadata.mjs";
 
 const rootDir = process.cwd();
 const args = parseArgs(process.argv.slice(2));
@@ -44,6 +50,7 @@ const iiifPresentationContext = "http://iiif.io/api/presentation/3/context.json"
 const nativeFetch = globalThis.fetch.bind(globalThis);
 const hostLastFetch = new Map();
 const { union: unionPolygons } = clipping;
+const collectionLabels = new Map();
 
 globalThis.fetch = async (input, init = {}) => {
   const url = typeof input === "string" ? input : input.url;
@@ -74,6 +81,8 @@ async function main() {
   await mkdir(path.join(staticDir, "iiif", "series"), { recursive: true });
   await mkdir(path.join(dataDir, "index-records"), { recursive: true });
 
+  const collectionRecord = await readMetadataRecord(metadataRoot, collectionDruid);
+  addCollectionLabel(collectionRecord);
   const allRecords = await discoverSeries(metadataRoot, collectionId);
   const records = allRecords
     .filter((record) => {
@@ -131,10 +140,10 @@ async function main() {
     if (item) {
       collectionItems.push(item);
     }
-    await writeCollectionAndReport(collectionItems, allRecords.length, report);
+    await writeCollectionAndReport(collectionItems, allRecords.length, report, collectionRecord);
   }
 
-  await writeCollectionAndReport(collectionItems, allRecords.length, report);
+  await writeCollectionAndReport(collectionItems, allRecords.length, report, collectionRecord);
   console.log(`Wrote ${collectionItems.length} collection manifest entries.`);
   console.log(`Collection: ${baseUrl}/iiif/collection.json`);
 }
@@ -211,6 +220,8 @@ async function prepareSeries(record, ordinal, total) {
 
 async function buildSeriesManifestFile(prepared, ordinal, total) {
   const { record, seriesDruid, title, refs, sheets, report } = prepared;
+  const navDate = navDateFromRecord(record);
+  const canvasSeeAlso = canvasSeeAlsoResources(record, seriesDruid);
   const canvases = [];
 
   console.log(
@@ -230,7 +241,7 @@ async function buildSeriesManifestFile(prepared, ordinal, total) {
           ? manifest.items
           : [];
         for (const canvas of manifestCanvases) {
-          canvases.push(enrichCanvas(canvas, sheet, sheetIndex));
+          canvases.push(enrichCanvas(canvas, sheet, sheetIndex, { navDate, seeAlso: canvasSeeAlso }));
         }
       } catch (error) {
         report.failedSheets.push({
@@ -263,10 +274,9 @@ async function buildSeriesManifestFile(prepared, ordinal, total) {
     label: languageMap(title),
     summary: languageMap(summaryText(record)),
     thumbnail: thumbnail(refs),
+    navDate,
     metadata: [
-      metadataPair("Series DRUID", seriesDruid),
-      metadataPair("Available sheets", String(sheets.length)),
-      metadataPair("Combined canvases", String(canvases.length)),
+      metadataPair("EarthWorks ID", record.id),
     ],
     homepage: [
       {
@@ -276,20 +286,13 @@ async function buildSeriesManifestFile(prepared, ordinal, total) {
         format: "text/html",
       },
     ],
-    seeAlso: [
-      {
-        id: `${baseUrl}/geojson/${seriesDruid}.geojson`,
-        type: "Dataset",
-        label: languageMap("Sheet index GeoJSON"),
-        format: "application/geo+json",
-      },
-    ],
+    seeAlso: seriesSeeAlsoResources(seriesDruid),
   };
 }
 
-async function writeCollectionAndReport(collectionItems, totalSeries, report) {
+async function writeCollectionAndReport(collectionItems, totalSeries, report, collectionRecord) {
   if (dryRun) return;
-  const collection = buildCollection(collectionItems, totalSeries);
+  const collection = buildCollection(collectionItems, totalSeries, collectionRecord);
   await writeJson(path.join(staticDir, "iiif", "collection.json"), collection);
   await writeBuildReport(report);
 }
@@ -467,6 +470,33 @@ async function flatgeobufToGeojson(bytes) {
   };
 }
 
+async function readMetadataRecord(metadataRoot, druid) {
+  const file = metadataPathForDruid(metadataRoot, druid);
+  if (!existsSync(file)) return null;
+  return readJson(file);
+}
+
+function addCollectionLabel(record) {
+  if (!record?.id) return;
+  const normalized = normalizeStanfordId(record.id);
+  const bare = normalizeBareDruid(normalized);
+  const title = record.dct_title_s || normalized;
+  collectionLabels.set(normalized, title);
+  collectionLabels.set(bare, title);
+}
+
+function metadataPathForDruid(metadataRoot, druid) {
+  const bare = normalizeBareDruid(druid);
+  return path.join(
+    metadataRoot,
+    bare.slice(0, 2),
+    bare.slice(2, 5),
+    bare.slice(5, 7),
+    bare.slice(7),
+    "geoblacklight.json",
+  );
+}
+
 async function discoverSeries(metadataRoot, memberOfId) {
   const records = [];
   for await (const file of walk(metadataRoot)) {
@@ -558,12 +588,8 @@ function buildSeriesManifest(record, seriesDruid, sheets, canvases) {
     summary: languageMap(summaryText(record)),
     rights: publicDomainRights(record),
     behavior: ["individuals"],
-    metadata: [
-      metadataPair("Series DRUID", seriesDruid),
-      metadataPair("EarthWorks ID", record.id),
-      metadataPair("Available sheets", String(sheets.length)),
-      metadataPair("Combined canvases", String(canvases.length)),
-    ],
+    navDate: navDateFromRecord(record),
+    metadata: metadataPairsFromRecord(record, { collectionLabels }),
     homepage: [
       {
         id: earthworksUrl(record.id),
@@ -578,20 +604,10 @@ function buildSeriesManifest(record, seriesDruid, sheets, canvases) {
         format: "text/html",
       },
     ],
-    seeAlso: [
-      {
-        id: `${baseUrl}/geojson/${seriesDruid}.geojson`,
-        type: "Dataset",
-        label: languageMap("Sheet index GeoJSON"),
-        format: "application/geo+json",
-      },
-      {
-        id: `${baseUrl}/iiif/series/${seriesDruid}/sheets.json`,
-        type: "Dataset",
-        label: languageMap("Extracted sheet manifest URLs"),
-        format: "application/json",
-      },
-    ],
+    seeAlso: dedupeResources([
+      ...seriesSeeAlsoResources(seriesDruid),
+      ...assetLinksFromRecord(record),
+    ]),
     thumbnail: thumbnail(refs),
     navPlace: unionSheetsNavPlace(sheets, seriesDruid, title),
     partOf: [
@@ -605,14 +621,19 @@ function buildSeriesManifest(record, seriesDruid, sheets, canvases) {
   });
 }
 
-function buildCollection(items, totalSeries) {
+function buildCollection(items, totalSeries, collectionRecord) {
+  const fallbackSummary =
+    "Combined IIIF manifests generated from " +
+    items.length +
+    " of " +
+    totalSeries +
+    " Stanford EarthWorks Gaihozu index-map records.";
   return {
-    id: `${baseUrl}/iiif/collection.json`,
+    id: baseUrl + "/iiif/collection.json",
     type: "Collection",
-    label: languageMap("Gaihozu Index Maps"),
-    summary: languageMap(
-      `Combined IIIF manifests generated from ${items.length} of ${totalSeries} Stanford EarthWorks Gaihozu index-map records.`,
-    ),
+    label: languageMap(collectionRecord?.dct_title_s || "Gaihozu Index Maps"),
+    summary: languageMap(summaryTextFromRecord(collectionRecord) || fallbackSummary),
+    metadata: metadataPairsFromRecord(collectionRecord, { collectionLabels }),
     requiredStatement: {
       label: languageMap("Source"),
       value: languageMap(
@@ -631,7 +652,45 @@ function buildCollection(items, totalSeries) {
   };
 }
 
-function enrichCanvas(canvas, sheet, sheetIndex) {
+function seriesSeeAlsoResources(seriesDruid) {
+  return [
+    {
+      id: baseUrl + "/geojson/" + seriesDruid + ".geojson",
+      type: "Dataset",
+      label: languageMap("Sheet index GeoJSON"),
+      format: "application/geo+json",
+    },
+    {
+      id: baseUrl + "/iiif/series/" + seriesDruid + "/sheets.json",
+      type: "Dataset",
+      label: languageMap("Extracted sheet manifest URLs"),
+      format: "application/json",
+    },
+  ];
+}
+
+function canvasSeeAlsoResources(record, seriesDruid) {
+  return dedupeResources([
+    {
+      id: baseUrl + "/geojson/" + seriesDruid + ".geojson",
+      type: "Dataset",
+      label: languageMap("Sheet index GeoJSON"),
+      format: "application/geo+json",
+    },
+    ...assetLinksFromRecord(record),
+  ]);
+}
+
+function dedupeResources(resources) {
+  const seen = new Set();
+  return resources.filter((resource) => {
+    if (!resource?.id || seen.has(resource.id)) return false;
+    seen.add(resource.id);
+    return true;
+  });
+}
+
+function enrichCanvas(canvas, sheet, sheetIndex, { navDate, seeAlso = [] } = {}) {
   const clone = structuredClone(canvas);
   const existing = Array.isArray(clone.metadata) ? clone.metadata : [];
   clone.metadata = [
@@ -642,11 +701,15 @@ function enrichCanvas(canvas, sheet, sheetIndex) {
   if (sheet.navPlace) {
     clone.navPlace = mergeNavPlace(clone.navPlace, sheet.navPlace);
   }
-  clone.navDate = clone.navDate || undefined;
+  if (navDate) {
+    clone.navDate = navDate;
+  } else {
+    clone.navDate = clone.navDate || undefined;
+  }
   clone.behavior = clone.behavior || [];
   clone.annotations = clone.annotations || [];
   clone.rendering = array(clone.rendering);
-  clone.seeAlso = array(clone.seeAlso);
+  clone.seeAlso = dedupeResources([...array(clone.seeAlso), ...seeAlso]);
   clone.partOf = [
     ...(Array.isArray(clone.partOf) ? clone.partOf : []),
     {
@@ -1045,18 +1108,26 @@ function stringValue(value) {
 }
 
 function summaryText(record) {
-  return array(record.dct_description_sm).find(Boolean) || "";
+  return summaryTextFromRecord(record);
 }
 
 function metadataPair(label, value) {
   return {
     label: languageMap(label),
-    value: languageMap(value || ""),
+    value: languageMap(value),
   };
 }
 
 function languageMap(value) {
-  return { none: [String(value || "")] };
+  const values = languageValues(value);
+  return { none: values.length ? values : [""] };
+}
+
+function languageValues(value) {
+  if (value === undefined || value === null) return [];
+  if (Array.isArray(value)) return value.flatMap((item) => languageValues(item)).filter(Boolean);
+  const text = typeof value === "string" ? value.trim() : String(value);
+  return text ? [text] : [];
 }
 
 function publicDomainRights(record) {
