@@ -12,6 +12,204 @@
       "19 series."
     ]
   },
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Collection view"
+        ]
+      },
+      "value": {
+        "none": [
+          "By Scale"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Group"
+        ]
+      },
+      "value": {
+        "none": [
+          "1:1,000,000"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Series in group"
+        ]
+      },
+      "value": {
+        "none": [
+          "19"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "EarthWorks ID"
+        ]
+      },
+      "value": {
+        "none": [
+          "stanford-ch237ht4777"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Publisher"
+        ]
+      },
+      "value": {
+        "none": [
+          "Stanford Digital Repository"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Issued"
+        ]
+      },
+      "value": {
+        "none": [
+          "2016"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Subject"
+        ]
+      },
+      "value": {
+        "none": [
+          "Grids (Cartography)",
+          "Index maps",
+          "Topographic maps"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Provider"
+        ]
+      },
+      "value": {
+        "none": [
+          "Stanford"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Identifier"
+        ]
+      },
+      "value": {
+        "none": [
+          "https://purl.stanford.edu/ch237ht4777"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Georeferenced"
+        ]
+      },
+      "value": {
+        "none": [
+          "No"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Resource class"
+        ]
+      },
+      "value": {
+        "none": [
+          "Maps"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Resource type"
+        ]
+      },
+      "value": {
+        "none": [
+          "Line data",
+          "Index maps",
+          "Topographic maps"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Rights"
+        ]
+      },
+      "value": {
+        "none": [
+          "This item is in the public domain.  There are no restrictions on use."
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Rights holder"
+        ]
+      },
+      "value": {
+        "none": [
+          "This work is in the Public Domain, meaning that it is not subject to copyright."
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Metadata modified"
+        ]
+      },
+      "value": {
+        "none": [
+          "2026-07-13T19:19:14Z"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Metadata version"
+        ]
+      },
+      "value": {
+        "none": [
+          "Aardvark"
+        ]
+      }
+    }
+  ],
   "items": [
     {
       "id": "https://pages.allmaps.org/stanford-gaihozu-maps/iiif/series/yb416dd0668/manifest.json",
@@ -33,28 +231,17 @@
           "format": "image/jpeg"
         }
       ],
+      "navDate": "1944-01-01T00:00:00Z",
       "metadata": [
         {
           "label": {
             "none": [
-              "Series DRUID"
+              "EarthWorks ID"
             ]
           },
           "value": {
             "none": [
-              "yb416dd0668"
-            ]
-          }
-        },
-        {
-          "label": {
-            "none": [
-              "Available sheets"
-            ]
-          },
-          "value": {
-            "none": [
-              "34"
+              "stanford-yb416dd0668"
             ]
           }
         },
@@ -78,7 +265,7 @@
           },
           "value": {
             "none": [
-              "Southeast Asia; Overview and Multi-region"
+              "Southeast Asia"
             ]
           }
         }
@@ -125,6 +312,56 @@
             ]
           },
           "format": "application/json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
         }
       ]
     },
@@ -148,28 +385,17 @@
           "format": "image/jpeg"
         }
       ],
+      "navDate": "1942-01-01T00:00:00Z",
       "metadata": [
         {
           "label": {
             "none": [
-              "Series DRUID"
+              "EarthWorks ID"
             ]
           },
           "value": {
             "none": [
-              "nf096xr6164"
-            ]
-          }
-        },
-        {
-          "label": {
-            "none": [
-              "Available sheets"
-            ]
-          },
-          "value": {
-            "none": [
-              "3"
+              "stanford-nf096xr6164"
             ]
           }
         },
@@ -193,7 +419,7 @@
           },
           "value": {
             "none": [
-              "China and Mongolia; South Asia; Overview and Multi-region"
+              "China and Mongolia"
             ]
           }
         }
@@ -240,6 +466,56 @@
             ]
           },
           "format": "application/json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:nf096xr6164/index_10505218-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:nf096xr6164/index_10505218-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:nf096xr6164/index_10505218.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:nf096xr6164/index_10505218.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/nf096xr6164",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
         }
       ]
     },
@@ -263,28 +539,17 @@
           "format": "image/jpeg"
         }
       ],
+      "navDate": "1942-01-01T00:00:00Z",
       "metadata": [
         {
           "label": {
             "none": [
-              "Series DRUID"
+              "EarthWorks ID"
             ]
           },
           "value": {
             "none": [
-              "xn125dn1518"
-            ]
-          }
-        },
-        {
-          "label": {
-            "none": [
-              "Available sheets"
-            ]
-          },
-          "value": {
-            "none": [
-              "2"
+              "stanford-xn125dn1518"
             ]
           }
         },
@@ -308,7 +573,7 @@
           },
           "value": {
             "none": [
-              "South Asia; Overview and Multi-region"
+              "South Asia"
             ]
           }
         }
@@ -355,6 +620,56 @@
             ]
           },
           "format": "application/json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:xn125dn1518/index_9927203-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:xn125dn1518/index_9927203-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:xn125dn1518/index_9927203.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:xn125dn1518/index_9927203.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/xn125dn1518",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
         }
       ]
     },
@@ -378,28 +693,17 @@
           "format": "image/jpeg"
         }
       ],
+      "navDate": "1926-01-01T00:00:00Z",
       "metadata": [
         {
           "label": {
             "none": [
-              "Series DRUID"
+              "EarthWorks ID"
             ]
           },
           "value": {
             "none": [
-              "mb886mv5963"
-            ]
-          }
-        },
-        {
-          "label": {
-            "none": [
-              "Available sheets"
-            ]
-          },
-          "value": {
-            "none": [
-              "181"
+              "stanford-mb886mv5963"
             ]
           }
         },
@@ -423,7 +727,7 @@
           },
           "value": {
             "none": [
-              "Europe and Eurasia Overview; Overview and Multi-region"
+              "Europe and Eurasia Overview"
             ]
           }
         }
@@ -470,6 +774,76 @@
             ]
           },
           "format": "application/json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:mb886mv5963/index_map.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:mb886mv5963/index_9590334-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:mb886mv5963/index_9590334-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:mb886mv5963/index_9590334-fgdc.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FGDC metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:mb886mv5963/index_map.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:mb886mv5963/index_map.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/mb886mv5963",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
         }
       ]
     },
@@ -493,28 +867,17 @@
           "format": "image/jpeg"
         }
       ],
+      "navDate": "1910-01-01T00:00:00Z",
       "metadata": [
         {
           "label": {
             "none": [
-              "Series DRUID"
+              "EarthWorks ID"
             ]
           },
           "value": {
             "none": [
-              "xj408js6736"
-            ]
-          }
-        },
-        {
-          "label": {
-            "none": [
-              "Available sheets"
-            ]
-          },
-          "value": {
-            "none": [
-              "72"
+              "stanford-xj408js6736"
             ]
           }
         },
@@ -538,7 +901,7 @@
           },
           "value": {
             "none": [
-              "Europe and Eurasia Overview; Overview and Multi-region"
+              "Europe and Eurasia Overview"
             ]
           }
         }
@@ -585,6 +948,76 @@
             ]
           },
           "format": "application/json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:xj408js6736/index_map.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:xj408js6736/index_9590333-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:xj408js6736/index_9590333-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:xj408js6736/index_9590333-fgdc.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FGDC metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:xj408js6736/index_map.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:xj408js6736/index_map.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/xj408js6736",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
         }
       ]
     },
@@ -608,28 +1041,17 @@
           "format": "image/jpeg"
         }
       ],
+      "navDate": "1944-01-01T00:00:00Z",
       "metadata": [
         {
           "label": {
             "none": [
-              "Series DRUID"
+              "EarthWorks ID"
             ]
           },
           "value": {
             "none": [
-              "yk608hw7824"
-            ]
-          }
-        },
-        {
-          "label": {
-            "none": [
-              "Available sheets"
-            ]
-          },
-          "value": {
-            "none": [
-              "28"
+              "stanford-yk608hw7824"
             ]
           }
         },
@@ -653,7 +1075,7 @@
           },
           "value": {
             "none": [
-              "Europe and Eurasia Overview; Overview and Multi-region"
+              "Europe and Eurasia Overview"
             ]
           }
         }
@@ -700,6 +1122,56 @@
             ]
           },
           "format": "application/json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yk608hw7824/index_13835091-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yk608hw7824/index_13835091-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yk608hw7824/index_13835091.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yk608hw7824/index_13835091.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yk608hw7824",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
         }
       ]
     },
@@ -723,28 +1195,17 @@
           "format": "image/jpeg"
         }
       ],
+      "navDate": "1941-01-01T00:00:00Z",
       "metadata": [
         {
           "label": {
             "none": [
-              "Series DRUID"
+              "EarthWorks ID"
             ]
           },
           "value": {
             "none": [
-              "dp038rh1523"
-            ]
-          }
-        },
-        {
-          "label": {
-            "none": [
-              "Available sheets"
-            ]
-          },
-          "value": {
-            "none": [
-              "3"
+              "stanford-dp038rh1523"
             ]
           }
         },
@@ -768,7 +1229,7 @@
           },
           "value": {
             "none": [
-              "Southeast Asia; South Asia; Overview and Multi-region"
+              "Southeast Asia"
             ]
           }
         }
@@ -815,6 +1276,56 @@
             ]
           },
           "format": "application/json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:dp038rh1523/index_10160337-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:dp038rh1523/index_10160337-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:dp038rh1523/index_10160337.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:dp038rh1523/index_10160337.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/dp038rh1523",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
         }
       ]
     },
@@ -838,28 +1349,17 @@
           "format": "image/jpeg"
         }
       ],
+      "navDate": "1941-01-01T00:00:00Z",
       "metadata": [
         {
           "label": {
             "none": [
-              "Series DRUID"
+              "EarthWorks ID"
             ]
           },
           "value": {
             "none": [
-              "md095vt8329"
-            ]
-          }
-        },
-        {
-          "label": {
-            "none": [
-              "Available sheets"
-            ]
-          },
-          "value": {
-            "none": [
-              "2"
+              "stanford-md095vt8329"
             ]
           }
         },
@@ -883,7 +1383,7 @@
           },
           "value": {
             "none": [
-              "Japan; Karafuto, Sakhalin, and Kurils; Russian Far East and Siberia; Overview and Multi-region"
+              "Japan"
             ]
           }
         }
@@ -930,6 +1430,76 @@
             ]
           },
           "format": "application/json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:md095vt8329/index_map.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:md095vt8329/index_10563447-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:md095vt8329/index_10563447-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:md095vt8329/index_10563447-fgdc.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FGDC metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:md095vt8329/index_map.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:md095vt8329/index_map.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/md095vt8329",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
         }
       ]
     },
@@ -953,28 +1523,17 @@
           "format": "image/jpeg"
         }
       ],
+      "navDate": "1941-01-01T00:00:00Z",
       "metadata": [
         {
           "label": {
             "none": [
-              "Series DRUID"
+              "EarthWorks ID"
             ]
           },
           "value": {
             "none": [
-              "pr343gx3789"
-            ]
-          }
-        },
-        {
-          "label": {
-            "none": [
-              "Available sheets"
-            ]
-          },
-          "value": {
-            "none": [
-              "2"
+              "stanford-pr343gx3789"
             ]
           }
         },
@@ -998,7 +1557,7 @@
           },
           "value": {
             "none": [
-              "Manchuria and Northeast China; Russian Far East and Siberia; Overview and Multi-region"
+              "Manchuria and Northeast China"
             ]
           }
         }
@@ -1045,6 +1604,76 @@
             ]
           },
           "format": "application/json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:pr343gx3789/index_map.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:pr343gx3789/index_10652573-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:pr343gx3789/index_10652573-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:pr343gx3789/index_10652573-fgdc.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FGDC metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:pr343gx3789/index_map.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:pr343gx3789/index_map.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/pr343gx3789",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
         }
       ]
     },
@@ -1068,28 +1697,17 @@
           "format": "image/jpeg"
         }
       ],
+      "navDate": "1941-01-01T00:00:00Z",
       "metadata": [
         {
           "label": {
             "none": [
-              "Series DRUID"
+              "EarthWorks ID"
             ]
           },
           "value": {
             "none": [
-              "wz242zy4095"
-            ]
-          }
-        },
-        {
-          "label": {
-            "none": [
-              "Available sheets"
-            ]
-          },
-          "value": {
-            "none": [
-              "1"
+              "stanford-wz242zy4095"
             ]
           }
         },
@@ -1113,7 +1731,7 @@
           },
           "value": {
             "none": [
-              "China and Mongolia; Southeast Asia; Overview and Multi-region"
+              "China and Mongolia"
             ]
           }
         }
@@ -1160,6 +1778,56 @@
             ]
           },
           "format": "application/json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:wz242zy4095/index_12271078-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:wz242zy4095/index_12271078-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:wz242zy4095/index_12271078.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:wz242zy4095/index_12271078.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/wz242zy4095",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
         }
       ]
     },
@@ -1183,28 +1851,17 @@
           "format": "image/jpeg"
         }
       ],
+      "navDate": "1945-01-01T00:00:00Z",
       "metadata": [
         {
           "label": {
             "none": [
-              "Series DRUID"
+              "EarthWorks ID"
             ]
           },
           "value": {
             "none": [
-              "gc220qw5615"
-            ]
-          }
-        },
-        {
-          "label": {
-            "none": [
-              "Available sheets"
-            ]
-          },
-          "value": {
-            "none": [
-              "2"
+              "stanford-gc220qw5615"
             ]
           }
         },
@@ -1228,7 +1885,7 @@
           },
           "value": {
             "none": [
-              "Manchuria and Northeast China; China and Mongolia; Overview and Multi-region"
+              "Manchuria and Northeast China"
             ]
           }
         }
@@ -1275,6 +1932,56 @@
             ]
           },
           "format": "application/json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:gc220qw5615/index_12376415-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:gc220qw5615/index_12376415-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:gc220qw5615/index_12376415.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:gc220qw5615/index_12376415.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/gc220qw5615",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
         }
       ]
     },
@@ -1298,28 +2005,17 @@
           "format": "image/jpeg"
         }
       ],
+      "navDate": "1944-01-01T00:00:00Z",
       "metadata": [
         {
           "label": {
             "none": [
-              "Series DRUID"
+              "EarthWorks ID"
             ]
           },
           "value": {
             "none": [
-              "kj167xt8678"
-            ]
-          }
-        },
-        {
-          "label": {
-            "none": [
-              "Available sheets"
-            ]
-          },
-          "value": {
-            "none": [
-              "3"
+              "stanford-kj167xt8678"
             ]
           }
         },
@@ -1343,7 +2039,7 @@
           },
           "value": {
             "none": [
-              "Manchuria and Northeast China; China and Mongolia; Russian Far East and Siberia; Overview and Multi-region"
+              "Manchuria and Northeast China"
             ]
           }
         }
@@ -1390,6 +2086,76 @@
             ]
           },
           "format": "application/json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:kj167xt8678/index_map.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:kj167xt8678/index_10109116-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:kj167xt8678/index_10109116-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:kj167xt8678/index_10109116-fgdc.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FGDC metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:kj167xt8678/index_map.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:kj167xt8678/index_map.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/kj167xt8678",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
         }
       ]
     },
@@ -1413,28 +2179,17 @@
           "format": "image/jpeg"
         }
       ],
+      "navDate": "1943-01-01T00:00:00Z",
       "metadata": [
         {
           "label": {
             "none": [
-              "Series DRUID"
+              "EarthWorks ID"
             ]
           },
           "value": {
             "none": [
-              "qg684ny8652"
-            ]
-          }
-        },
-        {
-          "label": {
-            "none": [
-              "Available sheets"
-            ]
-          },
-          "value": {
-            "none": [
-              "18"
+              "stanford-qg684ny8652"
             ]
           }
         },
@@ -1458,7 +2213,7 @@
           },
           "value": {
             "none": [
-              "China and Mongolia; Overview and Multi-region"
+              "China and Mongolia"
             ]
           }
         }
@@ -1505,6 +2260,76 @@
             ]
           },
           "format": "application/json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:qg684ny8652/index_map.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:qg684ny8652/index_10563606-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:qg684ny8652/index_10563606-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:qg684ny8652/index_10563606-fgdc.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FGDC metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:qg684ny8652/index_map.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:qg684ny8652/index_map.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/qg684ny8652",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
         }
       ]
     },
@@ -1528,28 +2353,17 @@
           "format": "image/jpeg"
         }
       ],
+      "navDate": "1939-01-01T00:00:00Z",
       "metadata": [
         {
           "label": {
             "none": [
-              "Series DRUID"
+              "EarthWorks ID"
             ]
           },
           "value": {
             "none": [
-              "rw143df7340"
-            ]
-          }
-        },
-        {
-          "label": {
-            "none": [
-              "Available sheets"
-            ]
-          },
-          "value": {
-            "none": [
-              "10"
+              "stanford-rw143df7340"
             ]
           }
         },
@@ -1573,7 +2387,7 @@
           },
           "value": {
             "none": [
-              "Manchuria and Northeast China; China and Mongolia; Russian Far East and Siberia; Overview and Multi-region"
+              "Manchuria and Northeast China"
             ]
           }
         }
@@ -1620,6 +2434,76 @@
             ]
           },
           "format": "application/json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:rw143df7340/index_map.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:rw143df7340/index_10563570-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:rw143df7340/index_10563570-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:rw143df7340/index_10563570-fgdc.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FGDC metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:rw143df7340/index_map.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:rw143df7340/index_map.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/rw143df7340",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
         }
       ]
     },
@@ -1643,28 +2527,17 @@
           "format": "image/jpeg"
         }
       ],
+      "navDate": "1944-01-01T00:00:00Z",
       "metadata": [
         {
           "label": {
             "none": [
-              "Series DRUID"
+              "EarthWorks ID"
             ]
           },
           "value": {
             "none": [
-              "yg448cx4106"
-            ]
-          }
-        },
-        {
-          "label": {
-            "none": [
-              "Available sheets"
-            ]
-          },
-          "value": {
-            "none": [
-              "7"
+              "stanford-yg448cx4106"
             ]
           }
         },
@@ -1688,7 +2561,7 @@
           },
           "value": {
             "none": [
-              "Japan; Karafuto, Sakhalin, and Kurils; Korea; Manchuria and Northeast China; China and Mongolia; Russian Far East and Siberia; Overview and Multi-region"
+              "Japan"
             ]
           }
         }
@@ -1735,6 +2608,76 @@
             ]
           },
           "format": "application/json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yg448cx4106/index_map.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yg448cx4106/index_10652554-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yg448cx4106/index_10652554-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yg448cx4106/index_10652554-fgdc.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FGDC metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yg448cx4106/index_map.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yg448cx4106/index_map.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yg448cx4106",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
         }
       ]
     },
@@ -1758,28 +2701,17 @@
           "format": "image/jpeg"
         }
       ],
+      "navDate": "1935-01-01T00:00:00Z",
       "metadata": [
         {
           "label": {
             "none": [
-              "Series DRUID"
+              "EarthWorks ID"
             ]
           },
           "value": {
             "none": [
-              "mg201zr0582"
-            ]
-          }
-        },
-        {
-          "label": {
-            "none": [
-              "Available sheets"
-            ]
-          },
-          "value": {
-            "none": [
-              "2"
+              "stanford-mg201zr0582"
             ]
           }
         },
@@ -1803,7 +2735,7 @@
           },
           "value": {
             "none": [
-              "Japan; Taiwan; Overview and Multi-region"
+              "Japan"
             ]
           }
         }
@@ -1850,6 +2782,76 @@
             ]
           },
           "format": "application/json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:mg201zr0582/index_map.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:mg201zr0582/index_12122837-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:mg201zr0582/index_12122837-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:mg201zr0582/index_12122837-fgdc.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FGDC metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:mg201zr0582/index_map.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:mg201zr0582/index_map.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/mg201zr0582",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
         }
       ]
     },
@@ -1873,28 +2875,17 @@
           "format": "image/jpeg"
         }
       ],
+      "navDate": "1935-01-01T00:00:00Z",
       "metadata": [
         {
           "label": {
             "none": [
-              "Series DRUID"
+              "EarthWorks ID"
             ]
           },
           "value": {
             "none": [
-              "np281bm5361"
-            ]
-          }
-        },
-        {
-          "label": {
-            "none": [
-              "Available sheets"
-            ]
-          },
-          "value": {
-            "none": [
-              "3"
+              "stanford-np281bm5361"
             ]
           }
         },
@@ -1918,7 +2909,7 @@
           },
           "value": {
             "none": [
-              "Taiwan; Southeast Asia; Overview and Multi-region"
+              "Taiwan"
             ]
           }
         }
@@ -1965,6 +2956,76 @@
             ]
           },
           "format": "application/json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:np281bm5361/index_map.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:np281bm5361/index_10563548-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:np281bm5361/index_10563548-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:np281bm5361/index_10563548-fgdc.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FGDC metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:np281bm5361/index_map.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:np281bm5361/index_map.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/np281bm5361",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
         }
       ]
     },
@@ -1988,28 +3049,17 @@
           "format": "image/jpeg"
         }
       ],
+      "navDate": "1942-01-01T00:00:00Z",
       "metadata": [
         {
           "label": {
             "none": [
-              "Series DRUID"
+              "EarthWorks ID"
             ]
           },
           "value": {
             "none": [
-              "km637dq7307"
-            ]
-          }
-        },
-        {
-          "label": {
-            "none": [
-              "Available sheets"
-            ]
-          },
-          "value": {
-            "none": [
-              "1"
+              "stanford-km637dq7307"
             ]
           }
         },
@@ -2033,7 +3083,7 @@
           },
           "value": {
             "none": [
-              "China and Mongolia; Overview and Multi-region"
+              "China and Mongolia"
             ]
           }
         }
@@ -2080,6 +3130,76 @@
             ]
           },
           "format": "application/json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:km637dq7307/index_map.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:km637dq7307/index_10660598-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:km637dq7307/index_10660598-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:km637dq7307/index_10660598-fgdc.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FGDC metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:km637dq7307/index_map.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:km637dq7307/index_map.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/km637dq7307",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
         }
       ]
     },
@@ -2103,28 +3223,17 @@
           "format": "image/jpeg"
         }
       ],
+      "navDate": "1941-01-01T00:00:00Z",
       "metadata": [
         {
           "label": {
             "none": [
-              "Series DRUID"
+              "EarthWorks ID"
             ]
           },
           "value": {
             "none": [
-              "fv326fx1543"
-            ]
-          }
-        },
-        {
-          "label": {
-            "none": [
-              "Available sheets"
-            ]
-          },
-          "value": {
-            "none": [
-              "6"
+              "stanford-fv326fx1543"
             ]
           }
         },
@@ -2148,7 +3257,7 @@
           },
           "value": {
             "none": [
-              "China and Mongolia; Overview and Multi-region"
+              "China and Mongolia"
             ]
           }
         }
@@ -2195,6 +3304,56 @@
             ]
           },
           "format": "application/json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:fv326fx1543/index_9690663-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:fv326fx1543/index_9690663-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:fv326fx1543/index_9690663.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:fv326fx1543/index_9690663.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/fv326fx1543",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
         }
       ]
     }

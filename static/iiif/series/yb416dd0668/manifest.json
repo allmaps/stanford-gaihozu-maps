@@ -23,12 +23,24 @@
     {
       "label": {
         "none": [
-          "Series DRUID"
+          "Scale"
         ]
       },
       "value": {
         "none": [
-          "yb416dd0668"
+          "1:1,000,000"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Broad region"
+        ]
+      },
+      "value": {
+        "none": [
+          "Southeast Asia"
         ]
       }
     },
@@ -47,24 +59,236 @@
     {
       "label": {
         "none": [
-          "Available sheets"
+          "Creator"
         ]
       },
       "value": {
         "none": [
-          "34"
+          "Stanford Geospatial Center"
         ]
       }
     },
     {
       "label": {
         "none": [
-          "Combined canvases"
+          "Publisher"
         ]
       },
       "value": {
         "none": [
-          "34"
+          "Stanford Digital Repository"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Issued"
+        ]
+      },
+      "value": {
+        "none": [
+          "2023"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Subject"
+        ]
+      },
+      "value": {
+        "none": [
+          "Military maps",
+          "Topographic maps",
+          "Index maps",
+          "Grids (Cartography)",
+          "Military"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Place"
+        ]
+      },
+      "value": {
+        "none": [
+          "Southeast Asia",
+          "Australia",
+          "East Asia"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Theme"
+        ]
+      },
+      "value": {
+        "none": [
+          "Military"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Temporal coverage"
+        ]
+      },
+      "value": {
+        "none": [
+          "1944"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Date range"
+        ]
+      },
+      "value": {
+        "none": [
+          "[1944 TO 1944]"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Index years"
+        ]
+      },
+      "value": {
+        "none": [
+          "1944"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Provider"
+        ]
+      },
+      "value": {
+        "none": [
+          "Stanford"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Identifier"
+        ]
+      },
+      "value": {
+        "none": [
+          "https://purl.stanford.edu/yb416dd0668"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Georeferenced"
+        ]
+      },
+      "value": {
+        "none": [
+          "Yes"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Resource class"
+        ]
+      },
+      "value": {
+        "none": [
+          "Maps"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Resource type"
+        ]
+      },
+      "value": {
+        "none": [
+          "Military maps",
+          "Topographic maps",
+          "Index maps"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Member of"
+        ]
+      },
+      "value": {
+        "none": [
+          "Gaihozu Index Maps (stanford-ch237ht4777)"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Rights"
+        ]
+      },
+      "value": {
+        "none": [
+          "This item is in the public domain.  There are no restrictions on use."
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Rights holder"
+        ]
+      },
+      "value": {
+        "none": [
+          "This work is in the Public Domain, meaning that it is not subject to copyright."
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Metadata modified"
+        ]
+      },
+      "value": {
+        "none": [
+          "2026-07-28T16:17:24Z"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Metadata version"
+        ]
+      },
+      "value": {
+        "none": [
+          "Aardvark"
         ]
       }
     }
@@ -111,6 +335,56 @@
         ]
       },
       "format": "application/json"
+    },
+    {
+      "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "ISO 19139 metadata"
+        ]
+      },
+      "format": "application/xml"
+    },
+    {
+      "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "ISO 19110 metadata"
+        ]
+      },
+      "format": "application/xml"
+    },
+    {
+      "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "PMTiles"
+        ]
+      },
+      "format": "application/vnd.pmtiles"
+    },
+    {
+      "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "FlatGeobuf"
+        ]
+      },
+      "format": "application/octet-stream"
+    },
+    {
+      "id": "https://stacks.stanford.edu/object/yb416dd0668",
+      "type": "Dataset",
+      "label": {
+        "none": [
+          "Source shapefile ZIP"
+        ]
+      },
+      "format": "application/zip"
     }
   ],
   "thumbnail": [
@@ -276,7 +550,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/nv256yw6503/iiif/manifest",
@@ -287,7 +622,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/wd179sb4539/iiif/canvas/cocina-fileSet-wd179sb4539-wd179sb4539_1",
@@ -433,7 +769,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/wd179sb4539/iiif/manifest",
@@ -444,7 +841,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/bm095gg1356/iiif/canvas/cocina-fileSet-bm095gg1356-bm095gg1356_1",
@@ -590,7 +988,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/bm095gg1356/iiif/manifest",
@@ -601,7 +1060,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/dd057yx4154/iiif/canvas/cocina-fileSet-dd057yx4154-dd057yx4154_1",
@@ -747,7 +1207,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/dd057yx4154/iiif/manifest",
@@ -758,7 +1279,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/kf147zj1936/iiif/canvas/cocina-fileSet-kf147zj1936-kf147zj1936_1",
@@ -904,7 +1426,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/kf147zj1936/iiif/manifest",
@@ -915,7 +1498,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/tk542my9002/iiif/canvas/cocina-fileSet-tk542my9002-tk542my9002_1",
@@ -1061,7 +1645,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/tk542my9002/iiif/manifest",
@@ -1072,7 +1717,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/nr700gb8806/iiif/canvas/cocina-fileSet-nr700gb8806-nr700gb8806_1",
@@ -1218,7 +1864,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/nr700gb8806/iiif/manifest",
@@ -1229,7 +1936,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/bp910ys7655/iiif/canvas/cocina-fileSet-bp910ys7655-bp910ys7655_1",
@@ -1375,7 +2083,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/bp910ys7655/iiif/manifest",
@@ -1386,7 +2155,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/hn698qs9223/iiif/canvas/cocina-fileSet-hn698qs9223-hn698qs9223_1",
@@ -1532,7 +2302,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/hn698qs9223/iiif/manifest",
@@ -1543,7 +2374,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/bv455gn0141/iiif/canvas/cocina-fileSet-bv455gn0141-bv455gn0141_1",
@@ -1689,7 +2521,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/bv455gn0141/iiif/manifest",
@@ -1700,7 +2593,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/tw092ms5372/iiif/canvas/cocina-fileSet-tw092ms5372-tw092ms5372_1",
@@ -1846,7 +2740,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/tw092ms5372/iiif/manifest",
@@ -1857,7 +2812,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/nb116px5951/iiif/canvas/cocina-fileSet-nb116px5951-nb116px5951_1",
@@ -2003,7 +2959,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/nb116px5951/iiif/manifest",
@@ -2014,7 +3031,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/ky764wz5483/iiif/canvas/cocina-fileSet-ky764wz5483-ky764wz5483_1",
@@ -2160,7 +3178,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/ky764wz5483/iiif/manifest",
@@ -2171,7 +3250,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/my261zc8147/iiif/canvas/cocina-fileSet-my261zc8147-my261zc8147_1",
@@ -2317,7 +3397,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/my261zc8147/iiif/manifest",
@@ -2328,7 +3469,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/dv758nx0147/iiif/canvas/cocina-fileSet-dv758nx0147-dv758nx0147_1",
@@ -2474,7 +3616,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/dv758nx0147/iiif/manifest",
@@ -2485,7 +3688,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/zf165zc3502/iiif/canvas/cocina-fileSet-zf165zc3502-zf165zc3502_1",
@@ -2631,7 +3835,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/zf165zc3502/iiif/manifest",
@@ -2642,7 +3907,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/zz776jw5058/iiif/canvas/cocina-fileSet-zz776jw5058-zz776jw5058_1",
@@ -2788,7 +4054,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/zz776jw5058/iiif/manifest",
@@ -2799,7 +4126,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/gj193tn3250/iiif/canvas/cocina-fileSet-gj193tn3250-gj193tn3250_1",
@@ -2945,7 +4273,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/gj193tn3250/iiif/manifest",
@@ -2956,7 +4345,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/cy846sj4995/iiif/canvas/cocina-fileSet-cy846sj4995-cy846sj4995_1",
@@ -3102,7 +4492,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/cy846sj4995/iiif/manifest",
@@ -3113,7 +4564,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/dg766xp9065/iiif/canvas/cocina-fileSet-dg766xp9065-dg766xp9065_1",
@@ -3259,7 +4711,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/dg766xp9065/iiif/manifest",
@@ -3270,7 +4783,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/pj221hd2503/iiif/canvas/cocina-fileSet-pj221hd2503-pj221hd2503_1",
@@ -3416,7 +4930,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/pj221hd2503/iiif/manifest",
@@ -3427,7 +5002,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/yf443qg1616/iiif/canvas/cocina-fileSet-yf443qg1616-yf443qg1616_1",
@@ -3573,7 +5149,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/yf443qg1616/iiif/manifest",
@@ -3584,7 +5221,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/yy133zv5222/iiif/canvas/cocina-fileSet-yy133zv5222-yy133zv5222_1",
@@ -3730,7 +5368,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/yy133zv5222/iiif/manifest",
@@ -3741,7 +5440,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/wb941mr2008/iiif/canvas/cocina-fileSet-wb941mr2008-wb941mr2008_1",
@@ -3887,7 +5587,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/wb941mr2008/iiif/manifest",
@@ -3898,7 +5659,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/dw402fj7771/iiif/canvas/cocina-fileSet-dw402fj7771-dw402fj7771_1",
@@ -4044,7 +5806,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/dw402fj7771/iiif/manifest",
@@ -4055,7 +5878,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/dq448sx6285/iiif/canvas/cocina-fileSet-dq448sx6285-dq448sx6285_1",
@@ -4201,7 +6025,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/dq448sx6285/iiif/manifest",
@@ -4212,7 +6097,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/gy669ss6414/iiif/canvas/cocina-fileSet-gy669ss6414-gy669ss6414_1",
@@ -4358,7 +6244,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/gy669ss6414/iiif/manifest",
@@ -4369,7 +6316,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/bx976kr5269/iiif/canvas/cocina-fileSet-bx976kr5269-bx976kr5269_1",
@@ -4515,7 +6463,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/bx976kr5269/iiif/manifest",
@@ -4526,7 +6535,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/fk648rp4660/iiif/canvas/cocina-fileSet-fk648rp4660-fk648rp4660_1",
@@ -4672,7 +6682,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/fk648rp4660/iiif/manifest",
@@ -4683,7 +6754,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/fh299qf7350/iiif/canvas/cocina-fileSet-fh299qf7350-fh299qf7350_1",
@@ -4829,7 +6901,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/fh299qf7350/iiif/manifest",
@@ -4840,7 +6973,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/mz331ht3116/iiif/canvas/cocina-fileSet-mz331ht3116-mz331ht3116_1",
@@ -4986,7 +7120,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/mz331ht3116/iiif/manifest",
@@ -4997,7 +7192,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/zm967rv6832/iiif/canvas/cocina-fileSet-zm967rv6832-zm967rv6832_1",
@@ -5143,7 +7339,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/zm967rv6832/iiif/manifest",
@@ -5154,7 +7411,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/bh340xn7816/iiif/canvas/cocina-fileSet-bh340xn7816-bh340xn7816_1",
@@ -5300,7 +7558,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/bh340xn7816/iiif/manifest",
@@ -5311,7 +7630,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     },
     {
       "id": "https://purl.stanford.edu/yh966qn8578/iiif/canvas/cocina-fileSet-yh966qn8578-yh966qn8578_1",
@@ -5457,7 +7777,68 @@
       },
       "behavior": [],
       "annotations": [],
-      "seeAlso": [],
+      "seeAlso": [
+        {
+          "id": "https://pages.allmaps.org/stanford-gaihozu-maps/geojson/yb416dd0668.geojson",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Sheet index GeoJSON"
+            ]
+          },
+          "format": "application/geo+json"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19139.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19139 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336-iso19110.xml",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "ISO 19110 metadata"
+            ]
+          },
+          "format": "application/xml"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.pmtiles",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "PMTiles"
+            ]
+          },
+          "format": "application/vnd.pmtiles"
+        },
+        {
+          "id": "https://stacks.stanford.edu/file/druid:yb416dd0668/index_10162336.fgb",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "FlatGeobuf"
+            ]
+          },
+          "format": "application/octet-stream"
+        },
+        {
+          "id": "https://stacks.stanford.edu/object/yb416dd0668",
+          "type": "Dataset",
+          "label": {
+            "none": [
+              "Source shapefile ZIP"
+            ]
+          },
+          "format": "application/zip"
+        }
+      ],
       "partOf": [
         {
           "id": "https://purl.stanford.edu/yh966qn8578/iiif/manifest",
@@ -5468,7 +7849,8 @@
             ]
           }
         }
-      ]
+      ],
+      "navDate": "1944-01-01T00:00:00Z"
     }
   ],
   "navPlace": {
@@ -5759,5 +8141,6 @@
       160.5000000000001,
       43.000000000000064
     ]
-  }
+  },
+  "navDate": "1944-01-01T00:00:00Z"
 }
