@@ -11,7 +11,8 @@
     "build": "pnpm run check && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "postprocess:data": "node scripts/postprocess-data.mjs",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc --noEmit"
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && tsc --noEmit",
+    "enrich:data": "node scripts/enrich-data.mjs"
   },
   "dependencies": {
     "@iiif/helpers": "^4.0.0",
