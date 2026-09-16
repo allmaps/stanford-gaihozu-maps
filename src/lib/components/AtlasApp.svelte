@@ -10,7 +10,7 @@
   import { loadCatalog, languageText, navYear, matchesDate, manifestFeature } from '../catalog';
   import type { Catalog } from '../catalog';
   import { fetchJson, fetchManifest, publicPath, localPath } from '../iiif';
-  import { featureId, featureLabel, featureIntersectsBbox, featureContainsBbox, featureBbox, rankForViewport } from '../map-data';
+  import { featureId, featureLabel, featureBbox, rankForViewport } from '../map-data';
   import type { Bbox } from '../map-data';
   import type { IiifManifest, IiifResource, SeriesIndexFeature } from '../types';
 
@@ -30,7 +30,6 @@
   let viewport = $state<Bbox | null>(null);
   let zoom = $state(config.map.zoom);
   let limitToView = $state(true);
-  let matchScale = $state(true);
   let polygonsVisible = $state(true);
   let densityEnabled = $state(true);
   let selected = $state<string | number | null>(null);
@@ -76,10 +75,7 @@
   const filtered = $derived(browseFiltered.filter(manifest => matchesDate(manifest, years, includeUndated)));
   const features = $derived(filtered.map(manifestFeature));
   const mapped = $derived(features.filter(feature => Boolean(featureBbox(feature))));
-  const inView = $derived(mapped.filter(feature => featureIntersectsBbox(feature, viewport) &&
-    (!viewport || !featureContainsBbox(feature, viewport, config.map.containmentMargin))));
-  const ranked = $derived(rankForViewport(mapped, viewport, config.map.maxPolygons, selected, config.map.containmentMargin));
-  const displayed = $derived(matchScale ? ranked : inView);
+  const displayed = $derived(rankForViewport(mapped, viewport, config.map.maxPolygons, selected, config.map.containmentMargin));
   const listed = $derived(limitToView ? displayed : features);
   const activeFilters = $derived(Object.values(choices).filter(Boolean).length + (includeUndated ? 0 : 1));
   const histogram = $derived.by(() => {
@@ -153,7 +149,6 @@
     years = [...dateBounds];
     includeUndated = true;
     limitToView = true;
-    matchScale = true;
     selected = null;
   }
   function updateFilterPanelHeight() {
@@ -287,7 +282,6 @@
               <div class="mt-4 grid gap-2 border-t border-slate-200 pt-4 text-xs dark:border-slate-700">
                 <label class="flex cursor-pointer items-center gap-2"><input class="size-4 accent-teal-600" type="checkbox" bind:checked={includeUndated} />{copy.undated} ({undatedCount})</label>
                 <label class="flex cursor-pointer items-center gap-2"><input class="size-4 accent-teal-600" type="checkbox" bind:checked={limitToView} />Search within map view</label>
-                <label class="flex cursor-pointer items-center gap-2"><input class="size-4 accent-teal-600" type="checkbox" bind:checked={matchScale} />Prioritize footprints at this zoom</label>
               </div>
             </div>
           {/if}
