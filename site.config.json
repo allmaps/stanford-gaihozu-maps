@@ -1,0 +1,38 @@
+{
+  "collection": "/iiif/collection.json",
+  "canonicalDataBaseUrl": "https://pages.allmaps.org/stanford-gaihozu-maps",
+  "eyebrow": "",
+  "title": "Gaihozu Index Maps",
+  "description": "",
+  "repository": {
+    "url": "https://github.com/allmaps/stanford-gaihozu-maps",
+    "label": "GitHub repository"
+  },
+  "map": {
+    "center": [126, 27],
+    "zoom": 3,
+    "style": "https://tiles.openfreemap.org/styles/positron",
+    "darkStyle": "https://tiles.openfreemap.org/styles/dark",
+    "maxPolygons": 60,
+    "densityMinZoom": 2,
+    "containmentMargin": 0.5,
+    "palette": {
+      "name": "ColorBrewer BuGn",
+      "colors": ["#f7fcfd", "#e5f5f9", "#ccece6", "#99d8c9", "#66c2a4", "#41ae76", "#238b45", "#006d2c", "#00441b"]
+    }
+  },
+  "labels": {
+    "items": "map series",
+    "item": "Map series",
+    "images": "images",
+    "search": "Search this collection",
+    "filters": "Browse collections",
+    "all": "All",
+    "timeline": "Explore by year",
+    "undated": "Include undated",
+    "about": "About the collection",
+    "open": "Explore images",
+    "empty": "No matches. Widen the date range, clear filters, or move the map.",
+    "loading": "Loading the collection…"
+  }
+}

@@ -1,5 +1,7 @@
 const topLevelIiifFields = new Set(["dct_title_s", "dct_description_sm"]);
 const excludedMetadataFields = new Set([
+  "gbl_dateRange_drsim",
+  "gbl_indexYear_im",
   "dct_language_sm",
   "dct_format_s",
   "locn_geometry",

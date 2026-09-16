@@ -1,506 +1,223 @@
 <script lang="ts">
-  import { onMount, tick, untrack } from "svelte";
-  import * as maplibregl from "maplibre-gl";
-  import {
-    asFeatureCollection,
-    bboxForFeatures,
-    featureById,
-    featureId,
-    propertyList,
-  } from "../map-data";
-  import type { Bbox } from "../map-data";
-  import type { SeriesIndexFeature } from "../types";
+  import { onMount, untrack } from 'svelte';
+  import * as maplibre from 'maplibre-gl';
+  import config from '../../../site.config.json';
+  import { asFeatureCollection, bboxForFeatures, featureBbox, featureId } from '../map-data';
+  import type { Bbox } from '../map-data';
+  import type { SeriesIndexFeature } from '../types';
 
-  type FeatureId = string | number;
+  let { features, densityFeatures = features, selectedFeatureId = null, hoveredFeatureId = null,
+    polygonsVisible = true, densityEnabled = true, darkMode = false, fitToFeaturesKey = 0,
+    onViewportChange = (_bbox: Bbox, _zoom: number) => {},
+    onSelectFeature = (_id: string | number) => {}, onHoverFeature = (_id: string | number | null) => {} }:
+    { features: SeriesIndexFeature[]; densityFeatures?: SeriesIndexFeature[]; selectedFeatureId?: string | number | null;
+      hoveredFeatureId?: string | number | null; polygonsVisible?: boolean; densityEnabled?: boolean; darkMode?: boolean; fitToFeaturesKey?: number;
+      onViewportChange?: (bbox: Bbox, zoom: number) => void; onSelectFeature?: (id: string | number) => void;
+      onHoverFeature?: (id: string | number | null) => void } = $props();
 
-  type Props = {
-    active?: boolean;
-    features: SeriesIndexFeature[];
-    selectedFeatureId?: FeatureId | null;
-    hoveredFeatureId?: FeatureId | null;
-    polygonsVisible?: boolean;
-    fitToFeaturesKey?: number;
-    fitToSelectedKey?: number;
-    onViewportBboxChange?: (bbox: Bbox | null) => void;
-    onSelectFeature?: (id: FeatureId) => void;
-    onHoverFeature?: (id: FeatureId | null) => void;
-  };
+  let container: HTMLDivElement;
+  let map: maplibre.Map | undefined;
+  let ready = $state(false);
+  let mapError = $state('');
+  let lastFit = 0;
+  let previousSelected: string | number | null = null;
+  let previousHovered: string | number | null = null;
+  let currentStyle = '';
+  const palette = config.map.palette.colors;
+  const footprintOpacity = ['case', ['boolean', ['feature-state', 'selected'], false], 0.42,
+    ['boolean', ['feature-state', 'hover'], false], 0.46, 0.08] as maplibre.ExpressionSpecification;
+  const densityAreaOpacity = ['interpolate', ['linear'], ['zoom'], 0, 0.075, 2, 0.06, 5, 0] as maplibre.ExpressionSpecification;
+  const heatOpacity = ['interpolate', ['linear'], ['zoom'], config.map.densityMinZoom, 0.5, 5, 0.72, 9, 0.8, 12, 0.58] as maplibre.ExpressionSpecification;
+  const dotOpacity = ['interpolate', ['linear'], ['zoom'], 0, 0.35, 4, 0.65, 8, 0.82] as maplibre.ExpressionSpecification;
 
-  let {
-    active = true,
-    features,
-    selectedFeatureId = null,
-    hoveredFeatureId = null,
-    polygonsVisible = true,
-    fitToFeaturesKey = 0,
-    fitToSelectedKey = 0,
-    onViewportBboxChange = () => {},
-    onSelectFeature = () => {},
-    onHoverFeature = () => {},
-  }: Props = $props();
-
-  const sourceId = "series-index";
-  const fillLayerId = "series-index-fill";
-  const lineLayerId = "series-index-line";
-  const openFreeMapStyle = "https://tiles.openfreemap.org/styles/liberty";
-
-  let mapEl = $state.raw<HTMLDivElement | null>(null);
-  let map = $state.raw<maplibregl.Map | null>(null);
-  let loaded = $state<boolean>(false);
-  let mapError = $state<string>("");
-  let appliedSelectedId = $state<FeatureId | null>(null);
-  let appliedHoveredId = $state<FeatureId | null>(null);
-  let previousFitToFeaturesKey = 0;
-  let previousFitToSelectedKey = 0;
-  let initialFitDone = false;
-  let layerInteractionHandlersAttached = false;
-  let ensureLayersFrame = 0;
-  let ensureLayersRetryTimer = 0;
+  export function zoomIn() { map?.easeTo({ zoom: map.getZoom() + 1, duration: 280 }); }
+  export function zoomOut() { map?.easeTo({ zoom: map.getZoom() - 1, duration: 280 }); }
+  export function fitFeature(feature: SeriesIndexFeature) { fit([feature], 13); }
 
   onMount(() => {
-    if (active) initMaplibre();
-    return () => {
-      clearScheduledEnsure();
-      map?.remove();
-      map = null;
-      loaded = false;
-      layerInteractionHandlersAttached = false;
-    };
-  });
-
-  $effect(() => {
-    if (!active) return;
-    initMaplibre();
-    void tick().then(() => {
-      map?.resize();
-      updateViewportBbox();
-    });
-  });
-
-  $effect(() => {
-    if (!map) return;
-    scheduleEnsureIndexLayers();
-    if (!loaded) return;
-    const nextFeatures = features;
-    if (!updateSourceData(nextFeatures)) return;
-    untrack(() => {
-      applyFeatureState(appliedSelectedId, "selected", false);
-      applyFeatureState(appliedHoveredId, "hover", false);
-      appliedSelectedId = null;
-      appliedHoveredId = null;
-      syncSelectedState();
-      syncHoveredState();
-      if (!initialFitDone && nextFeatures.length) {
-        initialFitDone = true;
-        fitToFeatures(nextFeatures, false);
-        updateViewportBbox();
-      }
-    });
-  });
-
-  $effect(() => {
-    if (!map || !loaded) return;
-    const visibility = polygonsVisible ? "visible" : "none";
-    if (map.getLayer(fillLayerId)) map.setLayoutProperty(fillLayerId, "visibility", visibility);
-    if (map.getLayer(lineLayerId)) map.setLayoutProperty(lineLayerId, "visibility", visibility);
-  });
-
-  $effect(() => {
-    if (!map || !loaded) return;
-    syncSelectedState();
-  });
-
-  $effect(() => {
-    if (!map || !loaded) return;
-    syncHoveredState();
-  });
-
-  $effect(() => {
-    if (!map || !loaded || fitToFeaturesKey === previousFitToFeaturesKey) return;
-    previousFitToFeaturesKey = fitToFeaturesKey;
-    fitToFeatures(features, true);
-  });
-
-  $effect(() => {
-    if (!map || !loaded || fitToSelectedKey === previousFitToSelectedKey) return;
-    previousFitToSelectedKey = fitToSelectedKey;
-    const feature = featureById(features, selectedFeatureId);
-    if (feature) fitToFeatures([feature], true);
-  });
-
-  function initMaplibre() {
-    if (!mapEl || map || mapError) return;
-
     try {
-      map = new maplibregl.Map({
-        container: mapEl,
-        center: [126, 27],
-        zoom: 3.15,
-        maxPitch: 0,
-        dragRotate: false,
-        touchPitch: false,
-        renderWorldCopies: true,
-        attributionControl: false,
+      const savedTheme = localStorage.getItem('atlas-theme');
+      const initiallyDark = savedTheme ? savedTheme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+      currentStyle = initiallyDark ? config.map.darkStyle : config.map.style;
+      map = new maplibre.Map({ container, style: currentStyle, hash: true,
+        center: config.map.center as [number, number], zoom: config.map.zoom,
+        maxPitch: 0, dragRotate: false, attributionControl: false });
+      map.touchZoomRotate.disableRotation();
+      map.on('style.load', setupLayers);
+      map.on('moveend', reportViewport);
+      map.on('error', event => {
+        console.error('[atlas map]', event.error);
+        mapError = event.error?.message || 'A map resource could not be loaded.';
       });
-    } catch (caught) {
-      mapError = caught instanceof Error ? caught.message : String(caught);
-      onViewportBboxChange(null);
-      return;
-    }
-
-    map.dragRotate.disable();
-    map.touchZoomRotate.disableRotation();
-    map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "bottom-left");
-    map.addControl(new maplibregl.ScaleControl({ unit: "metric" }), "bottom-left");
-    map.addControl(new maplibregl.AttributionControl({ compact: true }), "bottom-right");
-
-    const scheduleLayerSetup = () => scheduleEnsureIndexLayers();
-    map.on("style.load", scheduleLayerSetup);
-    map.on("styledata", scheduleLayerSetup);
-    map.on("load", scheduleLayerSetup);
-    map.on("idle", scheduleLayerSetup);
-    map.on("moveend", updateViewportBbox);
-    map.on("resize", updateViewportBbox);
-    map.on("error", handleMapError);
-    map.setStyle(openFreeMapStyle, { transformStyle: addIndexToStyle });
-    scheduleEnsureIndexLayers();
-  }
-
-  function scheduleEnsureIndexLayers(delay = 0) {
-    if (typeof window === "undefined" || !map) return;
-    if (delay > 0) {
-      if (ensureLayersRetryTimer) return;
-      ensureLayersRetryTimer = window.setTimeout(() => {
-        ensureLayersRetryTimer = 0;
-        scheduleEnsureIndexLayers();
-      }, delay);
-      return;
-    }
-    if (ensureLayersFrame) return;
-    ensureLayersFrame = window.requestAnimationFrame(() => {
-      ensureLayersFrame = 0;
-      ensureIndexLayers();
-    });
-  }
-
-  function clearScheduledEnsure() {
-    if (typeof window === "undefined") return;
-    if (ensureLayersFrame) window.cancelAnimationFrame(ensureLayersFrame);
-    if (ensureLayersRetryTimer) window.clearTimeout(ensureLayersRetryTimer);
-    ensureLayersFrame = 0;
-    ensureLayersRetryTimer = 0;
-  }
-
-  function ensureIndexLayers() {
-    if (!map) return;
-
-    try {
-      let source = map.getSource(sourceId) as maplibregl.GeoJSONSource | undefined;
-      if (!source) {
-        map.addSource(sourceId, {
-          type: "geojson",
-          data: displayFeatureCollection(features),
-          promoteId: "id",
-        });
-        source = map.getSource(sourceId) as maplibregl.GeoJSONSource | undefined;
-      }
-
-      addIndexLayers();
-
-      if (!source || !map.getLayer(fillLayerId) || !map.getLayer(lineLayerId)) {
-        scheduleEnsureIndexLayers(80);
-        return;
-      }
-
-      loaded = true;
-      mapError = "";
-      updateSourceData(features);
-      if (!initialFitDone && features.length) {
-        initialFitDone = true;
-        fitToFeatures(features, false);
-      }
-      updateViewportBbox();
-    } catch (caught) {
-      const message = errorMessage(caught);
-      if (isStyleLoadingMessage(message)) {
-        scheduleEnsureIndexLayers(80);
-        return;
-      }
-      mapError = message;
-      onViewportBboxChange(null);
-    }
-  }
-
-  function updateSourceData(nextFeatures: SeriesIndexFeature[]) {
-    if (!map) return false;
-    try {
-      const source = map.getSource(sourceId) as maplibregl.GeoJSONSource | undefined;
-      if (!source) {
-        loaded = false;
-        scheduleEnsureIndexLayers();
-        return false;
-      }
-      source.setData(displayFeatureCollection(nextFeatures));
-      mapError = "";
-      return true;
-    } catch (caught) {
-      const message = errorMessage(caught);
-      if (isStyleLoadingMessage(message)) {
-        loaded = false;
-        scheduleEnsureIndexLayers(80);
-        return false;
-      }
-      mapError = message;
-      onViewportBboxChange(null);
-      return false;
-    }
-  }
-
-  function handleMapError(event: maplibregl.ErrorEvent) {
-    const message = event.error?.message || String(event.error || "");
-    if (isStyleLoadingMessage(message)) {
-      scheduleEnsureIndexLayers(80);
-      return;
-    }
-    if (/geojson|series-index|feature|source|layer/i.test(message)) mapError = message;
-  }
-
-  function errorMessage(caught: unknown) {
-    return caught instanceof Error ? caught.message : String(caught);
-  }
-
-  function isStyleLoadingMessage(message: string) {
-    return /style.*(?:not.*(?:done|loaded|complete|completely)|loading)|loadStyle|before style/i.test(message);
-  }
-
-  const addIndexToStyle: maplibregl.TransformStyleFunction = (_previousStyle, nextStyle) => ({
-    ...nextStyle,
-    sources: {
-      ...nextStyle.sources,
-      [sourceId]: indexSource(),
-    },
-    layers: [
-      ...(nextStyle.layers || []).filter((layer) => layer.id !== fillLayerId && layer.id !== lineLayerId),
-      indexFillLayer(),
-      indexLineLayer(),
-    ],
+      map.on('mousemove', event => {
+        const hit = interactiveFeature(event.point);
+        onHoverFeature(hit?.id ?? null);
+        if (map) map.getCanvas().style.cursor = hit ? 'pointer' : '';
+      });
+      map.on('mouseout', () => {
+        onHoverFeature(null);
+        if (map) map.getCanvas().style.cursor = '';
+      });
+      map.on('click', event => {
+        const id = interactiveFeature(event.point)?.id;
+        if (id !== undefined) onSelectFeature(id);
+      });
+    } catch (error) { mapError = String(error); }
+    const observer = new ResizeObserver(() => { map?.resize(); reportViewport(); });
+    observer.observe(container);
+    return () => { observer.disconnect(); map?.remove(); map = undefined; };
   });
 
-  function indexSource(): maplibregl.GeoJSONSourceSpecification {
-    return {
-      type: "geojson",
-      data: displayFeatureCollection(features),
-      promoteId: "id",
-    };
-  }
+  $effect(() => {
+    const nextStyle = darkMode ? config.map.darkStyle : config.map.style;
+    const currentMap = map;
+    if (currentMap && currentStyle && nextStyle !== currentStyle) untrack(() => {
+      const switchStyle = () => {
+        if (nextStyle === currentStyle) return;
+        currentStyle = nextStyle;
+        ready = false;
+        currentMap.setStyle(nextStyle, { diff: false });
+      };
+      if (currentMap.isStyleLoaded()) switchStyle();
+      else currentMap.once('style.load', switchStyle);
+    });
+  });
 
-  function indexFillLayer(): maplibregl.LayerSpecification {
-    return {
-      id: fillLayerId,
-      type: "fill",
-      source: sourceId,
-      paint: {
-        "fill-color": [
-          "case",
-          ["boolean", ["feature-state", "selected"], false],
-          "#B1040E",
-          ["boolean", ["feature-state", "hover"], false],
-          "#006F54",
-          "#008566",
-        ],
-        "fill-opacity": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          2,
-          [
-            "case",
-            ["boolean", ["feature-state", "selected"], false],
-            0.54,
-            ["boolean", ["feature-state", "hover"], false],
-            0.42,
-            ["interpolate", ["linear"], ["to-number", ["get", "_scaleDenominator"], 1000000], 5000, 0.3, 25000, 0.26, 250000, 0.2, 1000000, 0.16],
-          ],
-          6,
-          [
-            "case",
-            ["boolean", ["feature-state", "selected"], false],
-            0.54,
-            ["boolean", ["feature-state", "hover"], false],
-            0.42,
-            ["interpolate", ["linear"], ["to-number", ["get", "_scaleDenominator"], 1000000], 5000, 0.12, 25000, 0.14, 250000, 0.18, 1000000, 0.16],
-          ],
-          9,
-          [
-            "case",
-            ["boolean", ["feature-state", "selected"], false],
-            0.54,
-            ["boolean", ["feature-state", "hover"], false],
-            0.42,
-            ["interpolate", ["linear"], ["to-number", ["get", "_scaleDenominator"], 1000000], 5000, 0.04, 25000, 0.07, 250000, 0.14, 1000000, 0.16],
-          ],
-        ],
-      },
-    };
-  }
+  $effect(() => {
+    const current = features;
+    const locations = densityFeatures;
+    if (ready) untrack(() => {
+      (map?.getSource('footprints') as maplibre.GeoJSONSource)?.setData(asFeatureCollection(current));
+      (map?.getSource('density-areas') as maplibre.GeoJSONSource)?.setData(asFeatureCollection(locations));
+      (map?.getSource('locations') as maplibre.GeoJSONSource)?.setData(locationData(locations));
+    });
+  });
+  $effect(() => {
+    const outlines = polygonsVisible;
+    const density = densityEnabled;
+    if (ready) untrack(() => updateOpacity(outlines, density));
+  });
+  $effect(() => {
+    const selected = selectedFeatureId;
+    const hovered = hoveredFeatureId;
+    if (ready) untrack(() => {
+      setState(previousSelected, 'selected', false); setState(previousHovered, 'hover', false);
+      setState(selected, 'selected', true); setState(hovered, 'hover', true);
+      previousSelected = selected; previousHovered = hovered;
+    });
+  });
+  $effect(() => {
+    const key = fitToFeaturesKey;
+    if (ready && key !== lastFit) untrack(() => { lastFit = key; fit(densityFeatures); });
+  });
 
-  function indexLineLayer(): maplibregl.LayerSpecification {
-    return {
-      id: lineLayerId,
-      type: "line",
-      source: sourceId,
-      paint: {
-        "line-color": [
-          "case",
-          ["boolean", ["feature-state", "selected"], false],
-          "#B1040E",
-          ["boolean", ["feature-state", "hover"], false],
-          "#006F54",
-          "#006F54",
-        ],
-        "line-opacity": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          2,
-          [
-            "case",
-            ["boolean", ["feature-state", "selected"], false],
-            1,
-            ["boolean", ["feature-state", "hover"], false],
-            0.98,
-            0.86,
-          ],
-          9,
-          [
-            "case",
-            ["boolean", ["feature-state", "selected"], false],
-            1,
-            ["boolean", ["feature-state", "hover"], false],
-            0.98,
-            ["interpolate", ["linear"], ["to-number", ["get", "_scaleDenominator"], 1000000], 5000, 0.22, 25000, 0.34, 250000, 0.66, 1000000, 0.76],
-          ],
-        ],
-        "line-width": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          1,
-          ["case", ["boolean", ["feature-state", "selected"], false], 2.6, 1.1],
-          5,
-          ["case", ["boolean", ["feature-state", "selected"], false], 4.2, 2.2],
-        ],
-      },
-    };
-  }
-
-  function addIndexLayers() {
+  function setupLayers() {
     if (!map) return;
-    if (!map.getLayer(fillLayerId)) map.addLayer(indexFillLayer());
-    if (!map.getLayer(lineLayerId)) map.addLayer(indexLineLayer());
-    attachLayerInteractionHandlers();
+    if (map.getSource('footprints')) return;
+    map.addSource('footprints', { type: 'geojson', data: asFeatureCollection(features), promoteId: 'id' });
+    map.addSource('density-areas', { type: 'geojson', data: asFeatureCollection(densityFeatures), promoteId: 'id' });
+    map.addSource('locations', { type: 'geojson', data: locationData(densityFeatures), promoteId: 'id' });
+    map.addLayer({ id: 'density-areas', type: 'fill', source: 'density-areas', paint: {
+      'fill-color': palette[5], 'fill-opacity': densityAreaOpacity, 'fill-antialias': false,
+      'fill-opacity-transition': { duration: 320, delay: 0 } } });
+    map.addLayer({ id: 'footprints-fill', type: 'fill', source: 'footprints', paint: {
+      'fill-color': ['case', ['boolean', ['feature-state', 'selected'], false], palette[8],
+        ['boolean', ['feature-state', 'hover'], false], palette[6], palette[4]],
+      'fill-opacity': footprintOpacity, 'fill-opacity-transition': { duration: 220, delay: 0 } } });
+    map.addLayer({ id: 'locations-heat', type: 'heatmap', source: 'locations', minzoom: config.map.densityMinZoom,
+      paint: {
+        'heatmap-weight': 1,
+        'heatmap-intensity': ['interpolate', ['linear'], ['zoom'], config.map.densityMinZoom, 1.25, 9, 1.9],
+        'heatmap-radius': ['interpolate', ['linear'], ['zoom'], config.map.densityMinZoom, 44, 9, 78],
+        'heatmap-opacity': heatOpacity, 'heatmap-opacity-transition': { duration: 320, delay: 0 },
+        'heatmap-color': ['interpolate', ['linear'], ['heatmap-density'],
+          0, 'rgba(247,252,253,0)', 0.12, palette[1], 0.25, palette[2], 0.38, palette[3],
+          0.5, palette[4], 0.63, palette[5], 0.76, palette[6], 0.89, palette[7], 1, palette[8]]
+      } });
+    map.addLayer({ id: 'footprints-line', type: 'line', source: 'footprints', paint: {
+      'line-color': ['case', ['boolean', ['feature-state', 'selected'], false], palette[8],
+        ['boolean', ['feature-state', 'hover'], false], palette[7], palette[6]],
+      'line-width': ['case', ['boolean', ['feature-state', 'selected'], false], 3.2,
+        ['boolean', ['feature-state', 'hover'], false], 3.8, 1.1], 'line-opacity': 0.9,
+      'line-opacity-transition': { duration: 220, delay: 0 } } });
+    map.addLayer({ id: 'locations-dots', type: 'circle', source: 'locations', paint: {
+      'circle-radius': ['interpolate', ['linear'], ['zoom'], 2, 2.2, 8, 4.2],
+      'circle-color': palette[6], 'circle-opacity': dotOpacity, 'circle-opacity-transition': { duration: 260, delay: 0 },
+      'circle-stroke-color': '#fff', 'circle-stroke-width': 1.2, 'circle-stroke-opacity': dotOpacity,
+      'circle-stroke-opacity-transition': { duration: 260, delay: 0 } } });
+    ready = true;
+    updateOpacity(polygonsVisible, densityEnabled);
+    setState(selectedFeatureId, 'selected', true);
+    setState(hoveredFeatureId, 'hover', true);
+    reportViewport();
   }
 
-  function attachLayerInteractionHandlers() {
-    if (!map || layerInteractionHandlersAttached || !map.getLayer(fillLayerId)) return;
-    layerInteractionHandlersAttached = true;
-
-    map.on("mousemove", fillLayerId, (event: maplibregl.MapLayerMouseEvent) => {
-      const feature = event.features?.[0] as SeriesIndexFeature | undefined;
-      const id = feature ? featureId(feature) : "";
-      if (!id) return;
-      onHoverFeature(id);
-      map?.getCanvas().style.setProperty("cursor", "pointer");
-    });
-
-    map.on("mouseleave", fillLayerId, () => {
-      onHoverFeature(null);
-      map?.getCanvas().style.setProperty("cursor", "");
-    });
-
-    map.on("click", fillLayerId, (event: maplibregl.MapLayerMouseEvent) => {
-      const feature = event.features?.[0] as SeriesIndexFeature | undefined;
-      const id = feature ? featureId(feature) : "";
-      if (id) onSelectFeature(id);
-    });
+  function locationData(items: SeriesIndexFeature[]): GeoJSON.FeatureCollection<GeoJSON.Point> {
+    return { type: 'FeatureCollection', features: items.flatMap(feature => {
+      const box = featureBbox(feature);
+      if (!box) return [];
+      let east = box[2]; if (east < box[0]) east += 360;
+      return [{ type: 'Feature' as const, id: featureId(feature), properties: { id: featureId(feature) },
+        geometry: { type: 'Point' as const, coordinates: [(box[0] + east) / 2, (box[1] + box[3]) / 2] } }];
+    }) };
   }
-
-  function displayFeatureCollection(nextFeatures: SeriesIndexFeature[]) {
-    return asFeatureCollection(nextFeatures.map(withScaleDenominator));
+  function setState(id: string | number | null, name: string, value: boolean) {
+    if (id !== null) map?.setFeatureState({ source: 'footprints', id }, { [name]: value });
   }
-
-  function withScaleDenominator(feature: SeriesIndexFeature): SeriesIndexFeature {
-    return {
-      ...feature,
-      properties: {
-        ...feature.properties,
-        _scaleDenominator: primaryScaleDenominator(feature),
-      },
-    };
+  function updateOpacity(outlines: boolean, density: boolean) {
+    if (!map) return;
+    map.setPaintProperty('footprints-fill', 'fill-opacity', outlines ? footprintOpacity : 0);
+    map.setPaintProperty('footprints-line', 'line-opacity', outlines ? 0.9 : 0);
+    map.setPaintProperty('density-areas', 'fill-opacity', density ? densityAreaOpacity : 0);
+    map.setPaintProperty('locations-heat', 'heatmap-opacity', density ? heatOpacity : 0);
+    map.setPaintProperty('locations-dots', 'circle-opacity', density ? dotOpacity : 0);
+    map.setPaintProperty('locations-dots', 'circle-stroke-opacity', density ? dotOpacity : 0);
   }
-
-  function primaryScaleDenominator(feature: SeriesIndexFeature) {
-    const denominators = propertyList(feature.properties?.scales)
-      .map(scaleDenominator)
-      .filter(Number.isFinite);
-    return denominators.length ? Math.min(...denominators) : 1000000;
-  }
-
-  function scaleDenominator(label: string) {
-    const match = label.match(/1:([0-9,]+)/);
-    return match ? Number(match[1].replace(/,/g, "")) : Number.POSITIVE_INFINITY;
-  }
-
-  function syncSelectedState() {
-    if (String(appliedSelectedId) === String(selectedFeatureId)) return;
-    applyFeatureState(appliedSelectedId, "selected", false);
-    appliedSelectedId = selectedFeatureId;
-    applyFeatureState(appliedSelectedId, "selected", true);
-  }
-
-  function syncHoveredState() {
-    if (String(appliedHoveredId) === String(hoveredFeatureId)) return;
-    applyFeatureState(appliedHoveredId, "hover", false);
-    appliedHoveredId = hoveredFeatureId;
-    applyFeatureState(appliedHoveredId, "hover", true);
-  }
-
-  function applyFeatureState(id: FeatureId | null, key: "hover" | "selected", value: boolean) {
-    if (!map || !map.getSource(sourceId) || id === null || id === "") return;
-    map.setFeatureState({ source: sourceId, id }, { [key]: value });
-  }
-
-  function updateViewportBbox() {
-    if (!map) {
-      onViewportBboxChange(null);
-      return;
+  function interactiveFeature(point: maplibre.PointLike) {
+    if (!map || !ready) return undefined;
+    const layers = [densityEnabled && 'locations-dots', polygonsVisible && 'footprints-fill']
+      .filter((id): id is string => Boolean(id && map?.getLayer(id)));
+    const rendered = map.queryRenderedFeatures(point, { layers });
+    const smallest = rendered.sort((left, right) => featureExtentArea(left.id) - featureExtentArea(right.id))[0];
+    if (smallest) return smallest;
+    if (!densityEnabled) return undefined;
+    const screenPoint = maplibre.Point.convert(point);
+    let nearest: { id: string | number; distance: number } | undefined;
+    for (const feature of densityFeatures) {
+      const box = featureBbox(feature);
+      if (!box) continue;
+      let east = box[2]; if (east < box[0]) east += 360;
+      const projected = map.project([(box[0] + east) / 2, (box[1] + box[3]) / 2]);
+      const distance = projected.dist(screenPoint);
+      if (distance <= 18 && (!nearest || distance < nearest.distance)) nearest = { id: featureId(feature), distance };
     }
-    const bounds = map.getBounds();
-    onViewportBboxChange([bounds.getWest(), bounds.getSouth(), bounds.getEast(), bounds.getNorth()]);
+    return nearest;
   }
-
-  function fitToFeatures(nextFeatures: SeriesIndexFeature[], animate: boolean) {
-    if (!map || nextFeatures.length === 0) return;
-    const bbox = bboxForFeatures(nextFeatures);
-    if (!bbox) return;
-    const narrow = window.innerWidth <= 760;
-    map.fitBounds(
-      [
-        [bbox[0], bbox[1]],
-        [bbox[2], bbox[3]],
-      ],
-      {
-        padding: narrow
-          ? { top: 24, right: 20, bottom: 24, left: 20 }
-          : { top: 44, right: 44, bottom: 44, left: 44 },
-        duration: animate ? 500 : 0,
-      },
-    );
+  function featureExtentArea(id: string | number | undefined) {
+    const feature = features.find(candidate => String(featureId(candidate)) === String(id));
+    const box = feature && featureBbox(feature);
+    if (!box) return Number.POSITIVE_INFINITY;
+    let east = box[2];
+    if (east < box[0]) east += 360;
+    return Math.max(0, east - box[0]) * Math.max(0, box[3] - box[1]);
+  }
+  function reportViewport() {
+    if (!map) return;
+    const bounds = map.getBounds();
+    onViewportChange([bounds.getWest(), bounds.getSouth(), bounds.getEast(), bounds.getNorth()], map.getZoom());
+  }
+  function fit(items: SeriesIndexFeature[], maxZoom = 12) {
+    const bounds = bboxForFeatures(items);
+    if (bounds) map?.fitBounds([[bounds[0], bounds[1]], [bounds[2], bounds[3]]],
+      { padding: { top: 70, right: 70, bottom: 190, left: 70 }, maxZoom, duration: 650 });
   }
 </script>
 
-<div bind:this={mapEl} class="map-container" aria-label="Unionized sheet index map">
-  {#if mapError}
-    <p class="map-message map-error">{mapError}</p>
-  {/if}
-</div>
+<div class="absolute inset-0"><div bind:this={container} class="h-full w-full" aria-label="Collection footprints map"></div></div>
+{#if mapError}
+  <div class="absolute right-4 top-20 z-20 max-w-xs rounded-xl border border-amber-300 bg-amber-50/90 p-3 text-xs text-amber-950 shadow-lg backdrop-blur-md dark:border-amber-700 dark:bg-amber-950/90 dark:text-amber-100" role="status">
+    Some background map resources could not load.
+    <button class="float-right rounded p-1" onclick={() => mapError = ''} aria-label="Dismiss map warning">×</button>
+    <details class="mt-2 break-words"><summary>Details</summary>{mapError}</details>
+  </div>
+{/if}

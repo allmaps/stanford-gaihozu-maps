@@ -30,6 +30,8 @@ export type IiifResource = {
   thumbnail?: IiifImage[];
   homepage?: LinkResource[];
   seeAlso?: LinkResource[];
+  navDate?: string;
+  navPlace?: FeatureCollection;
   items?: IiifResource[];
 };
 
@@ -53,6 +55,8 @@ export type IiifManifest = Omit<IiifResource, "items"> & {
 };
 
 export type SeriesIndexProperties = {
+  navDate?: string;
+  summary?: string;
   id?: string;
   seriesDruid?: string;
   manifestId?: string;

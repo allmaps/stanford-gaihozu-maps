@@ -1,5 +1,5 @@
 <script lang="ts">
-  import UnifiedApp from "../entries/UnifiedApp.svelte";
+  import AtlasApp from "$lib/components/AtlasApp.svelte";
 </script>
 
-<UnifiedApp />
+<AtlasApp />

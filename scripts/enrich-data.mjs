@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 import { existsSync } from "node:fs";
-import { mkdir, readFile, readdir, rename, writeFile } from "node:fs/promises";
+import { mkdir, readFile, readdir, rename, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import clipping from "polygon-clipping";
+import { prepareIiif, firstImageThumbnail } from './prepare-iiif.mjs';
 import {
   assetLinksFromRecord,
   decadesFromRecord,
@@ -34,6 +35,7 @@ const { union: unionPolygons } = clipping;
 const collectionLabels = new Map();
 
 await main();
+await prepareIiif(staticDir);
 
 async function main() {
   assertMetadataSourcesAvailable();
@@ -49,6 +51,7 @@ async function main() {
 
   const collection = buildRootCollection(enrichedSeries, collectionRecord);
   const seriesIndex = buildSeriesIndex(enrichedSeries);
+  await removeObsoleteGroupingCollections();
   await writeCollectionTree(collection);
   await writeJson(path.join(staticDir, "iiif", "series-index.geojson"), seriesIndex);
   console.log(
@@ -56,6 +59,16 @@ async function main() {
   );
   console.log("Collection: " + baseUrl + "/iiif/collection.json");
   console.log("Series index: " + baseUrl + "/iiif/series-index.geojson");
+}
+
+async function removeObsoleteGroupingCollections() {
+  const collectionsDir = path.join(staticDir, "iiif", "collections");
+  await Promise.all([
+    rm(path.join(collectionsDir, "by-theme"), { recursive: true, force: true }),
+    rm(path.join(collectionsDir, "by-theme.json"), { force: true }),
+    rm(path.join(collectionsDir, "by-subject"), { recursive: true, force: true }),
+    rm(path.join(collectionsDir, "by-subject.json"), { force: true }),
+  ]);
 }
 
 function assertMetadataSourcesAvailable() {
@@ -184,9 +197,9 @@ async function enrichSeries(seriesDruid, ordinal, total) {
   const regions = regionsForRecord(record, manifest, title);
   const scales = scalesForRecord(record, manifest, title);
   const themes = themesForRecord(record);
-  const subjects = subjectsForRecord(record);
   const decades = decadesFromRecord(record);
   manifest.metadata = buildSeriesMetadata(record, seriesDruid, sheets, manifest, { regions, scales });
+  manifest.thumbnail = firstImageThumbnail(manifest);
 
   await writeJson(manifestPath, manifest);
   await rewriteSheetsJson(seriesDruid);
@@ -206,7 +219,6 @@ async function enrichSeries(seriesDruid, ordinal, total) {
     regions,
     scales,
     themes,
-    subjects,
     decades,
     sheets,
   };
@@ -328,24 +340,6 @@ function buildRootCollection(series, collectionRecord) {
     compareGroups: compareScaleLabels,
     collectionRecord,
   });
-  const byTheme = buildGroupingCollection({
-    id: baseUrl + "/iiif/collections/by-theme.json",
-    label: "By Theme",
-    summary: "Series grouped by OpenGeoMetadata theme headings. A series can appear in more than one theme.",
-    basePath: "by-theme",
-    series: sortedSeries,
-    groupsForSeries: (item) => item.themes,
-    collectionRecord,
-  });
-  const bySubject = buildGroupingCollection({
-    id: baseUrl + "/iiif/collections/by-subject.json",
-    label: "By Subject",
-    summary: "Series grouped by OpenGeoMetadata subject headings. A series can appear in more than one subject.",
-    basePath: "by-subject",
-    series: sortedSeries,
-    groupsForSeries: (item) => item.subjects,
-    collectionRecord,
-  });
   const byDecade = buildGroupingCollection({
     id: baseUrl + "/iiif/collections/by-decade.json",
     label: "By Decade",
@@ -364,7 +358,7 @@ function buildRootCollection(series, collectionRecord) {
       summaryTextFromRecord(collectionRecord) ||
       "Combined IIIF manifests generated from " +
         sortedSeries.length +
-        " Stanford EarthWorks Gaihozu index-map records, nested by all series, broad region, scale, theme, subject, and decade.",
+        " Stanford EarthWorks Gaihozu index-map records, nested by all series, broad region, scale, and decade.",
     metadata: [
       metadataPair("Series in collection", String(sortedSeries.length)),
       ...collectionMetadata,
@@ -383,7 +377,7 @@ function buildRootCollection(series, collectionRecord) {
         format: "text/html",
       },
     ],
-    items: [allSeries, byRegion, byScale, byTheme, bySubject, byDecade],
+    items: [allSeries, byRegion, byScale, byDecade],
   });
 }
 
@@ -856,13 +850,6 @@ function regionsForRecord(record, manifest, fallbackTitle = "") {
 
   if (regions.length === 0) regions.push("Other / Local Places");
   return [...new Set(regions)];
-}
-
-function subjectsForRecord(record) {
-  const subjects = array(record.dct_subject_sm)
-    .map((subject) => String(subject || "").trim())
-    .filter(Boolean);
-  return subjects.length ? [...new Set(subjects)] : ["Unspecified subject"];
 }
 
 function themesForRecord(record) {

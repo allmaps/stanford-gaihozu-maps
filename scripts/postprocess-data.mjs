@@ -2,6 +2,7 @@
 import { existsSync } from "node:fs";
 import { readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { prepareIiif } from './prepare-iiif.mjs';
 
 const args = parseArgs(process.argv.slice(2));
 const baseUrl = trimTrailingSlash(
@@ -12,6 +13,7 @@ const iiifDir = path.join(staticDir, "iiif");
 const rewriteHosts = new Set(["localhost", "127.0.0.1", "pages.allmaps.org"]);
 
 await main();
+await prepareIiif(staticDir);
 
 async function main() {
   if (!existsSync(iiifDir)) {

@@ -9,6 +9,7 @@ import {
   writeFile,
 } from "node:fs/promises";
 import path from "node:path";
+import { firstImageThumbnail } from './prepare-iiif.mjs';
 import { unzipSync } from "fflate";
 import { featureCollection } from "@turf/helpers";
 import clipping from "polygon-clipping";
@@ -273,7 +274,7 @@ async function buildSeriesManifestFile(prepared, ordinal, total) {
     type: "Manifest",
     label: languageMap(title),
     summary: languageMap(summaryText(record)),
-    thumbnail: thumbnail(refs),
+    thumbnail: firstImageThumbnail({ items: canvases }) || thumbnail(refs),
     navDate,
     metadata: [
       metadataPair("EarthWorks ID", record.id),

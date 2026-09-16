@@ -1,16 +1,7 @@
 import type { Geometry } from "geojson";
-import { publicPath } from "./iiif";
-import type { SeriesIndex, SeriesIndexFeature, SeriesIndexProperties } from "./types";
+import type { SeriesIndex, SeriesIndexFeature, SeriesIndexProperties } from "./types.ts";
 
 export type Bbox = [number, number, number, number];
-
-export async function fetchSeriesIndex(url = publicPath("/iiif/series-index.geojson")) {
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error(url + " returned " + String(response.status));
-  }
-  return response.json() as Promise<SeriesIndex>;
-}
 
 export function featureId(feature: SeriesIndexFeature) {
   return feature.id ?? feature.properties?.id ?? feature.properties?.seriesDruid ?? "";
@@ -161,6 +152,19 @@ function longitudeIntervalsIntersect(left: Bbox, right: Bbox) {
   );
 }
 
+export function featureContainsBbox(feature: SeriesIndexFeature, viewport: Bbox, margin = 0) {
+  const bbox = featureBbox(feature);
+  if (!bbox) return false;
+  const marginX = Math.max(0, viewport[2] - viewport[0]) * Math.max(0, margin);
+  const marginY = Math.max(0, viewport[3] - viewport[1]) * Math.max(0, margin);
+  const expandedViewport: Bbox = [viewport[0] - marginX, viewport[1] - marginY, viewport[2] + marginX, viewport[3] + marginY];
+  if (bbox[1] > expandedViewport[1] || bbox[3] < expandedViewport[3]) return false;
+  const outerIntervals = longitudeIntervals(bbox);
+  return longitudeIntervals(expandedViewport).every(([innerMin, innerMax]) =>
+    outerIntervals.some(([outerMin, outerMax]) => outerMin <= innerMin && outerMax >= innerMax),
+  );
+}
+
 function longitudeIntervals(bbox: Bbox) {
   let [min, , max] = bbox;
   if (max < min) max += 360;
@@ -229,4 +233,39 @@ function emptyBbox() {
     maxY: -Infinity,
     valid: false,
   };
+}
+
+// Rank footprints against the current viewport without relying on collection-
+// specific map-scale metadata. Shift longitude bounds to the visible world copy.
+export function viewportScore(feature: SeriesIndexFeature, viewport: Bbox): number {
+  const bbox = featureBbox(feature);
+  if (!bbox) return 0;
+  const width = Math.max(0.00001, viewport[2] - viewport[0]);
+  const height = Math.max(0.00001, viewport[3] - viewport[1]);
+  let best = 0;
+  const shift = Math.round(((viewport[0] + viewport[2]) - (bbox[0] + bbox[2])) / 720) * 360;
+  for (const offset of [shift - 360, shift, shift + 360]) {
+    const w = bbox[0] + offset;
+    const e = (bbox[2] < bbox[0] ? bbox[2] + 360 : bbox[2]) + offset;
+    const intersection = Math.max(0, Math.min(e, viewport[2]) - Math.max(w, viewport[0])) *
+      Math.max(0, Math.min(bbox[3], viewport[3]) - Math.max(bbox[1], viewport[1]));
+    const area = Math.max(0.00000001, (e - w) * (bbox[3] - bbox[1]));
+    best = Math.max(best, (intersection / area) ** 2 * intersection / (width * height));
+    // Points and very narrow geometries remain discoverable.
+    if (!intersection && featureIntersectsBbox(feature, viewport) && area < 0.000001) best = Math.max(best, 0.00000001);
+  }
+  return best;
+}
+
+export function rankForViewport(features: SeriesIndexFeature[], viewport: Bbox | null, limit: number,
+  selected: string | number | null = null, containmentMargin = 0) {
+  if (!viewport) return features.slice(0, limit);
+  const ranked = features
+    .filter(feature => featureIntersectsBbox(feature, viewport) && !featureContainsBbox(feature, viewport, containmentMargin))
+    .map(feature => ({ feature, score: viewportScore(feature, viewport) }))
+    .sort((a, b) => b.score - a.score || String(featureId(a.feature)).localeCompare(String(featureId(b.feature))));
+  const displayed = ranked.slice(0, limit);
+  const selectedIndex = selected === null ? -1 : ranked.findIndex(entry => String(featureId(entry.feature)) === String(selected));
+  if (selectedIndex >= limit && displayed.length) displayed[displayed.length - 1] = ranked[selectedIndex];
+  return displayed.map(entry => entry.feature);
 }

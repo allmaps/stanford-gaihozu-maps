@@ -1,4 +1,5 @@
 import { assets, base } from "$app/paths";
+import config from '../../site.config.json';
 import type { IiifCanvas, IiifImage, IiifManifest, IiifResource, LanguageMap } from "./types";
 
 const staticBasePath = normalizeBasePath(assets || base || "/");
@@ -33,6 +34,9 @@ export function label(map?: LanguageMap | string) {
 }
 
 export function localPath(url: string) {
+  const canonical = config.canonicalDataBaseUrl.replace(/\/$/, '');
+  if (canonical && url.startsWith(canonical + '/')) return publicPath(url.slice(canonical.length));
+  if (/^https?:\/\//i.test(url)) return url;
   try {
     return publicPath(localAssetPath(new URL(url).pathname));
   } catch {
