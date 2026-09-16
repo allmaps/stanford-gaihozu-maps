@@ -1,4 +1,4 @@
-# IIIF Map Atlas
+# IIIF Gaihozu Maps Explorer
 
 This project builds IIIF Presentation 3 manifests from Stanford EarthWorks Gaihozu sheet-index records and presents them in a reusable Svelte map atlas. The application reads its items, filters, dates, footprints, labels, and description from IIIF plus one small site configuration file.
 

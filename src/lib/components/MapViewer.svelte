@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount, untrack } from 'svelte';
   import * as maplibre from 'maplibre-gl';
+  import maplibreWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
   import config from '../../../site.config.json';
   import { asFeatureCollection, bboxForFeatures, featureBbox, featureId } from '../map-data';
   import type { Bbox } from '../map-data';
@@ -22,7 +23,7 @@
   let lastFit = 0;
   let previousSelected: string | number | null = null;
   let previousHovered: string | number | null = null;
-  let currentStyle = '';
+  let currentStyle = $state('');
   const palette = config.map.palette.colors;
   const footprintOpacity = ['case', ['boolean', ['feature-state', 'selected'], false], 0.42,
     ['boolean', ['feature-state', 'hover'], false], 0.46, 0.08] as maplibre.ExpressionSpecification;
@@ -39,6 +40,7 @@
       const savedTheme = localStorage.getItem('atlas-theme');
       const initiallyDark = savedTheme ? savedTheme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
       currentStyle = initiallyDark ? config.map.darkStyle : config.map.style;
+      maplibre.setWorkerUrl(maplibreWorkerUrl);
       map = new maplibre.Map({ container, style: currentStyle, hash: true,
         center: config.map.center as [number, number], zoom: config.map.zoom,
         maxPitch: 0, dragRotate: false, attributionControl: false });
