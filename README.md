@@ -24,7 +24,7 @@ Edit `site.config.json` to reuse the interface with another collection. The impo
 - `canonicalDataBaseUrl`: the deployed base URL to rewrite to local paths during development.
 - `title`, `description`, and `eyebrow`: optional interface copy. An empty title or description falls back to the root Collection.
 - `repository`: the source-code link shown in the About dialog.
-- `map`: initial view, light and dark MapLibre styles, footprint limit, containment margin, the zoom at which the point heat layer joins the polygon density view, and the sequential map palette. `containmentMargin` expands each viewport edge by a fraction of its width or height before excluding footprints that contain it. The default light style is OpenFreeMap Positron and the default palette is ColorBrewer BuGn.
+- `map`: initial view, light and dark MapLibre styles, containment margin, the zoom at which the point heat layer joins the polygon density view, and the sequential map palette. `containmentMargin` expands each viewport edge by a fraction of its width or height before excluding footprints that contain it. The default light style is OpenFreeMap Positron and the default palette is ColorBrewer BuGn.
 - `labels`: collection-specific interface nouns and actions.
 
 The application derives its filter groups from the Collection tree. Each direct child Collection of the root can contain nested option Collections. Manifest membership in those options becomes the available filter values. A branch such as `All Series` can link directly to manifests without becoming a filter.

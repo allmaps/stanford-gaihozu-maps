@@ -257,15 +257,11 @@ export function viewportScore(feature: SeriesIndexFeature, viewport: Bbox): numb
   return best;
 }
 
-export function rankForViewport(features: SeriesIndexFeature[], viewport: Bbox | null, limit: number,
-  selected: string | number | null = null, containmentMargin = 0) {
-  if (!viewport) return features.slice(0, limit);
-  const ranked = features
+export function rankForViewport(features: SeriesIndexFeature[], viewport: Bbox | null, containmentMargin = 0) {
+  if (!viewport) return features;
+  return features
     .filter(feature => featureIntersectsBbox(feature, viewport) && !featureContainsBbox(feature, viewport, containmentMargin))
     .map(feature => ({ feature, score: viewportScore(feature, viewport) }))
-    .sort((a, b) => b.score - a.score || String(featureId(a.feature)).localeCompare(String(featureId(b.feature))));
-  const displayed = ranked.slice(0, limit);
-  const selectedIndex = selected === null ? -1 : ranked.findIndex(entry => String(featureId(entry.feature)) === String(selected));
-  if (selectedIndex >= limit && displayed.length) displayed[displayed.length - 1] = ranked[selectedIndex];
-  return displayed.map(entry => entry.feature);
+    .sort((a, b) => b.score - a.score || String(featureId(a.feature)).localeCompare(String(featureId(b.feature))))
+    .map(entry => entry.feature);
 }

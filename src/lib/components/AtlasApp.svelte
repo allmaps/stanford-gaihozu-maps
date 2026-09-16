@@ -75,7 +75,7 @@
   const filtered = $derived(browseFiltered.filter(manifest => matchesDate(manifest, years, includeUndated)));
   const features = $derived(filtered.map(manifestFeature));
   const mapped = $derived(features.filter(feature => Boolean(featureBbox(feature))));
-  const displayed = $derived(rankForViewport(mapped, viewport, config.map.maxPolygons, selected, config.map.containmentMargin));
+  const displayed = $derived(rankForViewport(mapped, viewport, config.map.containmentMargin));
   const listed = $derived(limitToView ? displayed : features);
   const activeFilters = $derived(Object.values(choices).filter(Boolean).length + (includeUndated ? 0 : 1));
   const histogram = $derived.by(() => {
